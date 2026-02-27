@@ -1,41 +1,41 @@
-# 🎬 Jimeng Seedance 2.0 User Manual (New Multi-modal Creation Experience)
+# 🎬 即梦 Seedance 2.0 使用手册（全新多模态创作体验）
 
-I still remember that from the day when we could only "tell stories" with text and first/last frames, we wanted to make a video model that truly understands your expressions. Today, it really came!
+还记得从只能用文字和首/尾帧「讲故事」的那天起，我们就想做出一个真正听得懂你表达的视频模型。今天，它真的来了！
 
-Jimeng Seedance 2.0 now supports four modal input modes: image, video, audio, and text, with richer expressions and more controllable generation.
+    即梦Seedance 2.0 现在支持图像、视频、音频、文本四种模态输入，表达方式更丰富，生成也更可控
 
-You can use a picture to set the style of the picture, use a video to specify the character's movements and lens changes, and then use a few seconds of audio to bring out the rhythm and atmosphere... with prompt words, the creative process becomes more natural, more efficient, and more like a real "director".
+你可以用一张图定下画面风格，用一个视频指定角色的动作和镜头的变化，再用几秒音频带起节奏氛围……搭配提示词，让创作过程变得更自然、更高效，也更像真正的“导演”。
 
-In this upgrade, “reference capabilities” are the biggest highlight:
-- 📷 Reference images can accurately restore picture composition and character details
-- 🎥 Reference videos support the reproduction of lens language, complex action rhythms, and creative special effects
-- ⏱ Video supports smooth extension and connection, and can generate continuous footage according to user prompts. Not only generation, but also "continue shooting"
-- ✂️ The editing capabilities are simultaneously enhanced, supporting role replacement, deletion, and addition of existing videos.
+这次升级中，“参考能力”是最大亮点：
+- 📷 参考图像可精准还原画面构图、角色细节
+- 🎥 参考视频支持镜头语言、复杂的动作节奏、创意特效的复刻
+- ⏱ 视频支持平滑延长与衔接，可按用户提示生成连续镜头，不止生成，还能“接着拍”
+- ✂️ 编辑能力同步增强，支持对已有视频进行角色更替、删减、增加
 
-We know that video creation is not only about “generation”, but also about the control of expression. 2.0 is not only multi-modal, but also a truly controllable way of creation.
+我们知道，视频创作从来不仅是“生成”，更是对表达的控制。2.0 不只是多模态，更是一种真正可控的创作方式
 
-Seedance 2.0, multi-modal creation, starts here. Please imagine it boldly and leave the rest to it
+    Seedance 2.0，多模态创作，从这里启程。请你们大胆想象，其余的交给它
 
-## Parameter preview
+## 参数预览
 
-|Core Dimensions| Seedance 2.0 |
+|核心维度| Seedance 2.0 |
 | --- | --- |
-| Image input & format: jpeg, png, webp, bmp, tiff, gif | ≤ 9 pictures <br/> Size: less than 30 MB |
-| Video input & format: mp4, mov | ≤ 3, total duration [2,15]s <br/> Size: less than 50 MB<br/> Total video pixel range: [409600 (640×640,480p), 927408 (834×1112,720p)] |
-| Audio input & format: mp3, wav | ≤ 3, total duration no more than 15s<br/> Size: less than 15MB |
-| Text input | Natural language |
-| Generation time | ≤ 15s, you can freely choose 4-15s |
-| Sound output | Comes with sound effects/soundtrack |
-| Interaction limit: The total maximum number of mixed inputs currently supported is 12 files. It is recommended to give priority to uploading materials that have the greatest impact on the picture or rhythm, and reasonably allocate the number of files in different modes |
+| 图片输入&格式：jpeg、png、webp、bmp、tiff、gif | ≤ 9 张 <br/> 大小：小于 30 MB |
+| 视频输入&格式: mp4、mov | ≤ 3 个，总时长［2,15］s <br/> 大小：小于 50 MB<br/> 视频总像素数范围：[409600（640×640,480p）， 927408（834×1112,720p）] |
+| 音频输入&格式：mp3、wav | ≤ 3 个，总时长不超过15s<br/> 大小：小于 15MB  |
+| 文本输入 | 自然语言 |
+| 生成时长 | ≤ 15s，可自由选择4-15s |
+| 声音输出 | 自带音效/配乐 |
+| 交互限制：目前支持的混合输入总上限是 12 个文件。建议优先上传对画面或节奏影响最大的素材，合理分配不同模态的文件数量  |
 
-## ⚠️Warm reminder: Instructions on uploading realistic face materials
-Due to platform compliance requirements, uploading materials containing realistic real faces is currently not supported (both pictures and video materials are not allowed). In order to protect user rights and generation security, the system will automatically block such materials, and video content will not be generated after uploading.
-This means that if you upload a photo of a real person (especially a clearly identifiable face), the model will not be able to handle correspondence generation.
-We understand that this may bring some limitations, but this measure is to ensure content security and platform operation. Thank you all for your understanding and cooperation! If there is any update in the future, we will update it in the document in time. Thank you again for your understanding~
+## ⚠️温馨提示：关于上传写实人脸素材的说明
+由于平台合规要求，目前暂不支持上传包含写实真人脸部的素材（图片和视频素材均不行）。为保障用户权益与生成安全，系统会自动拦截此类素材，上传后将无法生成视频内容。
+这意味着如果你上传了真人照片（尤其是清晰可辨识的人脸），模型将无法处理对应生成。
+我们理解这可能会带来一些限制，但这一措施是为了确保内容安全和平台规范运行。感谢大家的理解与配合！后续如果有update我们会及时在文档里更新，再次感谢理解～
 
-# Basic abilities are significantly enhanced: more stable, smoother, and more real!
+# 基础能力显著增强：更稳、更顺、更像真的！ 
 
-Not only multi-modal, Seedance 2.0 has been significantly enhanced at the basic level. The physical laws are more reasonable, the action performance is more natural and smooth, the command understanding is more accurate, and the style remains more stable. It can not only stably complete complex actions, continuous motion and other difficult generation tasks, but also make the overall video effect more realistic and smoother. It is a comprehensive evolution of underlying capabilities!
+不只是多模态，Seedance 2.0 在基础层面显著增强，物理规律更合理、动作表现更自然流畅、指令理解更精准、风格保持更稳定，不仅能稳定完成复杂动作、连续运动等高难度生成任务，也让整体视频效果更真实、更顺滑，是一次底层能力的全面进化！
 
 
 ## Case 1
@@ -44,7 +44,7 @@ Not only multi-modal, Seedance 2.0 has been significantly enhanced at the basic 
 
 #### 📝 Prompt
 ```
-The girl was drying her clothes elegantly. After drying, she took out another piece in the bucket and shook the clothes vigorously.
+女孩在优雅的晒衣服，晒完接着在桶里拿出另一件，用力抖一抖衣服。
 ```
 
 #### Image
@@ -53,7 +53,7 @@ The girl was drying her clothes elegantly. After drying, she took out another pi
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-1.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-1.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 
@@ -61,7 +61,7 @@ The girl was drying her clothes elegantly. After drying, she took out another pi
 
 #### 📝 Prompt
 ```
-The character in the painting has a guilty expression. He looks left and right and looks out of the frame. He quickly reaches out of the frame to pick up the Coke and takes a sip. Then he shows a satisfied expression. At this time, footsteps are heard and the character in the painting quickly puts the Coke back. At this time, a western cowboy picks up the Coke in the cup and walks away. Finally, the camera moves forward and the picture slowly changes to a pure black background with only the canned Coke illuminated by the top light. Artistic subtitles and narration appear at the bottom of the picture: "Yikou Cola, you must try it!"
+画里面的人物心虚的表情，眼睛左右看了看探出画框，快速的将手伸出画框拿起可乐喝了一口，然后露出一脸满足的表情，这时传来脚步声，画中的人物赶紧将可乐放回原位，此时一位西部牛仔拿起杯子里的可乐走了，最后镜头前推画面慢慢变得纯黑背景只有顶光照耀的罐装可乐，画面最下方出现艺术感字幕和旁白：“宜口可乐，不可不尝！”
 ```
 
 #### Image
@@ -70,7 +70,7 @@ The character in the painting has a guilty expression. He looks left and right a
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 
@@ -78,7 +78,7 @@ The character in the painting has a guilty expression. He looks left and right a
 
 #### 📝 Prompt
 ```
-The camera zooms out slightly (revealing a panoramic view of the street) and follows the heroine. The wind blows the skirt of the heroine. The heroine is walking on the streets of London in the 19th century. The heroine is walking on the street on the right and a steam locomotive drives up. It passes quickly by the heroine. The wind blows up the skirt of the heroine. The heroine looks shocked and quickly covers the skirt with her hands. The background sound effects are the sound of walking, crowds, cars, etc.
+镜头小幅度拉远（露出街头全景）并跟随女主移动，风吹拂着女主的裙摆，女主走在19世纪的伦敦大街上；女主走着走着右边街道驶来一辆蒸汽机车，快速驶过女主身旁，风将女主的裙摆吹起，女主一脸震惊的赶忙用双手向下捂住裙摆；背景音效为走路声，人群声，汽车声等等
 ```
 
 #### Image
@@ -87,7 +87,7 @@ The camera zooms out slightly (revealing a panoramic view of the street) and fol
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 
@@ -95,7 +95,7 @@ The camera zooms out slightly (revealing a panoramic view of the street) and fol
 
 #### 📝 Prompt
 ```
-The camera follows the man in black as he flees quickly, followed by a group of people chasing him. The camera switches to side tracking. The character panics and knocks down a fruit stand on the roadside, gets up and continues to run away. The crowd makes panicked sounds.
+镜头跟随黑衣男子快速逃亡，后面一群人在追，镜头转为侧面跟拍，人物惊慌撞倒路边的水果摊爬起来继续逃，人群慌乱的声音。
 ```
 
 #### Image
@@ -104,40 +104,40 @@ The camera follows the man in black as he flees quickly, followed by a group of 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-# Multi-modal comprehensive upgrade: Video creation enters the era of "free combination"!
+# 多模态全面升级：视频创作进入“自由组合”时代！
 
-## Seedance 2.0 Multimodal Introduction
+## Seedance 2.0 多模态介绍
 
-- Supports uploading text, pictures, videos, and audios. These materials can be used as objects or reference objects. You can refer to the movements, special effects, forms, camera movements, characters, scenes, and sounds of any content. As long as the prompt words are written clearly, the model can understand them.
-- Seedance 2.0 = multi-modal reference ability (can refer to everything) + strong creative generation + accurate command response (great understanding)
-- Just use natural language to describe the pictures and actions you want. Make it clear whether it is a reference or an edit. When there are a lot of materials, it is recommended that you check whether each @ object is clearly marked and don’t confuse pictures, videos, and characters.
+- 支持上传文本、图片、视频、音频，这些素材都可以被用作使用对象或参考对象。你可以参考任何内容的动作、特效、形式、运镜、人物、场景、声音，只要提示词写得清楚，模型都能理解。
+- Seedance 2.0 = 多模态参考能力（可参考万物） + 强创意生成 + 指令响应精准（理解力很棒）
+- 用自然语言描述你想要的画面和动作就可以啦，明确是参考，还是编辑～素材多的时候，建议你多检查一下各个 @对象有没有标清楚，别把图、视频、角色搞混了哦
 
-## Special usage (no limit, for reference only):
-- Is there a first frame/last frame picture? Still want to refer to the video action?
-→ Write clearly in the prompt, such as: "@Picture 1 is the first frame, refer to the fighting action of @Video 1"
-- Want to extend an existing video?
-→ Describe the extension time, such as "Extend @Video 1 by 5s". Note: The generated duration selected at this time should be the duration of the "new part" (for example, if extended by 5s, the generated length should also be selected as 5s.
-- Want to merge multiple videos?
-→ Explain the synthesis logic in the prompt word, such as: "I want to add a scene between @video1 and @video2, the content is xxx"
-- No audio material? You can directly refer to the sound in the video
-- Want to generate continuous motion?
-→ You can add a continuity description in the prompt words, such as: "The character transitions directly from jumping to rolling, keeping the movements coherent and smooth" @Figure 1 @ Figure 2 @ Figure 3...
+## 特殊使用方式（不设限，仅供参考）：
+- 有首帧/尾帧图？还想参考视频动作？
+ → 提示词中写清楚，如：“@图1为首帧，参考@视频1的打斗动作”
+- 想延长一个已有的视频？
+ → 说明延长时间，如“将@视频1延长 5s”，注意：此时选择的生成时长应为“新增部分”的时长（例如延长 5s，生成长度也选 5s
+- 想融合多个视频？
+ → 提示词中说明合成逻辑，如：“我要在@视频1和@视频2之间加一个场景，内容为xxx”
+- 没音频素材？可以直接参考视频里的声音
+- 想生成连续动作？
+ → 可以在提示词中加入连续性描述，如：“角色从跳跃直接过渡到翻滚，保持动作连贯流畅”@图1@图2@图3...
 
-## Those video problems that have always been difficult to solve can now really be solved!
-When making videos, you will always encounter some troublesome aspects: for example, the face is changed, the movements are not the same, the video is extended unnaturally, and the entire rhythm changes when you change it... This time multi-modality can solve these "old difficult" problems in one go. Here are the specific use cases👇
+## 那些一直很难做的视频问题，现在真的能搞定了！
+做视频总会碰到一些让人头疼的地方：比如人脸换了、动作不像、视频延长不自然、改着改着整个节奏都变了……这次多模态能把这些“老大难”问题一口气解决了，下面就是具体的使用案例👇
 
-### Comprehensive improvement in consistency
-You may have encountered these troubles: characters in the picture look different from front to back, product details are lost, small text is blurred, scenes jump, lens styles cannot be unified... These common consistency problems in creation are now in 2.0
-can be solved. From faces to clothing to font details, the overall consistency is more stable and accurate.
+### 一致性全面提升 
+你可能遇到过这些烦恼：画面里人物前后长得不一样、商品细节丢了、小字模糊、场景跳变、镜头风格无法统一……这些在创作中常见的一致性问题，现在在 2.0 中
+都能被解决。从人脸到服装，再到字体细节，整体一致性更稳、更准
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Man@Picture 1 After get off work, he walked tiredly in the corridor, his pace slowed down, and he finally stopped at the door of his home. A close-up shot of his face. The man took a deep breath, adjusted his emotions, put away his negative emotions, and became relaxed. Then he looked through the close-up to find the key and inserted the door lock. After entering the home, his little daughter and a pet dog happily ran over to receive a hug. The room was very warm, and the whole conversation was natural.
+男人@图片1下班后疲惫的走在走廊，脚步变缓，最后停在家门口，脸部特写镜头，男人深呼吸，调整情绪，收起了负面情绪，变得轻松，然后特写翻找出钥匙，插入门锁，进入家里后，他的小女儿和一只宠物狗，欢快的跑过来迎接拥抱，室内非常的温馨，全程自然对话
 ```
 
 #### Image
@@ -146,14 +146,14 @@ Man@Picture 1 After get off work, he walked tiredly in the corridor, his pace sl
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-1-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Replace the girls in @Video 1 with opera actresses. The scene is on a beautiful stage. Refer to the camera movements and transition effects of @Video 1, and use the lens to match the characters' movements to create the ultimate stage beauty and enhance the visual impact.
+将@视频1中的女生换成戏曲花旦，场景在一个精美的舞台上，参考@视频1的运镜和转场效果，利用镜头匹配人物的动作，极致的舞台美感，增强视觉冲击力
 ```
 
 #### Video
@@ -162,14 +162,14 @@ Replace the girls in @Video 1 with opera actresses. The scene is on a beautiful 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to all the transitions and camera movements in @Video 1, one shot to the end. The picture starts with a chess game. The camera moves to the left to show the yellow gravel on the floor. The camera moves up to a beach. There are footprints on the beach. A girl in white plain clothes is gradually moving away on the beach. The camera cuts to an overhead shot in the air. The sea water is washing (no characters should be shown). Seamless gradient transition. The washed waves turn into fluttering curtains. The camera zooms out to show a close-up of the girl's face. One shot to the end.
+参考 @视频1的所有转场和运镜，一镜到底，画面以棋局为起始，镜头左移，展示地板的黄色沙砾，镜头上移来到一个沙滩，沙滩上有足印，一个穿着白色素衣的女生在沙滩上渐行渐远，镜头切到空中的俯拍视角，海水在冲刷（不要出现人物），无缝渐变转场，冲刷的海浪变成飘动的窗帘，镜头拉远，展示女孩的面部特写，一镜到底
 ```
 
 #### Video
@@ -178,17 +178,17 @@ Refer to all the transitions and camera movements in @Video 1, one shot to the e
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-0-2 seconds screen: rapid four-frame flash cut, four bows in red, pink, purple, and leopard print are frozen in sequence, with a close-up of the satin gloss and the "chéri" brand word. Voiceover "Chéri 자석 리본으로 무궁무진한 아름다움을 연출해 보세요!"
-3-6 seconds: Close-up of the silver magnetic buckle "clicking" together, and then gently pulling it apart, showing the silky texture and convenience. Voice-over "단 1초 만에 잠그고, 최고의 스타일을 완성하세요!"
-7-12 seconds of screen: Quickly switch the wearing scene: the burgundy style is fastened to the collar of the coat, giving a full commuting atmosphere; the pink style is tied to a ponytail, and the sweet girl is out on the street; the purple style is tied to the bag strap, which is niche and high-end; the leopard print style is hung on the collar of the suit, and the hot girl is full of aura. Voiceover "코트, 가방, 헤어 액세서리까지, 다재다능하고 개성 넘치는 스타일을 완성하세요!"
-13-15 second screen: Four types of bows are displayed side by side, with the brand name “chéri, 당신에게 즉각적인 아름다움을 선사합니다!”
+0-2秒画面：快速四格闪切，红、粉、紫、豹纹四款蝴蝶结依次定格，特写缎面光泽与 “chéri” 品牌字样。画外音“Chéri 자석 리본으로 무궁무진한 아름다움을 연출해 보세요!”  
+3-6秒画面：特写银色磁吸扣 “咔嗒” 吸合，再轻轻一拉分开，展示丝滑质感与便捷性。画外音“단 1초 만에 잠그고, 최고의 스타일을 완성하세요!”  
+7-12 秒画面：快速切换佩戴场景：酒红款别在大衣领口，通勤氛围感拉满；粉色款绑在马尾，甜妹出街；紫色款系在包带，小众高级；豹纹款挂在西装领，辣妹气场全开。画外音“코트, 가방, 헤어 액세서리까지, 다재다능하고 개성 넘치는 스타일을 완성하세요!”  
+13-15秒画面：四款蝴蝶结并排陈列，品牌名 “chéri, 당신에게 즉각적인 아름다움을 선사합니다!”
 ```
 
 #### Image
@@ -197,14 +197,14 @@ Refer to all the transitions and camera movements in @Video 1, one shot to the e
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-4-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-Conduct a commercial photography display of the bag from @Picture 2. The side of the bag refers to @Picture 1, and the surface material of the bag refers to @Picture 3. It is required that all details of the bag be displayed, and the background sound is magnificent.
+对@图片2的包包进行商业化的摄像展示，包包的侧面参考@图片1，包包的表面材质参考@图片3，要求将包包的细节均有所展示，背景音恢宏大气
 ```
 
 #### Image
@@ -215,14 +215,14 @@ Conduct a commercial photography display of the bag from @Picture 2. The side of
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-5-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 6
 ### Input
 
 #### 📝 Prompt
 ```
-Take @Picture 1 as the first frame of the picture, first-person perspective, refer to the camera movement effect of @Video 1, the scene above refers to @Picture 2, the scene on the left refers to @Picture 3, and the scene on the right refers to @Picture 4.
+把@图片1作为画面的首帧图，第一人称视角，参考@视频1的运镜效果，上方场景参考@图片2，左边场景参考@图片3，右边场景参考@图片4。
 ```
 
 #### Video
@@ -236,17 +236,17 @@ Take @Picture 1 as the first frame of the picture, first-person perspective, ref
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-6.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Highly difficult/controllable camera movements and precise reproduction of movements
-In the past, if I wanted the model to imitate the movement, camera movement or complex movements in the movie, I would either have to write a bunch of detailed prompts or simply not be able to do it. But now, you only need to upload a reference video, and that’s it
+## 高难度/可控的运镜和动作精准复刻 
+以前想让模型模仿电影里的走位、运镜或者复杂动作，要么写一堆细节提示词，要么干脆做不到。而现在，只需要上传一段参考视频，就可以了
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the image of the man in @Picture 1. He is in the elevator in @Picture 2. Completely refer to all the camera effects and facial expressions of the protagonist in @Video 1. When the protagonist is frightened, Hitchcock zooms in, and then several surround shots show the perspective inside the elevator. The elevator door opens, follow the camera out of the elevator. For the scene outside the elevator, refer to @Picture 3. The man looks around. Refer to @Video 1 to use a robotic arm to follow the character's line of sight from multiple angles.
+参考@图1的男人形象，他在@图2的电梯中，完全参考@视频1的所有运镜效果还有主角的面部表情，主角在惊恐时希区柯克变焦，然后几个环绕镜头展示电梯内视角，电梯门打开，跟随镜头走出电梯，电梯外场景参考@图片3，男人环顾四周，参考@视频1用机械臂多角度跟随人物的视线
 ```
 
 #### Image
@@ -260,14 +260,14 @@ Refer to the image of the man in @Picture 1. He is in the elevator in @Picture 2
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Referring to the image of the man in @Picture 1, he is in the corridor of @Picture 2, completely referring to all the camera effects of @Video 1, as well as the facial expressions of the protagonist. The camera follows the protagonist running around the corner of @Picture 2, and then in the corridor of @Picture 3, the camera follows the perspective from the back and surrounds the front of the protagonist through a low angle of view; the camera then goes to the right Pan 90 degrees to shoot at the bifurcated intersection in @Picture 4, stop suddenly, pan right 180 degrees, and shoot the main character's face: the main character is panting, the camera follows the main character's perspective and looks around, refer to @Video 1's rapid left and right panning to show the scene, then zoom to the scene in @Picture 5, and continue to follow the side view of the main character running
+参考@图1的男人形象，他在@图2的走廊中，完全参考@视频1的所有运镜效果，还有主角的面部表情，镜头跟随主角在@图2拐角奔跑，然后在@图3的长廊里，镜头从背面的跟随视角，通过低视角环绕到主角正面；镜头再右摇90度拍摄@图片4的分叉路口，急停后右摇180度，怼脸拍摄主角正面：主角气喘吁吁，镜头跟随主角的视角环顾四周，参考@视频1里急速的左右环绕运镜展示场景，后拉到@图片5的场景，继续跟拍主角奔跑的侧面视角
 ```
 
 #### Image
@@ -283,14 +283,14 @@ Referring to the image of the man in @Picture 1, he is in the corridor of @Pictu
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-7.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-@Picture 1 uses a tablet as the main subject. Refer to @Video 1 for the camera movement. Zoom in to a close-up of the screen. After the lens is rotated, the tablet is reversed to show the full picture. The data flow on the screen is constantly changing, and the surrounding environment gradually turns into a science fiction-style data space.
+@图片1的平板电脑作为主体，运镜参考@视频1，推近到屏幕的特写，镜头旋转后平板反转展示全貌，屏幕中的数据流一直在变化，周围的环境逐渐变成科幻风格的数据空间
 ```
 
 #### Image
@@ -302,14 +302,14 @@ Referring to the image of the man in @Picture 1, he is in the corridor of @Pictu
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-The actress in @Picture 1 serves as the subject, referring to @Video 1's camera movement method to perform rhythmic push, pull and pan movements. The actress's movements also refer to the dance movements of the woman in @Video 1, performing energetically on the stage.
+@图片1的女星作为主体，参考@视频1的运镜方式进行有节奏的推拉摇移，女星的动作也参考@视频1中女子的舞蹈动作，在舞台上活力十足地表演
 ```
 
 #### Image
@@ -321,14 +321,14 @@ The actress in @Picture 1 serves as the subject, referring to @Video 1's camera 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to @Picture 1 @Picture 2 for the spear character, @Picture 3 @Picture 4 for the double sword character, imitate the movements of @Video 1, and fight in the maple leaf forest of @Picture 5
+参考@图1@图2长枪角色，@图3@图4双刀角色，模仿@视频1的动作，在@图5的枫叶林中打斗
 ```
 
 #### Image
@@ -344,14 +344,14 @@ Refer to @Picture 1 @Picture 2 for the spear character, @Picture 3 @Picture 4 fo
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-7.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 6
 ### Input
 
 #### 📝 Prompt
 ```
-Referring to the character movements in Video 1 and the surrounding lens language of Video 2, a fight scene between Character 1 and Character 2 was generated. The fight took place in the starry night. During the fight, white dust was raised. The fight scene was very gorgeous and the atmosphere was very tense.
+参考视频1的人物动作，参考视频2的环绕运镜镜头语言，生成角色1和角色2的打斗场面，打斗发生在星夜中，打斗的过程中有白色灰尘扬起，打斗场面非常华丽，气氛十分紧张。
 ```
 
 #### Image
@@ -365,14 +365,14 @@ Referring to the character movements in Video 1 and the surrounding lens languag
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 7
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the camera movement and screen switching rhythm in Video 1, and reproduce the red supercar in Picture 1.
+参考视频1的运镜、画面切换节奏，拿图片1的红色超跑进行复刻。
 ```
 
 #### Image
@@ -384,17 +384,17 @@ Refer to the camera movement and screen switching rhythm in Video 1, and reprodu
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Creative templates / Accurate reproduction of complex special effects
-Not only can you create pictures and write stories, Seedance 2.0 also supports "imitation" - creative transitions, commercials, movie clips, and complex editing. As long as you have reference pictures or videos, the model can identify the rhythm of the action, the lens language, and the visual structure, and accurately reproduce them. It doesn’t matter if you don’t understand professional terminology. Write clearly the parts you want to refer to, such as “Refer to @Video1’s rhythm and camera movement, @Picture 1’s character modeling”, and the model will be able to generate a version that belongs to you with high quality. Be brave and try! it can really do it
+## 创意模版 / 复杂特效精准复刻
+不止能生图写故事，Seedance 2.0 还支持“照着模仿”——创意转场、广告成片、电影片段、复杂剪辑，只要你有参考图或视频，模型就能识别动作节奏、镜头语言、视觉结构，并精准复刻出来。不懂专业术语也没关系，写清楚你想参考的部分，比如“参考 @视频1 的节奏和运镜，@图1 的角色造型”，模型就能高质量生成属于你的版本。大胆试！它真的能做到
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Replace the characters in @Video 1 with @Picture 1, @Picture 1 is the first frame, the character puts on virtual science fiction glasses, refer to @Video 1's camera movements, and the close-up surround lens, from the third-person perspective to the character's subjective perspective, shuttle in the AI virtual glasses, and come to the deep blue universe of @Picture 2 , several spaceships appeared and shuttled into the distance. The camera followed the spacecraft to the pixel world of @Picture 3. The camera flew over the pixel mountain forest world at low altitude, and the growth forms of trees inside appeared. Then it shot from an upward angle and quickly shuttled to the light green textured planet of @Picture 4. The camera shuttled and passed over the surface of the planet.
+将@视频1的人物换成@图片1，@图片1为首帧，人物带上虚拟科幻眼镜，参考@视频1的运镜，及近的环绕镜头，从第三人称视角变成人物的主观视角，在AI虚拟眼镜中穿梭，来到@图片2的深邃的蓝色宇宙，出现几架飞船穿梭向远方，镜头跟随飞船穿梭到@图片3的像素世界，镜头低空飞过像素的山林世界，里面的树木生长形式出现，随后视角仰拍，急速穿梭到@图片4的浅绿色纹理的星球，镜头穿梭并掠过星球表面
 ```
 
 #### Image
@@ -409,14 +409,14 @@ Replace the characters in @Video 1 with @Picture 1, @Picture 1 is the first fram
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-6.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the model’s facial features in the first picture. Models wear the clothes in the 2nd to 6th reference pictures and get closer to the camera, making naughty, cold, cute, surprised, and cool looks. Each look wears different clothes. Each time it is changed, the picture will be cut. Please refer to the fisheye lens effect and double flickering effect in the video. Please refer to the effect of @Video 1.
+参考第一张图片里模特的五官长相。模特分别穿着第2-6张参考图里的服装凑近镜头，做出调皮、冷酷、可爱、惊讶、耍帅的造型，每一个造型穿着不同服装，每次更换，画面伴随会切镜，参考视频的里鱼眼镜头效果、重影闪烁的炫影画面效果，参考@视频1的效果
 ```
 
 #### Image
@@ -433,14 +433,14 @@ Refer to the model’s facial features in the first picture. Models wear the clo
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-8.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the advertising creativity of the video, use the provided down jacket pictures, and refer to the goose down pictures and swan pictures, and match them with the following advertising words: "This is goose down, this is a warm swan, this is a wearable polar velvet down jacket. Wear warm clothes in the New Year and live a warm life." Generate a new down jacket advertising video.
+参考视频的广告创意，用提供的羽绒服图片，并参考鹅绒图片、天鹅图片，搭配以下广告词“这是根鹅绒，这是暖天鹅，这是能穿的极地天鹅绒羽绒服，新年穿得暖，生活过得暖”，生成新的羽绒服广告视频。
 ```
 
 #### Image
@@ -454,14 +454,14 @@ Refer to the advertising creativity of the video, use the provided down jacket p
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-In black and white ink style, the characters in @Picture 1 refer to the special effects and movements in @Video 1 to stage an ink Tai Chi Kung Fu episode.
+黑白水墨风格，@图片1的人物参考@视频1的特效和动作，上演一段水墨太极功夫
 ```
 
 #### Image
@@ -473,14 +473,14 @@ In black and white ink style, the characters in @Picture 1 refer to the special 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-Replace the character in the first frame of @Video 1 with @Picture 1, completely @ refer to the special effects and movements of Video 1. Rose petals grow from the stamens in the hand, and the cracks extend upward on the face, gradually covered by weeds. The character brushes his face with both hands, and the weeds turn into particles and dissipate, and finally become the appearance of @Picture 2
+将@视频1的首帧人物替换成@图片1，完全@参考视频1的特效和动作，手里的花蕊长出玫瑰花瓣，裂纹在脸部向上延伸，逐渐被杂草覆盖，人物双手拂过脸部，杂草变成粒子消散，最后变成@图片2的长相
 ```
 
 #### Image
@@ -493,14 +493,14 @@ Replace the character in the first frame of @Video 1 with @Picture 1, completely
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 6
 ### Input
 
 #### 📝 Prompt
 ```
-Starting from the ceiling of @Picture 1, refer to the puzzle breaking effect of @Video 1 for transition, replace the font "BELIEVE" with "Seedance", refer to the font of @Picture 2
+由@图片1的天花板开始，参考@视频1的拼图破碎效果进行转场，“BELIEVE”字体替换成“Seedance”，参考@图2的字体
 ```
 
 #### Image
@@ -513,14 +513,14 @@ Starting from the ceiling of @Picture 1, refer to the puzzle breaking effect of 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 7
 ### Input
 
 #### 📝 Prompt
 ```
-It starts with a black screen. Refer to the particle effects and materials of Video 1. The golden gravel material floats out from the left side of the screen and covers it to the right. Refer to the particle blowing effect of @Video 1. The font of @Picture 1 gradually appears in the center of the screen.
+以黑幕开场，参考视频1的粒子特效和材质，金色鎏金材质的沙砾从画面左边飘出并向右覆盖，参考@视频1的粒子吹散效果，@图片1的字体逐渐出现在画面中心
 ```
 
 #### Image
@@ -532,14 +532,14 @@ It starts with a black screen. Refer to the particle effects and materials of Vi
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 8
 ### Input
 
 #### 📝 Prompt
 ```
-The characters in @Picture 1 refer to the movements and expression changes in @Video 1 to show the abstract behavior of eating instant noodles.
+@图片1的人物参考@视频1中的动作和表情变化，展示吃泡面的抽象行为
 ```
 
 #### Image
@@ -551,16 +551,16 @@ The characters in @Picture 1 refer to the movements and expression changes in @V
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## The creativity and plot completion ability of the model
+## 模型的创意性、剧情补全能力
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Perform a comic interpretation of @Picture 1 in order from left to right and top to bottom, keeping the lines spoken by the characters consistent with the pictures, adding special sound effects to the storyboard switching and key plot interpretations, and the overall style is humorous; refer to @Video 1 for the interpretation method
+将@图1以从左到右从上到下的顺序进行漫画演绎，保持人物说的台词与图片上的一致，分镜切换以及重点的情节演绎加入特殊音效，整体风格诙谐幽默；演绎方式参考@视频1
 ```
 
 #### Image
@@ -572,14 +572,14 @@ Perform a comic interpretation of @Picture 1 in order from left to right and top
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the storyboard script of @Picture1's feature film, refer to the storyboards, scenes, camera movements, pictures and copywriting of @Picture1, and create a 15-second healing title sequence about "The Four Seasons of Childhood"
+参考@图片1的专题片的分镜头脚本，参考@图片1的分镜、景别、运镜、画面和文案，创作一段15s的关于“童年的四季”的治愈系片头
 ```
 
 #### Image
@@ -591,14 +591,14 @@ Refer to the storyboard script of @Picture1's feature film, refer to the storybo
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-Refer to the audio of video 1, and use Figures 1, 2, 3, 4, and 5 as inspiration to create an emotional video. Background music reference@video 1
+参考视频1的音频，根据图1、图2、图3、图4、图5为灵感，发散出一条情绪向的视频。背景音乐参考@视频1
 ```
 
 #### Image
@@ -610,19 +610,19 @@ Refer to the audio of video 1, and use Figures 1, 2, 3, 4, and 5 as inspiration 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Video extension
+## 视频延长
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Extend the video to 15 seconds, refer to the image of a donkey riding a motorcycle in @Picture 1 and @Picture 2, and add an imaginative advertisement
-Picture 1: Fixed shot from the side, the donkey rides a motorcycle and rushes out of the shed, and the chicken next to it is frightened.
-Screen 2: The donkey is riding a motorcycle and circling in the sand. First, a close-up of the motorcycle tires, and then cut to a mid-air shot of the donkey doing circling stunts on a motorcycle, raising smoke.
-Picture 3: The background is a shot of snowy mountains, with a donkey riding a car flying over the hillside. The slogan is behind the subject, and "Inspire Creativity, Enrich Life" appears in the middle in the form of a mask (when the donkey and the motorcycle fly by), and finally when the motorcycle flies by, a puff of dust and smoke is raised.
+延长15s视频，参考@图片1、@图片2的驴骑摩托车的形象，补充一段脑洞广告
+画面1：侧面固定镜头，驴骑着摩托车冲出棚栏，旁边的鸡受到惊吓，
+画面2：驴骑着摩托在沙地盘旋，先特写摩托轮胎，再切到半空中俯拍驴骑着摩托车做着盘旋特技，掀起烟雾
+画面3：背景是雪山镜头，驴骑着车从山坡飞越过，广告语在主体背后，通过遮罩的形式（驴和摩托车飞过时）中间出现"Inspire Creativity,Enrich Life"，最后在摩托飞过，扬起一阵尘烟
 ```
 
 #### Image
@@ -635,14 +635,14 @@ Picture 3: The background is a shot of snowy mountains, with a donkey riding a c
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-The video is extended for 6 seconds, and the exciting music of electric guitar appears. The advertisement font of "JUST DO IT" appears in the middle of the video and then gradually fades. The camera moves up to the ceiling. A strong man is pulling the hanging ring. His upper body is wearing tight fitness clothes from @Picture 1, with the "Fitness" logo of @Picture 2 printed on the back. The man pulls up the hanging ring with his strong upper limbs, and then the advertisement ending font of "DO SOME SPORT" appears in the middle of the video.
+将视频延长6s，出现电吉他的激昂音乐，视频中间出现“JUST DO IT”的广告字体后逐渐淡化，镜头上移到天花板，一个健硕的男人拉着吊环，上半身穿着@图1的紧身健身服，背面印有@图2的“Fitness”logo，男人用健硕的上肢拉上吊环，随后视频中间出现“DO SOME SPORT”的广告结束字体。
 ```
 
 #### Image
@@ -654,14 +654,14 @@ The video is extended for 6 seconds, and the exciting music of electric guitar a
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-Extend @video1 by 15 seconds. 1-5 seconds: The light and shadow slowly slide over the wooden table and cup body through the blinds, and the branches sway like a slight breath. 6-10 seconds: A coffee bean falls gently from the top of the screen, and the camera moves towards the coffee bean until the screen goes black. 11-15 seconds: The first line in English is "Lucky Coffee", the second line is "Breakfast", and the third line is "AM 7:00-10:00".
+将@视频1延长15秒。1-5秒：光影透过百叶窗在木桌、杯身上缓缓滑过，树枝伴随着轻微呼吸般的晃动。6-10秒：一粒咖啡豆从画面上方轻轻飘落，镜头向咖啡豆推进至画面黑屏。11-15秒：英文渐显第一行“Lucky Coffee ”，第二行“Breakfast”，第三行“AM 7:00-10:00”。
 ```
 
 #### Video
@@ -670,14 +670,14 @@ Extend @video1 by 15 seconds. 1-5 seconds: The light and shadow slowly slide ove
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-Extending forward for 10 seconds, in the warm afternoon light, the camera starts from the row of awnings on the street corner that were fluttered by the breeze, and slowly moves down to a few small daisies sticking their heads out at the base of the wall. Immediately afterwards, the protagonist's red sneakers appeared on the screen. He was squatting in front of a street flower stall, smiling as he gathered a large handful of sunflowers into his arms, and the petals rubbed against his white T-shirt. When he turned around and stepped on the skateboard, the flower stall owner smiled and shouted, "Be careful of the petals flying!" He waved to the boss and then started to skate. Several golden petals had already broken free from the bouquet and landed on the board of the skateboard.
+向前延长10s，温暖的午后光线里，镜头先从街角那排被微风掀动的遮阳篷开始，慢慢下移到墙根处几株探出头的小雏菊。紧接着，画面里出现主人公的红色板鞋，他正蹲在街边花摊前，笑着把一大捧向日葵拢进怀里，花瓣蹭过他的白 T 恤。他转身踏上滑板时，花摊老板笑着喊了句 “小心花瓣飞啦！”，他冲老板挥了挥手，然后才开始滑行，几片金黄的花瓣已经先一步从花束里挣脱出来，落在了滑板的板面。
 ```
 
 #### Video
@@ -686,16 +686,16 @@ Extending forward for 10 seconds, in the warm afternoon light, the camera starts
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## The timbre is more accurate and the sound is more realistic
+## 音色更准，声音更真
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Fixed lens, the central fisheye lens peeks down through the circular hole, refer to the fisheye lens in Video 1, let the horse in @Video 2 look towards the fisheye lens, refer to the speaking action in @Video 1, the background BGM refers to the sound effect in @Video 3.
+固定镜头，中央鱼眼镜头透过圆形孔洞向下窥视，参考视频1的鱼眼镜头，让@视频2中的马看向鱼眼镜头，参考@视频1中的说话动作，背景BGM参考@视频3中的音效。
 ```
 
 #### Video
@@ -706,14 +706,14 @@ Fixed lens, the central fisheye lens peeks down through the circular hole, refer
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Based on the office building promotional photos provided, a 15-second film-level real estate documentary was generated, using a 2.35:1 wide screen, 24fps, and a delicate picture style. The voice of the narration was referred to @Video 1, and the "ecology of the office building" was shot to present the operations of different companies in the building. The narration was used to explain how the office building became a vibrant business ecosystem.
+根据提供的写字楼宣传照，生成一段15秒电影级写实风格的地产纪录片，采用2.35:1宽银幕，24fps，细腻的画面风格，其中旁白的音色参考@视频1，拍摄 “写字楼的生态”，呈现楼内不同企业的运作，结合旁白阐述写字楼如何成为一个充满活力的商业生态系统.
 ```
 
 #### Image
@@ -727,16 +727,16 @@ Based on the office building promotional photos provided, a 15-second film-level
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-A complaint dialogue in the "Cat and Dog Complaint Room" requires rich emotions and is consistent with a talk show performance:
-Meow Jiang (hosted by Cat, licking fur and rolling eyes): "My family, who knows? The guy next to me, besides wagging his tail and tearing down the sofa every day, he only uses his eyes like "I'm so good, I want to be touched" to trick humans into snacking. He is obviously more aggressive than anyone else when it comes to tearing down homes, but he still has the nerve to call him Wangzai. I think calling him "Wangzai" is more or less, hahaha."
-Wang Zai (dog host, tilting his head and wagging his tail): "You still have the nerve to talk to me? You sleep 18 hours a day, and when you wake up, you rub human legs to ask for cans. You shed hair so much that the human's black clothes are covered with your hair. After they sweep the floor, you turn around and roll around on the sofa. How do you still have the nerve to pretend to be a cold noble?"
+在“猫狗吐槽间”里的一段吐槽对话，要求情感丰沛，符合脱口秀表演：
+喵酱（猫主持，舔毛翻眼）："家人们谁懂啊，我身边这位，每天除了摇尾巴、拆沙发，就只会用那种“我超乖求摸摸”的眼神骗人类零食，明明拆家的时候比谁都凶，还好意思叫旺仔，我看叫“旺拆”还差不多哈哈哈“
+旺仔（狗主持，歪头晃尾巴）："你还好意思说我？你每天睡18个小时，醒了就蹭人类腿要罐头，掉毛掉得人类黑衣服上全是你的毛，人家扫完地，你转身又在沙发上滚一圈，还好意思装高冷贵族？"
 ```
 
 #### Image
@@ -745,14 +745,14 @@ Wang Zai (dog host, tilting his head and wagging his tail): "You still have the 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-The accompaniment of "The Case of Guillotine Beauty" in the prelude to the Henan opera sounded. Bao Zheng in black on the left pointed to Chen Shimei in red on the right, and sang Henan opera through gritted teeth: "Sword against sheath, with real evidence, do you dare not to move?" Chen Shimei's eyes were darting around, looking for expedients, with a look of extreme embarrassment. At this time, a voice from a leading actor in the Henan Opera came from outside the screen: "Wait a minute!" Bao Zheng and Chen Shimei both looked to the right side of the screen.
+豫剧经前桥段《铡美案》的伴奏响起，左侧的黑衣包拯指着右侧的红衣陈世美，咬牙切齿地唱着豫剧：“刀对鞘，真凭实据你敢不招？” 陈世美的眼珠左右滴溜溜乱转，寻找着权宜之策，面色窘迫至极。此时，画面外传来一声豫剧旦角的念白：“且慢！”包拯和陈世美一齐向画面右侧看去。
 ```
 
 #### Image
@@ -761,14 +761,14 @@ The accompaniment of "The Case of Guillotine Beauty" in the prelude to the Henan
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-Generate a 15-second MV video. Keywords: Steady framing / light push and pull / low-angle heroic sense / documentary but high-end A super wide-angle shot, low camera angle shot slightly, the cliff dirt road and retro station wagon occupy the lower third of the screen, the sea and the horizon in the distance open up space, the volumetric light of the sunset side passes through the dust particles, film-level composition, real film grains, the breeze blows the corners of the clothes.
+生成一个15秒的MV视频。关键词：稳重构图 / 轻推拉 / 低角度英雄感 / 纪实但高级A超广角建立镜头，低机位轻微仰拍，悬崖土路与复古旅行车占画面下三分之一，远处海面与地平线拉开空间，夕阳侧逆光体积光穿过尘粒，电影级构图，真实胶片颗粒，微风吹动衣角。
 ```
 
 #### Image
@@ -777,14 +777,14 @@ Generate a 15-second MV video. Keywords: Steady framing / light push and pull / 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 6
 ### Input
 
 #### 📝 Prompt
 ```
-The girl wearing a hat in the middle of the picture sings softly "I'm so proud of my family!", then turns around and hugs the black girl in the middle. The black girl emotionally responded "My sweetie, you're the heart of our family" and hugged her back. The boy in yellow clothes on the left said happily, "Folks, let's dance together to celebrate!" The girl on the far right immediately replied: "I'll bring the music!", Latin American music played in the background, the woman in the orange skirt on the left (Julietta) smiled and nodded, and the woman with braids on the right (Louisa) clenched her fists and waved her arms. Someone in the crowd started to take steps, children clapped along with the rhythm, and the whole family was about to form a circle. Accompanied by cheerful music, skirts flying, they danced on the colorful streets, spreading joy and warmth.
+画面中间戴帽子的女孩温柔地唱着说"I'm so proud of my family!"，之后转身拥抱中间的黑人女孩。黑人女孩感动地回应"My sweetie, you're the heart of our family"，回抱她。左侧的黄衣服男孩开心地说"Folks, let's dance together to celebrate!” 最右侧的女孩紧接着回复： “I'll bring the music!"，背景拉美音乐响起，左侧穿橙色裙的女性（朱丽叶塔）笑着点头，右侧扎辫女性（路易莎）握紧拳头挥动手臂。人群中有人开始踏起步子，孩子们跟着节奏拍手，整个家族即将围成圈，伴着欢快的音乐，裙摆飞扬，在五彩的街道上尽情舞动，传递着喜悦与温暖。
 ```
 
 #### Image
@@ -793,14 +793,14 @@ The girl wearing a hat in the middle of the picture sings softly "I'm so proud o
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 7
 ### Input
 
 #### 📝 Prompt
 ```
-Fixed lens. The standing strong man (captain) clenched his fists and waved his arms and said in Spanish: "Attack in three minutes!" The blond team member stood checking the firearms, and the green-haired team member held onto the tactical flashlight. The black team members put their shoulders to each other and asked their companions in Spanish: "Flanking?" The captain nodded and said in Spanish: "Old rules, keep alive for interrogation." All members were solemn, completed tactical gestures amidst the sound of equipment clashing, and stood up in tacit understanding. Everyone was ready, and the two boys on the left also stood up first and prepared to fight.
+固定镜头。站着的壮汉（队长）握拳挥臂用西班牙语说着：“三分钟后突袭！”，金发队员站在检查枪械，绿发队员握紧战术手电。黑人队员搭肩问同伴用西班牙语说：“侧翼包抄？”队长点头用西班牙语说：“老规矩，活口留审讯。”全员肃然，装备碰撞声中完成战术手势，默契起身，大家都严阵以待，左侧两个男生也争先站起来准备战斗。
 ```
 
 #### Image
@@ -809,17 +809,17 @@ Fixed lens. The standing strong man (captain) clenched his fists and waved his a
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 8
 ### Input
 
 #### 📝 Prompt
 ```
-0-3 seconds: The alarm clock sounds at the beginning, and picture 1 appears in the hazy screen;
-3-10 seconds: Pan the camera quickly and turn to the opposite side to take a close-up of the man’s face. The man helplessly asks the girl to get up. The tone and timbre refer to @Video 1;
-10-12 seconds: The girl pouted and hid under the quilt;
-12-15 seconds: Switch to the whole body of the male protagonist, he sighed and said: "There is really nothing I can do against you!"
+0-3秒：开头闹钟响起来，画面朦胧中出现画面1； 
+3-10秒：快速摇镜头，转向对面特写男人面部，男人无奈的叫女生起床，语气和音色参考@视频1； 
+10-12秒：女生撅着嘴躲进被子里面； 
+12-15秒：切换到男主全身，他叹着气说：”真拿你没办法！“
 ```
 
 #### Image
@@ -832,18 +832,18 @@ Fixed lens. The standing strong man (captain) clenched his fists and waved his a
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 9
 ### Input
 
 #### 📝 Prompt
 ```
-Monkey in @Picture 1 walks towards the counter of the milk tea shop. The camera follows him. A Bichon Frize waiter in @Picture 2 is wiping the production tools at the bar. Monkey orders the waiter in a Sichuan accent: "Yao Meier, do you have a farewell to my concubine?"
-Cut shot, close-up.
-The waiter put down what he was doing, gave the old man a strange look and replied: "No, do you want American style?"
-Cut to show the monkey.
-He scratched his head and muttered something: "Is everything okay...? I have something to do! My grandson asked me to buy a milk tea, so I just called him Farewell My Concubine."
+@图片1的猴子走向奶茶店柜台，镜头跟随在他身后，一位@图片2的比熊服务员正在吧台处擦拭制作工具，猴子向服务员用四川口音点单：“幺妹儿，霸王别姬有得没得？”
+切镜，特写。
+服务员放下手里的活，怪异地看了老头一眼后回答：“没得，美式要不要得嘛”
+切镜，镜头给到猴子。
+他挠了挠头念念有词：“没事……？我有事！孙儿叫我来买个奶茶，就叫个撒子霸王别姬嘛”
 ```
 
 #### Image
@@ -854,14 +854,14 @@ He scratched his head and muttered something: "Is everything okay...? I have som
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 10
 ### Input
 
 #### 📝 Prompt
 ```
-Use popular science style and tone to interpret the content in picture 1, including Wukong going to Cuiyun Mountain to borrow a banana fan from Princess Iron Fan in order to cross the Flame Mountain. Princess Iron Fan wanted to take revenge because her red boy was surrendered by Wukong and worshiped Guanyin as a child. Mother and son were separated and she refused to borrow the fan in return. Wukong tried to persuade him to no avail, and the two immediately began to tell a story about their dispute.
+用科普风格和音色，将图片1中的内容演绎出来，内容包括悟空为过火焰山，到翠云山向铁扇公主借芭蕉扇。铁扇公主因红孩儿被悟空降伏拜观音为童子，母子分离，不肯借扇还欲报仇。悟空好言相劝无果，二人随即起了争执的小故事进行讲解。
 ```
 
 #### Image
@@ -870,16 +870,16 @@ Use popular science style and tone to interpret the content in picture 1, includ
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Lens continuity (one shot to the end) is stronger
+## 镜头连贯性（一镜到底）更强
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-@Picture 1@Picture 2@Picture 3@Picture 4@Picture 5, a one-shot tracking shot, following the runner from the street up the stairs, through the corridor, onto the roof, and finally overlooking the city.
+@图片1@图片2@图片3@图片4@图片5，一镜到底的追踪镜头，从街头跟随跑步者上楼梯、穿过走廊、进入屋顶，最终俯瞰城市。
 ```
 
 #### Image
@@ -890,14 +890,14 @@ Use popular science style and tone to interpret the content in picture 1, includ
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Taking @Picture 1 as the first frame, the picture is zoomed out of the plane window. Clouds slowly float into the frame. One of them is a cloud decorated with colorful jelly beans, always in the center of the picture, and then slowly transforms into the ice cream of @Picture 2. The camera zooms back to the cabin. @Picture 3, who is sitting by the window, reaches out to take the ice cream from the window and takes a bite. His mouth is covered with cream and a sweet smile spreads on his face.
+以@图片1为首帧，画面放大至飞机舷窗外，一团团云朵缓缓飘至画面中，其中一朵为彩色糖豆点缀的云朵，始终在画面中居中，然后缓缓变形为@图片2的冰淇淋，镜头推远回到机舱内，坐在窗边的@图片3伸手从窗外拿进冰淇淋，吃了一口，嘴巴上沾满奶油，脸上洋溢出甜蜜的笑容
 ```
 
 #### Image
@@ -908,14 +908,14 @@ Taking @Picture 1 as the first frame, the picture is zoomed out of the plane win
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-2-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-In the style of a spy film, @Picture 1 is the first frame. The camera follows the female agent in a red windbreaker walking forward. The camera follows the panoramic view. Passers-by keep blocking the woman in red as she walks to a corner. Refer to the corner building in @Picture 2. The fixed shot of the woman in red leaves the screen and disappears around the corner. A girl wearing a mask hides in the corner and stares at her fiercely. The image of the masked girl refers to @Picture 3. Only the image is referenced. The girl is standing at the corner. The camera panned forward to the female agent in red. She walked into a mansion and disappeared. For the mansion, please refer to @Picture 4. Don’t cut the camera during the whole process, just take one shot to the end.
+谍战片风格，@图片1作为首帧画面，镜头正面跟拍穿着红风衣的女特工向前走，镜头全景跟随，不断有路人遮挡红衣女子，走到一个拐角处，参考@图片2的拐角建筑，固定镜头红衣女子离开画面，走在拐角处消失，一个戴面具的女孩在拐角处躲着恶狠狠的盯着她，面具女孩形象参考@图片3，只参考形象，女孩站在拐角处。镜头往前摇向红衣女特工，她走进一座豪宅消失不见了，豪宅参考@图片4。全程不要切镜头，一镜到底。
 ```
 
 #### Image
@@ -927,14 +927,14 @@ In the style of a spy film, @Picture 1 is the first frame. The camera follows th
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-Based on the outdoor shot of @Picture 1, the first-person subjective perspective zooms in to a close-up view of the environment inside the wooden house. A deer @Picture 2 and a sheep @Picture 3 are drinking tea and chatting by the fire. The style of the close-up tea cup when the camera moves forward is referred to @Picture 4.
+根据@图片1外景的镜头，第一人称主观视角快推镜头到木屋内的环境场景近景，一只小鹿@图片2和一只羊@图片3在围炉旁喝茶聊天，镜头推进特写茶杯的样式参考@图片4.
 ```
 
 #### Image
@@ -946,14 +946,14 @@ Based on the outdoor shot of @Picture 1, the first-person subjective perspective
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-4-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-@Picture 1@Picture 2@Picture 3@Picture 4@Picture 5, a thrilling shot of the roller coaster from the subjective perspective. The speed of the roller coaster is getting faster and faster.
+@图片1@图片2@图片3@图片4@图片5，主观视角一镜到底的惊险过山车的镜头，过山车的速度越来越快。
 ```
 
 #### Image
@@ -966,17 +966,17 @@ Based on the outdoor shot of @Picture 1, the first-person subjective perspective
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-5-6.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## High usability for video editing
-Sometimes you already have a video, and you don’t want to find a picture from scratch or redo it, but you just want to adjust a small part of the action, extend it by a few seconds, or make the character performance closer to your idea. Now you can directly use existing videos as input and specify clips, actions or rhythms for targeted modifications without changing other content. No need to re-generate, and adjustments can be completed quickly
+## 视频编辑可用度高
+有时候你已经有了一段视频，不想从头再找图或重做一遍，只是希望调整其中一小段动作、延长几秒钟，或让角色表现更贴近你的想法。现在你可以直接用已有视频作为输入，在不改变其它内容的前提下，指定片段、动作或节奏进行定向修改。无需重头生成，也能快速完成调整
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-Subverting the plot in @Video 1, the man's eyes suddenly changed from gentle to cold and fierce. At the moment when the heroine was defenseless, he violently pushed the heroine from the bridge and pushed the heroine into the water. The movements are crisp and neat, with long-planned determination and no hesitation, completely subverting the original affectionate character setting. The moment the heroine fell into the water, there was no scream, only a look of disbelief. She looked up and shouted at the hero: "You have been lying to me from the beginning!" The hero stood on the bridge with a cold smile on his face and whispered to the water: "This is what you owe my family."
+颠覆@视频1里的剧情，男人眼神从温柔瞬间转为冰冷狠厉，在女主毫无防备的瞬间，猛地将女主从桥上往外推，把女主推进水里。动作干脆利落，带着蓄谋已久的决绝，没有丝毫犹豫，彻底颠覆原有的深情人物设定。女主坠入水中的瞬间，没有尖叫，只有难以置信的眼神，她抬头冲男主嘶吼：“你从一开始就在骗我！”男主站在桥上上，脸上露出阴冷的笑容，对着水面低声说：“这是你欠我家族的。”
 ```
 
 #### Video
@@ -985,19 +985,19 @@ Subverting the plot in @Video 1, the man's eyes suddenly changed from gentle to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-Subvert the entire plot of @video 1
-0-3 seconds: A man in a suit is sitting in a bar with a calm expression and a glass of wine in his hand. The camera advances slowly, the light and shadow are advanced, and the atmosphere is serious. The ambient sound was low, and the man in a suit whispered, "This business is huge."
-3-6 seconds: The woman behind her looks nervous and asks, "How big is it?" The man in the suit raises his eyes and lowers his voice: "It's very big." The camera cuts to a close-up of his hands - he puts down the wine glass, full of aura.
-6-9 seconds of footage: Suddenly the man in a suit took out a large snack gift bag from under the table and placed it on the table with a thud.
-9-12 seconds: The woman behind her hands originally placed on her waist, her muscles changed from stiff to relaxed, and her whole expression relaxed. The atmosphere of the picture becomes relaxed.
-13-15 second screen: The man in a suit takes out a bag of snacks for the woman, the camera zooms out to show the panoramic view of the tavern, the picture becomes transparent and blurry - the subtitle pops up "No matter how busy you are, remember to eat some snacks~"
+颠覆@视频1的整个剧情
+0–3秒画面：西装男坐在酒吧，神情冷静，手里轻晃酒杯。 镜头缓慢推进，光影高级、氛围严肃。 环境音低沉，西装男小声说“这单生意，很大。”
+3–6秒画面：身后的女人表情紧张问“有多大？”西装男抬眼，压低声音：“非常大。”镜头切手部特写——他把酒杯放下，气场拉满。
+6–9秒画面：突然西装男从桌下掏出—— 一大包体积夸张的零食礼包，“咚”的一声重重放在桌上。
+9–12秒画面：身后的女人原本放在腰间的手，肌肉从僵硬到松弛，整个人表情放松。画面氛围轻松起来。
+13–15秒画面：西装男拿出一包零食给女人，镜头拉远展示酒馆全景，画面变得透明模糊—— 字幕弹出“再忙，也要记得吃点零食~”
 ```
 
 #### Video
@@ -1006,14 +1006,14 @@ Subvert the entire plot of @video 1
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-The female lead singer in video 1 is replaced by the male lead singer in picture 1. The movements are completely imitated in the original video. There should be no camera cuts. The band sings the music.
+视频1中的女主唱换成图片1的男主唱，动作完全模仿原视频，不要出现切镜，乐队演唱音乐。
 ```
 
 #### Image
@@ -1025,14 +1025,14 @@ The female lead singer in video 1 is replaced by the male lead singer in picture
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-Change the woman's hairstyle in video 1 to long red hair, and the great white shark in picture 1 slowly emerges half of her head behind her.
+将视频1女人发型变成红色长发，图片1中的大白鲨缓缓浮出半个脑袋，在她身后。
 ```
 
 #### Image
@@ -1044,14 +1044,14 @@ Change the woman's hairstyle in video 1 to long red hair, and the great white sh
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 5
 ### Input
 
 #### 📝 Prompt
 ```
-In Video 1, the camera pans to the right. The fried chicken boss is busy handing the fried chicken to the queuing customers, saying in Mandarin, "Do his job, do your job, everyone queues up in a civilized manner." After saying this, he goes to get the paper bag to put the fried chicken. A close-up shows the boss taking the paper bag with the picture 1 printed on it, and a close-up showing the hand passing it to the customer.
+视频1镜头右摇，炸鸡老板忙碌地将炸鸡递给排队的客户，用普通话说“做完他的，做你的，大家文明排队。”一说完，就去拿纸袋子去装炸鸡。特写展示老板拿印有图1的纸袋子，特写展示递给客户的手部特写。
 ```
 
 #### Image
@@ -1063,16 +1063,16 @@ In Video 1, the camera pans to the right. The fried chicken boss is busy handing
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-5-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-3.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Can perform music card points
+## 可进行音乐卡点
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
+海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
 ```
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-1.png" alt="1" width="400" height="auto">
@@ -1086,14 +1086,14 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-6.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-@Picture 1 @Picture 2 @Picture 3 @Picture 4 @Picture 5 @Picture 6 @Picture 7 The pictures in the picture are stuck according to the position and overall rhythm of the key frames in the @ video. The characters in the picture are more dynamic, the overall picture style is more dreamy, and the picture tension is strong. You can change the scene of the reference picture according to the music and picture needs, and supplement the light and shadow changes in the picture.
+@图片1@图片2@图片3@图片4@图片5@图片6@图片7中的图片根据@视频中的画面关键帧的位置和整体节奏进行卡点，画面中的人物更有动感，整体画面风格更梦幻，画面张力强，可根据音乐及画面需求自行改变参考图的景别，及补充画面的光影变化
 ```
 
 #### Image
@@ -1110,14 +1110,14 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-8.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-@Picture 1@Picture 2@Picture 3@Picture 4@Picture 5@Picture 6 of the scenery scene picture, refer to the picture rhythm in the @video, the picture style and music rhythm between transitions to make points
+@图片1@图片2@图片3@图片4@图片5@图片6的风光场景图，参考@视频中的画面节奏，转场间画面风格及音乐节奏进行卡点
 ```
 
 #### Image
@@ -1134,29 +1134,29 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-8.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 4
 ### Input
 
 #### 📝 Prompt
 ```
-An 8-second intellectual game-style combat animation clip that fits the theme of revenge. 0-3 seconds: In the storyboard 1, the heroine turns around and sits down, then turns the camera. The heroine makes a move and says "you lose", refer to the storyboard 2. 3-4 seconds: Pan the camera quickly and turn to the close-up of the man opposite, refer to the storyboard 3. The man grits his teeth and is very dissatisfied with the result. 4-6 seconds: Cut to an overhead shot, the woman makes a move, and the people on the opposite side are amazed, refer to storyboard 4. 6-8 seconds: The camera pans down quickly, the screen transitions to black, then the screen gradually brightens, in a dark room, the woman looks at the moonlight outside the window and quietly says "We'll see", refer to storyboard 5.
+8秒智性博弈式战斗动漫片段，贴合复仇主题。0-3秒：分镜图1中女主转身坐下，转镜头，女主下了一步棋子，并说“你输了”，参考分镜图2。3-4秒：快速摇镜头，转向对面男人面部特写，参考分镜图3，男人咬牙切齿，对结果很不满。4-6秒：切镜头，俯拍，女人下了一步棋，对面的人们惊叹，参考分镜图4。6-8秒：镜头迅速向下摇，画面黑屏转场，后画面渐亮，昏暗室内，女人看着窗外月色静静地说“我们走着瞧”，参考分镜图5。
 ```
 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
-## Emotional interpretation is better
+## 情绪演绎更好
 
 ## Case 1
 ### Input
 
 #### 📝 Prompt
 ```
-The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
+海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
 ```
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-1.png" alt="1" width="400" height="auto">
@@ -1168,14 +1168,14 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 2
 ### Input
 
 #### 📝 Prompt
 ```
-The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
+海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
 ```
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-1.png" alt="1" width="400" height="auto">
@@ -1185,14 +1185,14 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 ## Case 3
 ### Input
 
 #### 📝 Prompt
 ```
-The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
+海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
 ```
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-1.png" alt="1" width="400" height="auto">
@@ -1206,10 +1206,10 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
 
-📥 *Click on the Gif image to download the video*
+📥 *点击 Gif 图片下载视频*
 
 
-# 🏁 Two final words
-The multi-modal capabilities of Seedance 2.0 are constantly evolving, and we will continue to update capabilities and support more input combinations. I hope this user manual will help you express your creativity more freely!
+# 🏁 最后说两句
+Seedance 2.0 的多模态能力正处于不断进化中，我们会持续更新能力、支持更多种输入组合方式。希望这份使用手册能帮你更自由地发挥创意！
 
-If you encounter a bug, or have usage suggestions or demand scenarios, please leave a message, send a private message, or beat the drums and let us know! We will continue to optimize and work together to turn Jimeng into a productivity tool that truly makes you happy and convenient ❤️
+如果你遇到了 Bug，或者有用法建议、需求场景，欢迎留言、私信、敲锣打鼓告诉我们！我们会持续优化，一起把即梦变成真正让你们开心、方便的生产力工具 ❤️
