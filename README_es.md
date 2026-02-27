@@ -1,37 +1,37 @@
-# 🎬 Manual de usuario de Jimeng Seedance 2.0 (Nueva experiencia de creación multimodal)
+# 🎬 Manual de usuario de Jimeng Seedance 2.0 (Una nueva experiencia de creación multimodal)
 
-Todavía recuerdo que desde el día en que sólo podíamos "contar historias" con texto y primeros/últimos cuadros, queríamos hacer un modelo de video que realmente entendiera tus expresiones. ¡Hoy realmente llegó!
+Desde aquellos días en que solo podíamos "contar historias" mediante texto y fotogramas estáticos, soñábamos con crear un modelo de video capaz de comprender verdaderamente tu visión creativa. ¡Hoy, ese sueño se hace realidad!
 
-Jimeng Seedance 2.0 ahora admite cuatro modos de entrada modales: imagen, video, audio y texto, con expresiones más ricas y generación más controlable.
+Jimeng Seedance 2.0 ahora admite cuatro modos de entrada: **imagen, video, audio y texto**, ofreciendo una expresividad más rica y un control de generación sin precedentes.
 
-Puedes usar una imagen para establecer el estilo de la imagen, usar un video para especificar los movimientos del personaje y los cambios de lente, y luego usar unos segundos de audio para resaltar el ritmo y la atmósfera... con palabras rápidas, el proceso creativo se vuelve más natural, más eficiente y más parecido a un verdadero "director".
+Puedes usar una imagen para definir el estilo visual, un video para especificar los movimientos del personaje o encuadres de cámara, y unos segundos de audio para establecer el ritmo y la atmósfera. Combinado con un lenguaje natural, el proceso creativo se vuelve más fluido, eficiente y te sitúa en el papel de un verdadero "director".
 
-En esta actualización, las "capacidades de referencia" son lo más destacado:
-- 📷 Las imágenes de referencia pueden restaurar con precisión la composición de la imagen y los detalles de los personajes
-- 🎥 Los videos de referencia apoyan la reproducción del lenguaje de la lente, ritmos de acción complejos y efectos especiales creativos.
-- ⏱ El video admite una extensión y conexión fluidas y puede generar imágenes continuas según las indicaciones del usuario. No sólo generación, sino también "seguir disparando"
-- ✂️ Las capacidades de edición se mejoran simultáneamente, lo que admite el reemplazo de roles, la eliminación y la adición de videos existentes.
+En esta actualización, las **"Capacidades de Referencia"** son el gran protagonista:
+- 📷 **Referencia de Imagen:** Restaura con precisión la composición y los detalles de los personajes.
+- 🎥 **Referencia de Video:** Permite replicar el lenguaje cinematográfico, ritmos de acción complejos y efectos especiales creativos.
+- ⏱ **Extensión de Video:** Soporta extensiones y conexiones fluidas para generar secuencias continuas. No es solo generación, es "rodaje continuo".
+- ✂️ **Edición Potenciada:** Ahora es posible reemplazar personajes, eliminar elementos o añadir contenido a videos existentes.
 
-Sabemos que la creación de videos no se trata sólo de “generación”, sino también de control de la expresión. 2.0 no es sólo multimodal, sino también una forma de creación verdaderamente controlable.
+Sabemos que la creación de video no es solo “generar”, sino controlar la expresión. La versión 2.0 no es solo multimodal, es una herramienta de creación verdaderamente controlable.
 
-Seedance 2.0, la creación multimodal, comienza aquí. Imagínelo con valentía y déjele el resto a él.
+Seedance 2.0: la creación multimodal comienza aquí. Imagina con valentía y deja que nosotros nos encarguemos del resto.
 
-## Vista previa de parámetros
+## Guía de especificaciones principales
 
-| Dimensiones del núcleo | Semilla 2.0 |
+| Dimensión Principal | Seedance 2.0 |
 | --- | --- |
-| Entrada y formato de imagen: jpeg, png, webp, bmp, tiff, gif | ≤ 9 imágenes <br/> Tamaño: menos de 30 MB |
-| Entrada y formato de vídeo: mp4, mov | ≤ 3, duración total [2,15]s <br/> Tamaño: menos de 50 MB<br/> Rango total de píxeles del vídeo: [409600 (640×640,480p), 927408 (834×1112,720p)] |
-| Entrada y formato de audio: mp3, wav | ≤ 3, duración total no superior a 15 s<br/> Tamaño: menos de 15 MB |
-| Entrada de texto | lenguaje natural |
-| tiempo de generacion | ≤ 15s, puedes elegir libremente entre 4 y 15s |
-| Salida de sonido | Viene con efectos de sonido/banda sonora. |
-| Límite de interacción: el número máximo total de entradas mixtas admitidas actualmente es de 12 archivos. Se recomienda dar prioridad a la carga de materiales que tengan el mayor impacto en la imagen o el ritmo, y asignar razonablemente la cantidad de archivos en diferentes modos. |
+| **Entrada y formato de imagen:** jpeg, png, webp, bmp, tiff, gif | Máx. 9 imágenes <br/> Tamaño: < 30 MB |
+| **Entrada y formato de video:** mp4, mov | Máx. 3 videos, duración total [2, 15]s <br/> Tamaño: < 50 MB <br/> Resolución: [480p (640×640) a 720p (834×1112)] |
+| **Entrada y formato de audio:** mp3, wav | Máx. 3 pistas, duración < 15s <br/> Tamaño: < 15 MB |
+| **Entrada de texto** | Lenguaje natural |
+| **Tiempo de generación** | 4-15s (configurable por el usuario) |
+| **Salida de sonido** | Incluye efectos de sonido y banda sonora |
+| **Límite de interacción:** Actualmente se permite un máximo de 12 archivos combinados. Se recomienda priorizar el contenido con mayor impacto visual o rítmico para obtener mejores resultados. |
 
-## ⚠️Recordatorio: instrucciones para cargar materiales faciales realistas
-Debido a los requisitos de cumplimiento de la plataforma, actualmente no se admite la carga de materiales que contengan caras reales realistas (no se permiten imágenes ni videos). Para proteger los derechos del usuario y la seguridad de generación, el sistema bloqueará automáticamente dichos materiales y no se generará contenido de video después de cargarlo.
-Esto significa que si subes una foto de una persona real (especialmente una cara claramente identificable), el modelo no podrá manejar la generación de correspondencia.
-Entendemos que esto puede traer algunas limitaciones, pero esta medida es para garantizar la seguridad del contenido y el funcionamiento de la plataforma. ¡Gracias a todos por su comprensión y cooperación! Si hay alguna actualización en el futuro, la actualizaremos en el documento a tiempo. Gracias de nuevo por su comprensión ~
+## ⚠️ Importante: Instrucciones sobre rostros humanos reales
+De acuerdo con las políticas de cumplimiento de la plataforma, actualmente no permitimos la carga de materiales con rostros humanos reales (ya sean imágenes o videos). Para garantizar la seguridad y los derechos de los usuarios, el sistema detectará y bloqueará automáticamente dicho contenido, impidiendo la generación de video.
+
+Esto implica que el modelo no podrá procesar fotos de personas reales con rasgos identificables. Agradecemos su comprensión, ya que esta medida garantiza la seguridad y el correcto funcionamiento del servicio. Actualizaremos este documento ante cualquier cambio futuro en nuestras políticas.
 
 # Las habilidades básicas se han mejorado significativamente: ¡más estables, más fluidas y más reales!
 
@@ -106,13 +106,14 @@ La cámara sigue al hombre de negro mientras huye rápidamente, seguido por un g
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
-# Actualización integral multimodal: ¡la creación de videos ingresa a la era de la "combinación libre"!
+# Evolución Multimodal: ¡La creación de video entra en la era de la "combinación libre"!
 
-## Introducción multimodal a Seedance 2.0
+## Resumen de Seedance 2.0 Multimodal
 
-- Admite la carga de texto, imágenes, videos y audios. Estos materiales pueden utilizarse como objetos u objetos de referencia. Puedes consultar los movimientos, efectos especiales, formas, movimientos de cámara, personajes, escenas y sonidos de cualquier contenido. Siempre que las palabras clave estén escritas con claridad, el modelo podrá entenderlas.
-- Seedance 2.0 = capacidad de referencia multimodal (puede referirse a todo) + fuerte generación creativa + respuesta de comando precisa (gran comprensión)
-- Simplemente use lenguaje natural para describir las imágenes y acciones que desee. Deja claro si se trata de una referencia o una edición. Cuando hay muchos materiales, se recomienda verificar si cada objeto @ está claramente marcado y no confundir imágenes, videos y personajes.
+- **Soporte Universal:** Permite cargar texto, imágenes, video y audio. Estos elementos se pueden usar como sujetos principales o como guías de referencia.
+- **Referencia Total:** Puedes referenciar movimientos, efectos especiales, formas, encuadres de cámara, personajes y sonidos de cualquier contenido. Cuanto más claro sea tu prompt, mejor será el resultado.
+- **La fórmula Seedance 2.0:** Capacidad de referencia multimodal + potente generación creativa + respuesta precisa a comandos (gran comprensión).
+- **Control intuitivo:** Simplemente describe las imágenes o acciones que deseas con lenguaje natural. Especifica si buscas una "referencia" o una "edición". Si usas varios materiales, usa etiquetas @ (ej. @Imagen1) para evitar confusiones entre elementos.
 
 ## Uso especial (sin límite, solo como referencia):
 - ¿Hay una imagen del primer/último fotograma? ¿Aún quieres consultar la acción del vídeo?
@@ -125,12 +126,11 @@ La cámara sigue al hombre de negro mientras huye rápidamente, seguido por un g
 - ¿Quieres generar movimiento continuo?
 → Puedes agregar una descripción de continuidad en las palabras clave, como por ejemplo: "El personaje pasa directamente de saltar a rodar, manteniendo los movimientos coherentes y suaves" @Figura 1 @ Figura 2 @ Figura 3...
 
-## ¡Esos problemas de vídeo que siempre han sido difíciles de resolver ahora realmente pueden resolverse!
-Al hacer videos, siempre encontrarás algunos aspectos problemáticos: por ejemplo, la cara cambia, los movimientos no son los mismos, el video se extiende de manera poco natural y todo el ritmo cambia cuando lo cambias... Esta vez la multimodalidad puede resolver estos "viejos y difíciles" problemas de una sola vez. Estos son los casos de uso específicos👇
+## ¡Adiós a los problemas clásicos de la generación de video!
+Al crear videos, solemos enfrentar retos como cambios de rostro entre cortes, movimientos inconsistentes, extensiones artificiales o pérdida del ritmo al editar. La tecnología multimodal de Seedance 2.0 soluciona estos "viejos dilemas" de forma definitiva.
 
-### Mejora integral de la coherencia
-Es posible que te hayas encontrado con estos problemas: los personajes de la imagen se ven diferentes de adelante hacia atrás, los detalles del producto se pierden, el texto pequeño está borroso, las escenas saltan, los estilos de lentes no se pueden unificar... Estos problemas comunes de coherencia en la creación ahora están en 2.0
-se puede solucionar. Desde rostros hasta ropa y detalles de fuentes, la coherencia general es más estable y precisa.
+### Mejora radical de la coherencia
+Se acabaron los personajes que cambian de apariencia, la pérdida de detalles del producto o el texto borroso. Desde los rasgos faciales hasta los detalles de las fuentes y la vestimenta, la coherencia visual ahora es estable y precisa.
 
 ## Caso 1
 ### Aporte
@@ -183,12 +183,12 @@ Consulte todas las transiciones y movimientos de cámara en @Video 1, un plano h
 ## Caso 4
 ### Aporte
 
-#### 📝 Aviso
+#### 📝 Prompt
 ```
-Pantalla de 0 a 2 segundos: corte rápido de cuatro fotogramas, cuatro lazos en rojo, rosa, morado y estampado de leopardo congelados en secuencia, con un primer plano del brillo satinado y la palabra de la marca "chéri". Voz en off "¡Crea una belleza infinita con las cintas magnéticas Chéri!"
-3-6 segundos: primer plano de la hebilla magnética plateada que hace clic y luego se separa suavemente, mostrando la textura sedosa y la comodidad. Voz en off "¡Ciérralo en sólo 1 segundo y consigue tu mejor estilo!"
-7-12 segundos de pantalla: cambie rápidamente la escena de uso: el estilo burdeos está abrochado al cuello del abrigo, brindando una atmósfera de viaje total; el estilo rosa está atado a una cola de caballo y la dulce niña está en la calle; el estilo morado está atado a la correa del bolso, que es de nicho y de alta gama; El estilo con estampado de leopardo cuelga del cuello del traje y la chica sexy está llena de aura. Voz en off "코트, 가방, 헤어 액세서리까지, 다재다능하고 개성 넘치는 스타일을 완성하세요!"
-Pantalla de 13 a 15 segundos: se muestran cuatro tipos de lazos uno al lado del otro, con la marca “chéri, ¡brindándote belleza instantánea!”
+Pantalla de 0-2 segundos: Corte rápido de cuatro fotogramas. Cuatro lazos (rojo, rosa, morado y estampado de leopardo) se congelan en secuencia. Primer plano del brillo del satén y la marca "chéri". Voz en off: "¡Crea una belleza infinita con las cintas magnéticas de Chéri!"
+3-6 segundos: Primer plano de una hebilla magnética plateada cerrándose con un "clic" y separándose suavemente, resaltando la textura sedosa. Voz en off: "¡Ajuste perfecto en solo un segundo!"
+7-12 segundos: Cambio rápido de estilos: burdeos para el cuello de un abrigo (estilo oficina), rosa para una coleta (estilo callejero), morado para una correa de bolso (estilo chic) y leopardo para un traje (estilo audaz). Voz en off: "Desde abrigos hasta bolsos y peinados, completa tu estilo único."
+13-15 segundos: Los cuatro estilos aparecen juntos con el logo: "Chéri: belleza instantánea para ti."
 ```
 
 #### Imagen
@@ -1209,7 +1209,7 @@ La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
 
-# 🏁 Dos palabras finales
-Las capacidades multimodales de Seedance 2.0 están en constante evolución y continuaremos actualizando las capacidades y admitiendo más combinaciones de entradas. ¡Espero que este manual de usuario te ayude a expresar tu creatividad más libremente!
+# 🏁 Palabras Finales
+Las capacidades multimodales de Seedance 2.0 están en constante evolución. Seguiremos actualizando y añadiendo soporte para más combinaciones de entrada. ¡Esperamos que este manual te ayude a llevar tu creatividad al siguiente nivel!
 
-Si encuentra un error, tiene sugerencias de uso o escenarios de demanda, deje un mensaje, envíe un mensaje privado o toque los tambores y háganoslo saber. Continuaremos optimizando y trabajando juntos para convertir a Jimeng en una herramienta de productividad que realmente lo haga feliz y conveniente ❤️
+Si encuentras algún error o tienes sugerencias y casos de uso, no dudes en contactarnos. Seguiremos optimizando Jimeng para que sea la herramienta de productividad que siempre deseaste ❤️

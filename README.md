@@ -1,41 +1,41 @@
-# 🎬 Jimeng Seedance 2.0 User Manual (New Multi-modal Creation Experience)
+# 🎬 Jimeng Seedance 2.0 User Manual (A New Multi-modal Creation Experience)
 
-I still remember that from the day when we could only "tell stories" with text and first/last frames, we wanted to make a video model that truly understands your expressions. Today, it really came!
+We still remember the days when video creation was limited to simple text and fixed frames. Our goal has always been to build a video model that truly understands your vision. Today, that vision becomes reality!
 
-Jimeng Seedance 2.0 now supports four modal input modes: image, video, audio, and text, with richer expressions and more controllable generation.
+Jimeng Seedance 2.0 now supports four input modalities: **Image, Video, Audio, and Text**, offering richer expression and unprecedented control over generation.
 
-You can use a picture to set the style of the picture, use a video to specify the character's movements and lens changes, and then use a few seconds of audio to bring out the rhythm and atmosphere... with prompt words, the creative process becomes more natural, more efficient, and more like a real "director".
+By using images to set the style, videos to specify movements and camera shifts, and audio snippets to define the rhythm and atmosphere—combined with intuitive prompts—the creative process becomes more natural, efficient, and professional.
 
-In this upgrade, “reference capabilities” are the biggest highlight:
-- 📷 Reference images can accurately restore picture composition and character details
-- 🎥 Reference videos support the reproduction of lens language, complex action rhythms, and creative special effects
-- ⏱ Video supports smooth extension and connection, and can generate continuous footage according to user prompts. Not only generation, but also "continue shooting"
-- ✂️ The editing capabilities are simultaneously enhanced, supporting role replacement, deletion, and addition of existing videos.
+With this upgrade, our "Reference Capabilities" are the key highlight:
+- 📷 **Reference Images:** Accurately restore composition and character details.
+- 🎥 **Reference Videos:** Support for complex cinematography, action rhythms, and creative special effects.
+- ⏱ **Video Extension:** Smoothly extend and connect footage according to user prompts. It’s not just generation; it’s "continuous shooting."
+- ✂️ **Enhanced Editing:** Support for character replacement, addition, or deletion within existing videos.
 
-We know that video creation is not only about “generation”, but also about the control of expression. 2.0 is not only multi-modal, but also a truly controllable way of creation.
+Video creation is about more than just "generation"—it’s about controlling expression. Seedance 2.0 is a truly multi-modal, controllable creative tool.
 
-Seedance 2.0, multi-modal creation, starts here. Please imagine it boldly and leave the rest to it
+Seedance 2.0: Multi-modal creation starts here. Imagine boldly, and let the model handle the rest.
 
-## Parameter preview
+## Quick Start: Parameter Guide
 
-|Core Dimensions| Seedance 2.0 |
+| Core Specifications | Seedance 2.0 |
 | --- | --- |
-| Image input & format: jpeg, png, webp, bmp, tiff, gif | ≤ 9 pictures <br/> Size: less than 30 MB |
-| Video input & format: mp4, mov | ≤ 3, total duration [2,15]s <br/> Size: less than 50 MB<br/> Total video pixel range: [409600 (640×640,480p), 927408 (834×1112,720p)] |
-| Audio input & format: mp3, wav | ≤ 3, total duration no more than 15s<br/> Size: less than 15MB |
-| Text input | Natural language |
-| Generation time | ≤ 15s, you can freely choose 4-15s |
-| Sound output | Comes with sound effects/soundtrack |
-| Interaction limit: The total maximum number of mixed inputs currently supported is 12 files. It is recommended to give priority to uploading materials that have the greatest impact on the picture or rhythm, and reasonably allocate the number of files in different modes |
+| **Image Input & Formats:** jpeg, png, webp, bmp, tiff, gif | ≤ 9 images <br/> Max Size: 30 MB |
+| **Video Input & Formats:** mp4, mov | ≤ 3 videos, total duration [2, 15]s <br/> Max Size: 50 MB<br/> Resolution Range: [640×640 (480p) to 834×1112 (720p)] |
+| **Audio Input & Formats:** mp3, wav | ≤ 3 clips, total duration ≤ 15s<br/> Max Size: 15MB |
+| **Text Input** | Natural Language |
+| **Generation Time** | 4 - 15s (Customizable) |
+| **Audio Output** | Integrated Sound Effects/Soundtracks |
+| **Input Limit:** Current mixed input limit is 12 files. We recommend prioritizing materials that have the most impact on visual style or rhythm. |
 
-## ⚠️Warm reminder: Instructions on uploading realistic face materials
-Due to platform compliance requirements, uploading materials containing realistic real faces is currently not supported (both pictures and video materials are not allowed). In order to protect user rights and generation security, the system will automatically block such materials, and video content will not be generated after uploading.
-This means that if you upload a photo of a real person (especially a clearly identifiable face), the model will not be able to handle correspondence generation.
-We understand that this may bring some limitations, but this measure is to ensure content security and platform operation. Thank you all for your understanding and cooperation! If there is any update in the future, we will update it in the document in time. Thank you again for your understanding~
+## ⚠️ Important: Policy on Realistic Human Faces
+Due to platform compliance requirements, uploading materials featuring identifiable real human faces (both images and videos) is currently prohibited. To ensure safety and protect user rights, the system will automatically filter such materials, and video generation will be disabled for these uploads. 
 
-# Basic abilities are significantly enhanced: more stable, smoother, and more real!
+This means that if you upload a clearly identifiable photo of a real person, the model will not be able to process the generation request. We appreciate your understanding as we work to maintain a secure and compliant platform. Should these policies update, we will notify you through this document.
 
-Not only multi-modal, Seedance 2.0 has been significantly enhanced at the basic level. The physical laws are more reasonable, the action performance is more natural and smooth, the command understanding is more accurate, and the style remains more stable. It can not only stably complete complex actions, continuous motion and other difficult generation tasks, but also make the overall video effect more realistic and smoother. It is a comprehensive evolution of underlying capabilities!
+# Enhanced Core Capabilities: Stable, Fluid, and Realistic!
+
+Seedance 2.0 introduces significant advancements beyond multi-modality. Physics laws are more consistent, character movements are more natural, and instruction following is more precise. Whether it's complex actions, continuous movement, or maintaining a stable artistic style, the evolution of our underlying model ensures the overall video output is smoother and more lifelike than ever.
 
 
 ## Case 1
@@ -61,7 +61,7 @@ The girl was drying her clothes elegantly. After drying, she took out another pi
 
 #### 📝 Prompt
 ```
-The character in the painting has a guilty expression. He looks left and right and looks out of the frame. He quickly reaches out of the frame to pick up the Coke and takes a sip. Then he shows a satisfied expression. At this time, footsteps are heard and the character in the painting quickly puts the Coke back. At this time, a western cowboy picks up the Coke in the cup and walks away. Finally, the camera moves forward and the picture slowly changes to a pure black background with only the canned Coke illuminated by the top light. Artistic subtitles and narration appear at the bottom of the picture: "Yikou Cola, you must try it!"
+The character in the painting has a guilty expression. He looks left and right, peering out of the frame. He quickly reaches out of the frame to grab a Coke and takes a sip, followed by a satisfied expression. Footsteps are heard, and he panics, quickly putting the Coke back. A western cowboy then enters the frame, picks up the Coke, and walks away. Finally, the camera moves forward as the scene fades to a black background with only the canned Coke illuminated by a spotlight. Text appears at the bottom: "A Sip of Cola—You’ve Got to Try It!"
 ```
 
 #### Image
@@ -106,13 +106,14 @@ The camera follows the man in black as he flees quickly, followed by a group of 
 
 📥 *Click on the Gif image to download the video*
 
-# Multi-modal comprehensive upgrade: Video creation enters the era of "free combination"!
+# Multi-modal Evolution: The "Mixed Media" Era of Video Creation
 
-## Seedance 2.0 Multimodal Introduction
+## Seedance 2.0 Multimodal Overview
 
-- Supports uploading text, pictures, videos, and audios. These materials can be used as objects or reference objects. You can refer to the movements, special effects, forms, camera movements, characters, scenes, and sounds of any content. As long as the prompt words are written clearly, the model can understand them.
-- Seedance 2.0 = multi-modal reference ability (can refer to everything) + strong creative generation + accurate command response (great understanding)
-- Just use natural language to describe the pictures and actions you want. Make it clear whether it is a reference or an edit. When there are a lot of materials, it is recommended that you check whether each @ object is clearly marked and don’t confuse pictures, videos, and characters.
+- **Unified Uploads:** Supports text, images, videos, and audio. These can be used as direct subjects or stylistic references.
+- **Versatile Referencing:** You can reference movements, special effects, shapes, camera work, characters, scenes, and sounds from any content.
+- **The Formula:** Seedance 2.0 = Universal Multi-modal Reference + Powerful Creative Generation + Precise Instruction Following.
+- **Natural Interaction:** Use natural language to describe your vision. Specify clearly whether you are "referencing" or "editing." For complex scenes, use the @ tag to distinguish between images, videos, and characters.
 
 ## Special usage (no limit, for reference only):
 - Is there a first frame/last frame picture? Still want to refer to the video action?
@@ -125,12 +126,11 @@ The camera follows the man in black as he flees quickly, followed by a group of 
 - Want to generate continuous motion?
 → You can add a continuity description in the prompt words, such as: "The character transitions directly from jumping to rolling, keeping the movements coherent and smooth" @Figure 1 @ Figure 2 @ Figure 3...
 
-## Those video problems that have always been difficult to solve can now really be solved!
-When making videos, you will always encounter some troublesome aspects: for example, the face is changed, the movements are not the same, the video is extended unnaturally, and the entire rhythm changes when you change it... This time multi-modality can solve these "old difficult" problems in one go. Here are the specific use cases👇
+## Solving Long-standing Creative Challenges
+Video creation often involves persistent hurdles: faces that shift between frames, erratic movements, unnatural extensions, or losing the rhythm during edits. Seedance 2.0’s multi-modal capabilities address these "chronic" issues directly.
 
-### Comprehensive improvement in consistency
-You may have encountered these troubles: characters in the picture look different from front to back, product details are lost, small text is blurred, scenes jump, lens styles cannot be unified... These common consistency problems in creation are now in 2.0
-can be solved. From faces to clothing to font details, the overall consistency is more stable and accurate.
+### Enhanced Consistency
+Common frustrations include inconsistent characters, lost product details, blurry text, or mismatched cinematographic styles. Seedance 2.0 solves these by ensuring stable and accurate rendering of faces, clothing, and even fine font details.
 
 ## Case 1
 ### Input
@@ -185,10 +185,10 @@ Refer to all the transitions and camera movements in @Video 1, one shot to the e
 
 #### 📝 Prompt
 ```
-0-2 seconds screen: rapid four-frame flash cut, four bows in red, pink, purple, and leopard print are frozen in sequence, with a close-up of the satin gloss and the "chéri" brand word. Voiceover "Chéri 자석 리본으로 무궁무진한 아름다움을 연출해 보세요!"
-3-6 seconds: Close-up of the silver magnetic buckle "clicking" together, and then gently pulling it apart, showing the silky texture and convenience. Voice-over "단 1초 만에 잠그고, 최고의 스타일을 완성하세요!"
-7-12 seconds of screen: Quickly switch the wearing scene: the burgundy style is fastened to the collar of the coat, giving a full commuting atmosphere; the pink style is tied to a ponytail, and the sweet girl is out on the street; the purple style is tied to the bag strap, which is niche and high-end; the leopard print style is hung on the collar of the suit, and the hot girl is full of aura. Voiceover "코트, 가방, 헤어 액세서리까지, 다재다능하고 개성 넘치는 스타일을 완성하세요!"
-13-15 second screen: Four types of bows are displayed side by side, with the brand name “chéri, 당신에게 즉각적인 아름다움을 선사합니다!”
+0-2s: A rapid four-frame montage. Four bows (red, pink, purple, and leopard print) are frozen in sequence with close-ups showing the satin sheen and the "chéri" branding. Voiceover: "Experience endless beauty with Chéri magnetic ribbons!"
+3-6s: Close-up of a silver magnetic buckle "clicking" together and then gently pulled apart to show its silky texture and convenience. Voiceover: "Snap into perfection in just one second!"
+7-12s: A fast-paced lifestyle montage: the burgundy bow fastened to a coat collar for a chic commute; the pink bow on a ponytail for a sweet street look; the purple bow on a bag strap for a high-end niche vibe; and the leopard print on a suit lapel for a bold, powerful presence. Voiceover: "From coats to hair accessories, complete your unique style!"
+13-15s: Side-by-side display of the four bow types with the brand logo: "Chéri—Instantly Beautiful!"
 ```
 
 #### Image
@@ -1209,7 +1209,7 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 📥 *Click on the Gif image to download the video*
 
 
-# 🏁 Two final words
-The multi-modal capabilities of Seedance 2.0 are constantly evolving, and we will continue to update capabilities and support more input combinations. I hope this user manual will help you express your creativity more freely!
+# 🏁 Closing Words
+The multi-modal capabilities of Seedance 2.0 are constantly evolving. We are committed to updating our features and supporting even more input combinations. We hope this manual helps you unleash your creativity!
 
-If you encounter a bug, or have usage suggestions or demand scenarios, please leave a message, send a private message, or beat the drums and let us know! We will continue to optimize and work together to turn Jimeng into a productivity tool that truly makes you happy and convenient ❤️
+If you encounter bugs, have suggestions, or want to share specific use cases, please reach out to us! We will continue to optimize the model to ensure Jimeng remains a tool that brings both productivity and joy to your creative journey. ❤️
