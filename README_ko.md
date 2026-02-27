@@ -1,5 +1,7 @@
 # 🎬 Jimeng Seedance 2.0 사용자 매뉴얼 (멀티모달 창작의 새로운 경험)
 
+[![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Click-blue)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Current-brightgreen)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
+
 텍스트와 고정 프레임만으로 '이야기'를 전달해야 했던 한계를 넘어, 우리는 사용자의 의도를 완벽하게 이해하는 비디오 모델을 꿈꿔왔습니다. 그리고 드디어 오늘, 그 결실을 여러분께 선보입니다!
 
 Jimeng Seedance 2.0은 이제 **이미지, 비디오, 오디오, 텍스트**의 네 가지 입력 방식을 지원하며, 더욱 풍부한 표현력과 정교한 제어 기능을 제공합니다.

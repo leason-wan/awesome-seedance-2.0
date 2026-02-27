@@ -1,5 +1,7 @@
 # 🎬 即梦 Seedance 2.0 使用手册（全新多模态创作体验）
 
+[![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Current-brightgreen)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
+
 还记得从只能用文字和首/尾帧「讲故事」的那天起，我们就想做出一个真正听得懂你表达的视频模型。今天，它真的来了！
 
     即梦Seedance 2.0 现在支持图像、视频、音频、文本四种模态输入，表达方式更丰富，生成也更可控

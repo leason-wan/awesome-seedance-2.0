@@ -1,5 +1,7 @@
 # 🎬 Manual de usuario de Jimeng Seedance 2.0 (Una nueva experiencia de creación multimodal)
 
+[![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Click-blue)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Current-brightgreen)](README_es.md)
+
 Desde aquellos días en que solo podíamos "contar historias" mediante texto y fotogramas estáticos, soñábamos con crear un modelo de video capaz de comprender verdaderamente tu visión creativa. ¡Hoy, ese sueño se hace realidad!
 
 Jimeng Seedance 2.0 ahora admite cuatro modos de entrada: **imagen, video, audio y texto**, ofreciendo una expresividad más rica y un control de generación sin precedentes.

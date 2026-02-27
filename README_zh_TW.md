@@ -1,5 +1,7 @@
 # 🎬 即夢 Seedance 2.0 使用手冊（全新多模態創作體驗）
 
+[![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Click-blue)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Current-brightgreen)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
+
 還記得從前只能用文字和首/尾幀「講故事」的日子嗎？我們一直夢想能做出一個真正聽得懂你表達的影片模型。今天，它終於來了！
 
 即夢 Seedance 2.0 現在支援**影像、影片、音訊、文字**四種模態輸入，表達方式更豐富，生成過程也更精準可控。

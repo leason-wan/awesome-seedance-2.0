@@ -1,5 +1,7 @@
 # 🎬 Jimeng Seedance 2.0 ユーザーマニュアル (次世代マルチモーダル創作体験)
 
+[![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Click-blue)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Current-brightgreen)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
+
 テキストや静止画だけで「ストーリー」を伝えていた時代を経て、私たちはついに、ユーザーの意図を真に理解し、自在に表現できるビデオモデルを開発しました。本日、その集大成となる Seedance 2.0 を皆さまにお届けします！
 
 Jimeng Seedance 2.0 は、**画像、ビデオ、オーディオ、テキスト**の4つのモーダル入力に対応。より豊かな表現力と、かつてないほど精密な制御を可能にしました。
