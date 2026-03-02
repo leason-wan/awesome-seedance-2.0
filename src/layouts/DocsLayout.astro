@@ -1,0 +1,583 @@
+---
+import { navigation } from '../config/navigation';
+import LanguageSwitcher from '../components/LanguageSwitcher';
+
+import CopyPageButton from '../components/CopyPageButton';
+
+interface Props {
+  title: string;
+  lang: 'en' | 'zh';
+  activeId: string;
+}
+
+// Access frontmatter from MDX
+const { frontmatter } = Astro.props as any;
+const title = frontmatter?.title || Astro.props.title;
+const lang = frontmatter?.lang || Astro.props.lang || 'en';
+const activeId = frontmatter?.activeId || Astro.props.activeId;
+
+// Create refs for use in template expressions
+const navItems = navigation.map(group => ({
+  title: group.title[lang],
+  items: group.items.map(item => ({
+    id: item.id,
+    title: item.title[lang],
+    icon: item.icon || '',
+    isActive: item.id === activeId,
+    href: `/docs/${lang}/${item.id}/`
+  }))
+}));
+
+const backHomeText = lang === 'en' ? 'Back to Home' : '返回首页';
+const tocTitle = lang === 'en' ? 'ON THIS PAGE' : '本页内容';
+const langSwitchUrl = `/docs/${lang === 'en' ? 'zh' : 'en'}/${activeId}/`;
+const editOnGitHubText = lang === 'en' ? 'Edit this page on GitHub' : '在 GitHub 上编辑此页';
+const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues`;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | lytai API Documentation</title>
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.ico">
+</head>
+<body class="bg-[#1e2227] text-[#f0f6fc] overflow-x-hidden antialiased">
+  <div class="min-h-screen w-full">
+
+
+
+
+    <div class="flex min-h-screen">
+      <!-- Left Sidebar - Navigation (Hidden on mobile) -->
+      <aside class="hidden lg:block w-64 flex-shrink-0 bg-[#282c34] border-r border-gray-700/50">
+        <div class="sticky top-8 px-6 py-8">
+
+
+            <!-- Back to Home -->
+            <a href="https://lytai.com/" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              {backHomeText}
+            </a>
+
+            <nav class="space-y-4">
+              {navItems.map((group) => (
+                <div>
+                    <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                      {group.title}
+                    </h3>
+                  <ul class="space-y-1">
+                    {group.items.map((item) => (
+                      <li>
+                        <a
+                          href={item.href}
+                          class:list={[
+                            'flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all duration-200',
+                            item.isActive
+                              ? 'bg-blue-600/20 text-blue-300 font-semibold shadow-inner'
+                              : 'text-gray-400 hover:text-white hover:bg-gray-700/40'
+                          ]}
+                        >
+                          {item.icon === 'rocket' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'key' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'file-text' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'message-square' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'file-code' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'image' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'terminal' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'alert-triangle' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'code' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'help-circle' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                              <path d="M12 17h.01"></path>
+                            </svg>
+                          )}
+                          {item.icon === 'book' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                          )}
+                          {item.icon === 'zap' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                          )}
+                          {item.icon === 'layers' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M17.5 19L12 21.5L6.5 19M17.5 14L12 16.5L6.5 14M12 4L4.5 7.5L12 11L19.5 7.5L12 4Z" />
+                            </svg>
+                          )}
+                          {item.icon === 'video' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          )}
+                          {item.icon === 'layout' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                          )}
+                          {item.icon === 'edit-3' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                          )}
+                          {item.icon === 'trending-up' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                          )}
+                          {item.icon === 'music' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                            </svg>
+                          )}
+                          {item.icon === 'repeat' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                          )}
+                          {item.icon === 'scissors' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M7 11a2 2 0 100-4 2 2 0 000 4zM17 11a2 2 0 100-4 2 2 0 000 4zM16 11l-2.001 2.001M8 11l6.5 6.5M14 13l1 1h4m-12 3h4l1-1" />
+                            </svg>
+                          )}
+                          {item.icon === 'activity' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                          )}
+                          {item.icon === 'smile' && (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          )}
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </nav>
+
+            <!-- Language Switcher at Bottom -->
+            <div class="mt-8 pt-8 border-t border-gray-700">
+              <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
+            </div>
+          </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 flex">
+        <!-- Spacer for centering (hidden on mobile) -->
+        <div class="hidden xl:block flex-1"></div>
+
+        <!-- Main Content -->
+        <main class="w-full max-w-4xl px-4 md:px-6 lg:px-8 py-6 md:py-8">
+          <article class="docs-content">
+            <slot />
+          </article>
+
+          <!-- Edit on GitHub -->
+          <div class="mt-12 pt-6 border-t border-gray-700">
+            <a
+              href={githubEditUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+              {editOnGitHubText}
+            </a>
+          </div>
+        </main>
+
+        <!-- Spacer for centering (hidden on mobile) -->
+        <div class="hidden xl:block flex-1"></div>
+      </div>
+
+      <!-- Right Sidebar - Table of Contents (Hidden on mobile and tablet) -->
+      <aside class="hidden xl:block w-64 flex-shrink-0 bg-[#282c34] border-l border-gray-700/50">
+        <div class="sticky top-8 px-6 py-8">
+          <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+            {tocTitle}
+          </h3>
+          <div id="toc" class="text-sm space-y-2"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-700/50 bg-[#1e2227]">
+      <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <!-- Copyright -->
+          <div class="text-sm text-gray-600">
+            © 2026 lytai. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <style is:global>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Docs content styling - mobile-first approach */
+    .docs-content {
+      color: #e1e4e8;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+    }
+
+    .docs-content h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      margin-top: 0;
+      letter-spacing: -0.02em;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content h1 {
+        font-size: 2.25rem;
+      }
+    }
+
+    .docs-content h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #3e4451;
+      letter-spacing: -0.01em;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content h2 {
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+      }
+    }
+
+    .docs-content h3 {
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content h3 {
+        font-size: 1.125rem;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .docs-content p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #e1e4e8;
+      line-height: 1.75;
+    }
+
+    .docs-content a {
+      color: #4493f8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .docs-content a:hover {
+      text-decoration: underline;
+    }
+
+    .docs-content ul,
+    .docs-content ol {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .docs-content ul {
+      list-style-type: disc;
+    }
+
+    .docs-content ol {
+      list-style-type: decimal;
+    }
+
+    .docs-content li {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: #e1e4e8;
+      line-height: 1.8;
+    }
+
+    .docs-content li::marker {
+      color: #adbac7;
+      font-weight: 600;
+    }
+
+    .docs-content strong {
+      color: #f3f4f6;
+      font-weight: 600;
+    }
+
+    .docs-content :not(pre) > code {
+      font-size: 0.875rem;
+      background-color: #2c313a;
+      color: #abb2bf;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    }
+
+    /* Style for markdown code blocks - mobile-first */
+    .docs-content pre {
+      background-color: #1e1e1e;
+      border-radius: 0.375rem;
+      padding: 1rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+      font-size: 0.8125rem;
+      line-height: 1.7;
+      max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content pre {
+        border-radius: 0.5rem;
+        padding: 1.25rem 1.5rem;
+        margin: 1.5rem 0;
+        font-size: 0.875rem;
+      }
+    }
+
+    /* Don't style code blocks from CodeExample component */
+    .docs-content .not-content pre {
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+    }
+
+    .docs-content pre code {
+      all: unset;
+      display: block;
+      color: #d4d4d4;
+      font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    }
+
+    /* Tables - mobile-first */
+    .docs-content table {
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-collapse: collapse;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      font-size: 0.8125rem;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content table {
+        display: table;
+        white-space: normal;
+        font-size: 0.875rem;
+      }
+    }
+
+    .docs-content th {
+      background-color: #282c34;
+      padding: 0.75rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #3e4451;
+      color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content th {
+        padding: 0.75rem;
+      }
+    }
+
+    .docs-content td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #3e4451;
+    }
+
+    @media (min-width: 768px) {
+      .docs-content td {
+        padding: 0.75rem;
+      }
+    }
+
+    .docs-content blockquote {
+      border-left: 4px solid #4b5263;
+      padding-left: 1.25rem;
+      margin: 1.5rem 0;
+      color: #abb2bf;
+      font-size: 1.1rem;
+    }
+
+    /* Prevent docs-content styles from affecting CodeExample components */
+    .docs-content .not-content {
+      font-size: initial;
+      color: initial;
+      line-height: initial;
+    }
+
+    /* Ensure CodeExample components are responsive on mobile */
+    .docs-content .not-content {
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .docs-content .not-content > div {
+      max-width: 100%;
+    }
+
+    /* Code blocks inside CodeExample should allow horizontal scroll */
+    .docs-content .not-content pre,
+    .docs-content .not-content code {
+      max-width: 100%;
+      white-space: pre;
+      word-wrap: normal;
+      overflow-wrap: normal;
+    }
+
+    /* Touch target improvements for mobile devices */
+    @media (pointer: coarse) and (max-width: 768px) {
+      /* Ensure minimum touch target size of 44x44px for touch devices */
+      button, a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* Improve link spacing on mobile */
+      .docs-content a {
+        padding: 2px 0;
+      }
+    }
+  </style>
+
+  <script>
+
+
+
+
+    // Generate table of contents
+    function generateTOC() {
+      const article = document.querySelector('article');
+      const toc = document.getElementById('toc');
+
+      if (!article || !toc) return;
+
+      const headings = article.querySelectorAll('h2, h3');
+      const tocItems: string[] = [];
+
+      headings.forEach((heading) => {
+        const level = heading.tagName === 'H2' ? 0 : 1;
+        const text = heading.textContent || '';
+        const id = heading.id || text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
+        if (!heading.id) heading.id = id;
+
+        tocItems.push(`
+          <a href="#${id}" class="block py-1 text-gray-400 hover:text-white transition-colors ${level === 1 ? 'pl-4 text-sm' : 'font-medium'}">
+            ${text}
+          </a>
+        `);
+      });
+
+      toc.innerHTML = tocItems.join('');
+    }
+
+    // Run on load
+    document.addEventListener('DOMContentLoaded', () => {
+      generateTOC();
+    });
+  </script>
+</body>
+</html>

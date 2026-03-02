@@ -1,0 +1,59 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: Video Extension
+lang: en
+activeId: cookbook/video-extension
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
+# Video extension
+
+Support for video front and back extension, providing extremely high picture consistency and movement fluency.
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Extend the video to 15 seconds, refer to the image of a donkey riding a motorcycle in @Picture 1 and @Picture 2, and add an imaginative advertisement
+Picture 1: Fixed shot from the side, the donkey rides a motorcycle and rushes out of the shed, and the chicken next to it is frightened.
+Screen 2: The donkey is riding a motorcycle and circling in the sand. First, a close-up of the motorcycle tires, and then cut to a mid-air shot of the donkey doing circling stunts on a motorcycle, raising smoke.
+Picture 3: The background is a shot of snowy mountains, with a donkey riding a car flying over the hillside. The slogan is behind the subject, and "Inspire Creativity, Enrich Life" appears in the middle in the form of a mask (when the donkey and the motorcycle fly by), and finally when the motorcycle flies by, a puff of dust and smoke is raised.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-2.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`The video is extended for 6 seconds, and the exciting music of electric guitar appears. The advertisement font of "JUST DO IT" appears in the middle of the video and then gradually fades. The camera moves up to the ceiling. A strong man is pulling the hanging ring. His upper body is wearing tight fitness clothes from @Picture 1, with the "Fitness" logo of @Picture 2 printed on the back. The man pulls up the hanging ring with his strong upper limbs, and then the advertisement ending font of "DO SOME SPORT" appears in the middle of the video.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-2.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Extend @video1 by 15 seconds. 1-5 seconds: The light and shadow slowly slide over the wooden table and cup body through the blinds, and the branches sway like a slight breath. 6-10 seconds: A coffee bean falls gently from the top of the screen, and the camera moves towards the coffee bean until the screen goes black. 11-15 seconds: The first line in English is "Lucky Coffee", the second line is "Breakfast", and the third line is "AM 7:00-10:00".`}
+  inputAssets={[
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-1.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`Extending forward for 10 seconds, in the warm afternoon light, the camera starts from the row of awnings on the street corner that were fluttered by the breeze, and slowly moves down to a few small daisies sticking their heads out at the base of the wall. Immediately afterwards, the protagonist's red sneakers appeared on the screen. He was squatting in front of a street flower stall, smiling as he gathered a large handful of sunflowers into his arms, and the petals rubbed against his white T-shirt. When he turned around and stepped on the skateboard, the flower stall owner smiled and shouted, "Be careful of the petals flying!" He waved to the boss and then started to skate. Several golden petals had already broken free from the bouquet and landed on the board of the skateboard.`}
+  inputAssets={[
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-1.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-2.mp4"
+/>

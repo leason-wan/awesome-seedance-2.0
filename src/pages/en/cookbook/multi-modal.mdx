@@ -1,0 +1,91 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: Multi-modal Evolution
+lang: en
+activeId: cookbook/multi-modal
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
+# Multi-modal Evolution: The "Mixed Media" Era of Video Creation
+
+## Seedance 2.0 Multimodal Overview
+
+- **Unified Uploads:** Supports text, images, videos, and audio. These can be used as direct subjects or stylistic references.
+- **Versatile Referencing:** You can reference movements, special effects, shapes, camera work, characters, scenes, and sounds from any content.
+- **The Formula:** Seedance 2.0 = Universal Multi-modal Reference + Powerful Creative Generation + Precise Instruction Following.
+- **Natural Interaction:** Use natural language to describe your vision. Specify clearly whether you are "referencing" or "editing." For complex scenes, use the @ tag to distinguish between images, videos, and characters.
+
+## Special usage (no limit, for reference only):
+- Is there a first frame/last frame picture? Still want to refer to the video action?
+→ Write clearly in the prompt, such as: "@Picture 1 is the first frame, refer to the fighting action of @Video 1"
+- Want to extend an existing video?
+→ Describe the extension time, such as "Extend @Video 1 by 5s". Note: The generated duration selected at this time should be the duration of the "new part" (for example, if extended by 5s, the generated length should also be selected as 5s.
+- Want to merge multiple videos?
+→ Explain the synthesis logic in the prompt word, such as: "I want to add a scene between @video1 and @video2, the content is xxx"
+- No audio material? You can directly refer to the sound in the video
+- Want to generate continuous motion?
+→ You can add a continuity description in the prompt words, such as: "The character transitions directly from jumping to rolling, keeping the movements coherent and smooth" @Figure 1 @ Figure 2 @ Figure 3...
+
+## Solving Long-standing Creative Challenges
+Video creation often involves persistent hurdles: faces that shift between frames, erratic movements, unnatural extensions, or losing the rhythm during edits. Seedance 2.0’s multi-modal capabilities address these "chronic" issues directly.
+
+### Enhanced Consistency
+Common frustrations include inconsistent characters, lost product details, blurry text, or mismatched cinematographic styles. Seedance 2.0 solves these by ensuring stable and accurate rendering of faces, clothing, and even fine font details.
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Man@Picture 1 After get off work, he walked tiredly in the corridor, his pace slowed down, and he finally stopped at the door of his home. A close-up shot of his face. The man took a deep breath, adjusted his emotions, put away his negative emotions, and became relaxed. Then he looked through the close-up to find the key and inserted the door lock. After entering the home, his little daughter and a pet dog happily ran over to receive a hug. The room was very warm, and the whole conversation was natural.`}
+  inputAssets={[{ type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-1.png' }]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Replace the girls in @Video 1 with opera actresses. The scene is on a beautiful stage. Refer to the camera movements and transition effects of @Video 1, and use the lens to match the characters' movements to create the ultimate stage beauty and enhance the visual impact.`}
+  inputAssets={[{ type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-2-1.mp4' }]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-2-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Refer to all the transitions and camera movements in @Video 1, one shot to the end. The picture starts with a chess game. The camera moves to the left to show the yellow gravel on the floor. The camera moves up to a beach. There are footprints on the beach. A girl in white plain clothes is gradually moving away on the beach. The camera cuts to an overhead shot in the air. The sea water is washing (no characters should be shown). Seamless gradient transition. The washed waves turn into fluttering curtains. The camera zooms out to show a close-up of the girl's face. One shot to the end.`}
+  inputAssets={[{ type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-3-1.mp4' }]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-3-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`0-2s: A rapid four-frame montage. Four bows (red, pink, purple, and leopard print) are frozen in sequence with close-ups showing the satin sheen and the "chéri" branding. Voiceover: "Experience endless beauty with Chéri magnetic ribbons!"\n3-6s: Close-up of a silver magnetic buckle "clicking" together and then gently pulled apart to show its silky texture and convenience. Voiceover: "Snap into perfection in just one second!"\n7-12s: A fast-paced lifestyle montage: the burgundy bow fastened to a coat collar for a chic commute; the pink bow on a ponytail for a sweet street look; the purple bow on a bag strap for a high-end niche vibe; and the leopard print on a suit lapel for a bold, powerful presence. Voiceover: "From coats to hair accessories, complete your unique style!"\n13-15s: Side-by-side display of the four bow types with the brand logo: "Chéri—Instantly Beautiful!"`}
+  inputAssets={[{ type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-1.png' }]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`Conduct a commercial photography display of the bag from @Picture 2. The side of the bag refers to @Picture 1, and the surface material of the bag refers to @Picture 3. It is required that all details of the bag be displayed, and the background sound is magnificent.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-3.png' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 6"
+  prompt={`Take @Picture 1 as the first frame of the picture, first-person perspective, refer to the camera movement effect of @Video 1, the scene above refers to @Picture 2, the scene on the left refers to @Picture 3, and the scene on the right refers to @Picture 4.`}
+  inputAssets={[
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-5.mp4' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-3.png' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-6.mp4"
+/>

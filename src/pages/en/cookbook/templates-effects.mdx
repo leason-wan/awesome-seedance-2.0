@@ -1,0 +1,112 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: Templates & Special Effects
+lang: en
+activeId: cookbook/templates-effects
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
+# Creative templates / Accurate reproduction of complex special effects
+
+Not only can you create pictures and write stories, Seedance 2.0 also supports "imitation" - creative transitions, commercials, movie clips, and complex editing. As long as you have reference pictures or videos, the model can identify the rhythm of the action, the lens language, and the visual structure, and accurately reproduce them. It doesn't matter if you don't understand professional terminology. Write clearly the parts you want to refer to, such as "Refer to @Video1's rhythm and camera movement, @Picture 1's character modeling", and the model will be able to generate a version that belongs to you with high quality. Be brave and try! it can really do it
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Replace the characters in @Video 1 with @Picture 1, @Picture 1 is the first frame, the character puts on virtual science fiction glasses, refer to @Video 1's camera movements, and the close-up surround lens, from the third-person perspective to the character's subjective perspective, shuttle in the AI virtual glasses, and come to the deep blue universe of @Picture 2 , several spaceships appeared and shuttled into the distance. The camera followed the spacecraft to the pixel world of @Picture 3. The camera flew over the pixel mountain forest world at low altitude, and the growth forms of trees inside appeared. Then it shot from an upward angle and quickly shuttled to the light green textured planet of @Picture 4. The camera shuttled and passed over the surface of the planet.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-3.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-4.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-5.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-6.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Refer to the model's facial features in the first picture. Models wear the clothes in the 2nd to 6th reference pictures and get closer to the camera, making naughty, cold, cute, surprised, and cool looks. Each look wears different clothes. Each time it is changed, the picture will be cut. Please refer to the fisheye lens effect and double flickering effect in the video. Please refer to the effect of @Video 1.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-3.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-4.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-5.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-6.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-7.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-8.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Refer to the advertising creativity of the video, use the provided down jacket pictures, and refer to the goose down pictures and swan pictures, and match them with the following advertising words: "This is goose down, this is a warm swan, this is a wearable polar velvet down jacket. Wear warm clothes in the New Year and live a warm life." Generate a new down jacket advertising video.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-3.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-4.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-5.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`In black and white ink style, the characters in @Picture 1 refer to the special effects and movements in @Video 1 to stage an ink Tai Chi Kung Fu episode.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-2.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`Replace the character in the first frame of @Video 1 with @Picture 1, completely @ refer to the special effects and movements of Video 1. Rose petals grow from the stamens in the hand, and the cracks extend upward on the face, gradually covered by weeds. The character brushes his face with both hands, and the weeds turn into particles and dissipate, and finally become the appearance of @Picture 2`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-2.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 6"
+  prompt={`Starting from the ceiling of @Picture 1, refer to the puzzle breaking effect of @Video 1 for transition, replace the font "BELIEVE" with "Seedance", refer to the font of @Picture 2`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-2.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 7"
+  prompt={`It starts with a black screen. Refer to the particle effects and materials of Video 1. The golden gravel material floats out from the left side of the screen and covers it to the right. Refer to the particle blowing effect of @Video 1. The font of @Picture 1 gradually appears in the center of the screen.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 8"
+  prompt={`The characters in @Picture 1 refer to the movements and expression changes in @Video 1 to show the abstract behavior of eating instant noodles.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-3.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-4.mp4"
+/>

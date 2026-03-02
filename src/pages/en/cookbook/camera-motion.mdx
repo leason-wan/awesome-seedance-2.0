@@ -1,0 +1,101 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: Camera & Motion
+lang: en
+activeId: cookbook/camera-motion
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
+# Highly difficult/controllable camera movements and precise reproduction of movements
+
+In the past, if I wanted the model to imitate the movement, camera movement or complex movements in the movie, I would either have to write a bunch of detailed prompts or simply not be able to do it. But now, you only need to upload a reference video, and that's it.
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Refer to the image of the man in @Picture 1. He is in the elevator in @Picture 2. Completely refer to all the camera effects and facial expressions of the protagonist in @Video 1. When the protagonist is frightened, Hitchcock zooms in, and then several surround shots show the perspective inside the elevator. The elevator door opens, follow the camera out of the elevator. For the scene outside the elevator, refer to @Picture 3. The man looks around. Refer to @Video 1 to use a robotic arm to follow the character's line of sight from multiple angles.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-3.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-4.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-5.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Referring to the image of the man in @Picture 1, he is in the corridor of @Picture 2, completely referring to all the camera effects of @Video 1, as well as the facial expressions of the protagonist. The camera follows the protagonist running around the corner of @Picture 2, and then in the corridor of @Picture 3, the camera follows the perspective from the back and surrounds the front of the protagonist through a low angle of view; the camera then goes to the right Pan 90 degrees to shoot at the bifurcated intersection in @Picture 4, stop suddenly, pan right 180 degrees, and shoot the main character's face: the main character is panting, the camera follows the main character's perspective and looks around, refer to @Video 1's rapid left and right panning to show the scene, then zoom to the scene in @Picture 5, and continue to follow the side view of the main character running`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-3.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-4.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-5.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-6.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-7.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`@Picture 1 uses a tablet as the main subject. Refer to @Video 1 for the camera movement. Zoom in to a close-up of the screen. After the lens is rotated, the tablet is reversed to show the full picture. The data flow on the screen is constantly changing, and the surrounding environment gradually turns into a science fiction-style data space.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-2.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`The actress in @Picture 1 serves as the subject, referring to @Video 1's camera movement method to perform rhythmic push, pull and pan movements. The actress's movements also refer to the dance movements of the woman in @Video 1, performing energetically on the stage.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-2.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`Refer to @Picture 1 @Picture 2 for the spear character, @Picture 3 @Picture 4 for the double sword character, imitate the movements of @Video 1, and fight in the maple leaf forest of @Picture 5`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-3.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-4.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-5.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-6.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-7.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 6"
+  prompt={`Referring to the character movements in Video 1 and the surrounding lens language of Video 2, a fight scene between Character 1 and Character 2 was generated. The fight took place in the starry night. During the fight, white dust was raised. The fight scene was very gorgeous and the atmosphere was very tense.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-2.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-3.mp4' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-4.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-5.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 7"
+  prompt={`Refer to the camera movement and screen switching rhythm in Video 1, and reproduce the red supercar in Picture 1.`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-1.png' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-2.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-3.mp4"
+/>

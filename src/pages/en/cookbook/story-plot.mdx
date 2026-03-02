@@ -1,0 +1,45 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: Creativity & Plot
+lang: en
+activeId: cookbook/story-plot
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
+# The creativity and plot completion ability of the model
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Perform a comic interpretation of @Picture 1 in order from left to right and top to bottom, keeping the lines spoken by the characters consistent with the pictures, adding special sound effects to the storyboard switching and key plot interpretations, and the overall style is humorous; refer to @Video 1 for the interpretation method`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-1.jpg' },
+    { type: 'video', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-2.mp4' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Refer to the storyboard script of @Picture1's feature film, refer to the storyboards, scenes, camera movements, pictures and copywriting of @Picture1, and create a 15-second healing title sequence about "The Four Seasons of Childhood"`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-1.png' }
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Refer to the audio of video 1, and use Figures 1, 2, 3, 4, and 5 as inspiration to create an emotional video. Background music reference@video 1`}
+  inputAssets={[
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-1.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-2.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-4.png' },
+    { type: 'image', url: 'https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-5.png' },
+  ]}
+  outputVideo="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-6.mp4"
+/>

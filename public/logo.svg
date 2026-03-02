@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+<defs>
+    <!-- Monolith Gradients to simulate lighting on pure black material -->
+    <linearGradient id="monolithFront" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="#000000" />
+        <stop offset="50%" stop-color="#0a0a0c" />
+        <stop offset="100%" stop-color="#030304" />
+    </linearGradient>
+    
+    <linearGradient id="monolithSide" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1c1d21" />
+        <stop offset="100%" stop-color="#08080a" />
+    </linearGradient>
+    
+    <linearGradient id="monolithTop" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2b2d33" />
+        <stop offset="100%" stop-color="#14151a" />
+    </linearGradient>
+    
+    <!-- Glow Filter for the horizon -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="12" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Broad background halo around the horizon -->
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#5a8bed" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="#5a8bed" stop-opacity="0" />
+    </radialGradient>
+</defs>
+
+<!-- Background removed to keep it transparent -->
+
+<!-- Horizon Glow -->
+<g>
+    <!-- Ambient Halo -->
+    <ellipse cx="400" cy="560" rx="350" ry="100" fill="url(#halo)" filter="url(#glow)"/>
+    
+    <!-- Horizon Line -->
+    <path d="M -100 620 Q 400 520 900 620" fill="transparent" stroke="#5a8bed" stroke-width="8" opacity="0.6" filter="url(#glow)"/>
+    <path d="M -100 620 Q 400 520 900 620" fill="transparent" stroke="#8ac2ff" stroke-width="4" opacity="0.8" filter="url(#intenseGlow)"/>
+    
+    <!-- Core Brightness of the Horizon -->
+    <path d="M 150 581 Q 400 520 650 581" fill="transparent" stroke="#ffffff" stroke-width="2" opacity="1" filter="url(#intenseGlow)"/>
+</g>
+
+<!-- 
+    The 1 : 4 : 9 Isometric Monolith
+    Base Length Variables: Thickness=45, Width=180, Height=405
+-->
+<g transform="translate(60, 100)">
+    <!-- Front-Left Face (Width x Height) -->
+    <polygon points="400,550 244.1,460 244.1,55 400,145" fill="url(#monolithFront)" stroke="#1a1a1c" stroke-width="0.5" stroke-linejoin="round"/>
+    
+    <!-- Front-Right Face (Thickness x Height) -->
+    <polygon points="400,550 439,527.5 439,122.5 400,145" fill="url(#monolithSide)" stroke="#2b2d33" stroke-width="0.5" stroke-linejoin="round"/>
+    
+    <!-- Top Face (Width x Thickness) -->
+    <polygon points="400,145 244.1,55 283.1,32.5 439,122.5" fill="url(#monolithTop)" stroke="#3f414a" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Subtle highlights on edges to enhance 3D structure -->
+    <line x1="400" y1="145" x2="400" y2="550" stroke="#121214" stroke-width="1"/>
+    <line x1="400" y1="145" x2="244.1" y2="55" stroke="#4a4d57" stroke-width="1.5" filter="url(#intenseGlow)"/>
+    <line x1="400" y1="145" x2="439" y2="122.5" stroke="#3b3d45" stroke-width="1.5"/>
+</g>
+</svg>

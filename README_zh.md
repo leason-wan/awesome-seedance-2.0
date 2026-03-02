@@ -587,9 +587,6 @@
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-1.png" alt="1" width="400" height="auto">
 
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-2.gif" alt="1" width="400" height="auto">
-
 ### Output
 <a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
 
@@ -605,12 +602,13 @@
 
 #### Image
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-1.png" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-2.gif" alt="1" width="400" height="auto">
+<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-2.png" alt="1" width="400" height="auto">
+<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.png" alt="1" width="400" height="auto">
+<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-4.png" alt="1" width="400" height="auto">
+<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-5.png" alt="1" width="400" height="auto">
 
 ### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
+<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-6.gif" width="600"></a>
 
 📥 *点击 Gif 图片下载视频*
 
