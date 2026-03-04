@@ -93,7 +93,7 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
 
     return (
         <>
-            <div className="cookbook-case border border-white/10 rounded-xl overflow-hidden mb-12 bg-[#1b1e23] shadow-2xl transition-all">
+            <div className="cookbook-case border border-white/10 rounded-xl overflow-hidden mb-12 bg-[#000000] shadow-2xl transition-all">
                 {/* Header */}
                 <div className="px-4 py-1.5 bg-white/5 flex justify-between items-center border-b border-white/5">
                     <div className="flex items-center gap-2">
@@ -160,7 +160,7 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
                                 <span className="w-1 h-1 rounded-full bg-gray-500/50"></span>
                                 Generation Prompt
                             </h4>
-                            <div className="bg-gray-800/30 rounded-lg p-4 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20">
+                            <div className="bg-white/5 rounded-lg p-4 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20">
                                 <p className="text-[13px] text-gray-300 font-mono m-0 leading-relaxed opacity-90">
                                     {prompt}
                                 </p>

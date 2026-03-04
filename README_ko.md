@@ -50,10 +50,10 @@ The girl was drying her clothes elegantly. After drying, she took out another pi
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-1.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-1.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-1.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-1.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-1.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -67,10 +67,10 @@ The character in the painting has a guilty expression. He looks left and right a
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-2.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -84,10 +84,10 @@ The camera zooms out slightly (revealing a panoramic view of the street) and fol
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -101,10 +101,10 @@ The camera follows the man in black as he flees quickly, followed by a group of 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-4.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -143,10 +143,10 @@ Man@Picture 1 After get off work, he walked tiredly in the corridor, his pace sl
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-1-1.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-1-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -162,7 +162,7 @@ Replace the girls in @Video 1 with opera actresses. The scene is on a beautiful 
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -178,7 +178,7 @@ Refer to all the transitions and camera movements in @Video 1, one shot to the e
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -194,10 +194,10 @@ Refer to all the transitions and camera movements in @Video 1, one shot to the e
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-1.png" width="600">
+<img src="https://cdn.weniai.com/seedance/2-4-1.png" width="600">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-4-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -210,12 +210,12 @@ Conduct a commercial photography display of the bag from @Picture 2. The side of
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-5-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-5-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -231,12 +231,12 @@ Take @Picture 1 as the first frame of the picture, first-person perspective, ref
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-5.gif" alt="1" width="400" height="auto">
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-6-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-6.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -252,15 +252,15 @@ Refer to the image of the man in @Picture 1. He is in the elevator in @Picture 2
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-3.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-4.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -273,17 +273,17 @@ Referring to the image of the man in @Picture 1, he is in the corridor of @Pictu
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-5.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-6.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-7.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-2-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-7.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -296,13 +296,13 @@ Referring to the image of the man in @Picture 1, he is in the corridor of @Pictu
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-3-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -315,13 +315,13 @@ The actress in @Picture 1 serves as the subject, referring to @Video 1's camera 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-4-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -334,17 +334,17 @@ Refer to @Picture 1 @Picture 2 for the spear character, @Picture 3 @Picture 4 fo
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-5.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-6.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-7.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-5-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-7.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -357,15 +357,15 @@ Referring to the character movements in Video 1 and the surrounding lens languag
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-6-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-3.gif" alt="1" width="400" height="auto">
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-4.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-6-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -378,13 +378,13 @@ Refer to the camera movement and screen switching rhythm in Video 1, and reprodu
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-7-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-7-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -400,16 +400,16 @@ Replace the characters in @Video 1 with @Picture 1, @Picture 1 is the first fram
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-4.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-5.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-6.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -422,18 +422,18 @@ Refer to the model’s facial features in the first picture. Models wear the clo
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-6.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-7.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-8.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -446,15 +446,15 @@ Refer to the advertising creativity of the video, use the provided down jacket p
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-3.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-4.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -467,13 +467,13 @@ In black and white ink style, the characters in @Picture 1 refer to the special 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-4-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -486,14 +486,14 @@ Replace the character in the first frame of @Video 1 with @Picture 1, completely
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-5-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -506,14 +506,14 @@ Starting from the ceiling of @Picture 1, refer to the puzzle breaking effect of 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-6-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-6-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -526,13 +526,13 @@ It starts with a black screen. Refer to the particle effects and materials of Vi
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-7-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-7-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -545,13 +545,13 @@ The characters in @Picture 1 refer to the movements and expression changes in @V
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-8-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -566,13 +566,13 @@ Perform a comic interpretation of @Picture 1 in order from left to right and top
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-1.jpg" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-1-1.jpg" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -585,13 +585,13 @@ Refer to the storyboard script of @Picture1's feature film, refer to the storybo
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-2-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -604,13 +604,13 @@ Refer to the audio of video 1, and use Figures 1, 2, 3, 4, and 5 as inspiration 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-4-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -628,14 +628,14 @@ Picture 3: The background is a shot of snowy mountains, with a donkey riding a c
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-1-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -648,13 +648,13 @@ The video is extended for 6 seconds, and the exciting music of electric guitar a
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-2-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -670,7 +670,7 @@ Extend @video1 by 15 seconds. 1-5 seconds: The light and shadow slowly slide ove
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -686,7 +686,7 @@ Extending forward for 10 seconds, in the warm afternoon light, the camera starts
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -706,7 +706,7 @@ Fixed lens, the central fisheye lens peeks down through the circular hole, refer
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -719,15 +719,15 @@ Based on the office building promotional photos provided, a 15-second film-level
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-3.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-4.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -742,10 +742,10 @@ Wang Zai (dog host, tilting his head and wagging his tail): "You still have the 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-3-1.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -761,7 +761,7 @@ The accompaniment of "The Case of Guillotine Beauty" in the prelude to the Henan
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -774,10 +774,10 @@ Generate a 15-second MV video. Keywords: Steady framing / light push and pull / 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-5-1.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -793,7 +793,7 @@ The girl wearing a hat in the middle of the picture sings softly "I'm so proud o
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -806,10 +806,10 @@ Fixed lens. The standing strong man (captain) clenched his fists and waved his a
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-7-1.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -825,14 +825,14 @@ Fixed lens. The standing strong man (captain) clenched his fists and waved his a
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-8-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-8-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -849,12 +849,12 @@ He scratched his head and muttered something: "Is everything okay...? I have som
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -867,10 +867,10 @@ Use popular science style and tone to interpret the content in picture 1, includ
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-1.jpg" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-10-1.jpg" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -885,12 +885,12 @@ Use popular science style and tone to interpret the content in picture 1, includ
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -903,12 +903,12 @@ Taking @Picture 1 as the first frame, the picture is zoomed out of the plane win
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-2-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-2-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -921,13 +921,13 @@ In the style of a spy film, @Picture 1 is the first frame. The camera follows th
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-4.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -940,13 +940,13 @@ Based on the outdoor shot of @Picture 1, the first-person subjective perspective
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-4.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-4-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-4-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-4-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -959,14 +959,14 @@ Based on the outdoor shot of @Picture 1, the first-person subjective perspective
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-5.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-5-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-5-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-5-6.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -985,7 +985,7 @@ Subverting the plot in @Video 1, the man's eyes suddenly changed from gentle to 
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1006,7 +1006,7 @@ Subvert the entire plot of @video 1
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-1.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1019,13 +1019,13 @@ The female lead singer in video 1 is replaced by the male lead singer in picture
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-3-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1038,13 +1038,13 @@ Change the woman's hairstyle in video 1 to long red hair, and the great white sh
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-4-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1057,13 +1057,13 @@ In Video 1, the camera pans to the right. The fried chicken boss is busy handing
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-5-1.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-2.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-5-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-5-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-3.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1077,16 +1077,16 @@ In Video 1, the camera pans to the right. The fried chicken boss is busy handing
 The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
 ```
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-4.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-5.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-6.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1099,18 +1099,18 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-6.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-7.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-8.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1123,18 +1123,18 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 ```
 
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-6.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-7.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-3-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-8.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1147,7 +1147,7 @@ An 8-second intellectual game-style combat animation clip that fits the theme of
 ```
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1161,14 +1161,14 @@ An 8-second intellectual game-style combat animation clip that fits the theme of
 The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
 ```
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-1-2.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-3.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1180,12 +1180,12 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
 ```
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-3.png" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 
@@ -1197,16 +1197,16 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 The girl in the poster is constantly changing her clothes. The clothes refer to the style of @Picture 1 @Picture 2. She is holding the bag from @Picture 3. The rhythm of the video refers to @Video.
 ```
 #### 영상
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-4.png" alt="1" width="400" height="auto">
 
 #### 동영상
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" alt="1" width="400" height="auto">
 
 ### 산출
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
 
 📥 *Gif 이미지를 클릭하시면 영상을 다운로드 받으실 수 있습니다*
 

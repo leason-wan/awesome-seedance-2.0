@@ -1,75 +1,57 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: 视频延长
+lang: zh
+activeId: cookbook/video-extension
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
 ## 视频延长
 
-## Case 1
-### Input
-
-#### 📝 Prompt
-```
-延长15s视频，参考@图片1、@图片2的驴骑摩托车的形象，补充一段脑洞广告
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`延长15s视频，参考@图片1、@图片2的驴骑摩托车的形象，补充一段脑洞广告
 画面1：侧面固定镜头，驴骑着摩托车冲出棚栏，旁边的鸡受到惊吓，
 画面2：驴骑着摩托在沙地盘旋，先特写摩托轮胎，再切到半空中俯拍驴骑着摩托车做着盘旋特技，掀起烟雾
-画面3：背景是雪山镜头，驴骑着车从山坡飞越过，广告语在主体背后，通过遮罩的形式（驴和摩托车飞过时）中间出现"Inspire Creativity,Enrich Life"，最后在摩托飞过，扬起一阵尘烟
-```
+画面3：背景是雪山镜头，驴骑着车从山坡飞越过，广告语在主体背后，通过遮罩的形式（驴和摩托车飞过时）中间出现"Inspire Creativity,Enrich Life"，最后在摩托飞过，扬起一阵尘烟`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-1-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-1-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-1-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-1-4.mp4"
+/>
 
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-2.png" alt="1" width="400" height="auto">
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`将视频延长6s，出现电吉他的激昂音乐，视频中间出现“JUST DO IT”的广告字体后逐渐淡化，镜头上移到天花板，一个健硕的男人拉着吊环，上半身穿着@图1的紧身健身服，背面印有@图2的“Fitness”logo，男人用健硕的上肢拉上吊环，随后视频中间出现“DO SOME SPORT”的广告结束字体。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-2-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-2-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-2-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-2-4.mp4"
+/>
 
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-3.gif" alt="1" width="400" height="auto">
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`将@视频1延长15秒。1-5秒：光影透过百叶窗在木桌、杯身上缓缓滑过，树枝伴随着轻微呼吸般的晃动。6-10秒：一粒咖啡豆从画面上方轻轻飘落，镜头向咖啡豆推进至画面黑屏。11-15秒：英文渐显第一行“Lucky Coffee ”，第二行“Breakfast”，第三行“AM 7:00-10:00”。`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-3-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-3-2.mp4"
+/>
 
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 2
-### Input
-
-#### 📝 Prompt
-```
-将视频延长6s，出现电吉他的激昂音乐，视频中间出现“JUST DO IT”的广告字体后逐渐淡化，镜头上移到天花板，一个健硕的男人拉着吊环，上半身穿着@图1的紧身健身服，背面印有@图2的“Fitness”logo，男人用健硕的上肢拉上吊环，随后视频中间出现“DO SOME SPORT”的广告结束字体。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-1.png" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-2.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 3
-### Input
-
-#### 📝 Prompt
-```
-将@视频1延长15秒。1-5秒：光影透过百叶窗在木桌、杯身上缓缓滑过，树枝伴随着轻微呼吸般的晃动。6-10秒：一粒咖啡豆从画面上方轻轻飘落，镜头向咖啡豆推进至画面黑屏。11-15秒：英文渐显第一行“Lucky Coffee ”，第二行“Breakfast”，第三行“AM 7:00-10:00”。
-```
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-1.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 4
-### Input
-
-#### 📝 Prompt
-```
-向前延长10s，温暖的午后光线里，镜头先从街角那排被微风掀动的遮阳篷开始，慢慢下移到墙根处几株探出头的小雏菊。紧接着，画面里出现主人公的红色板鞋，他正蹲在街边花摊前，笑着把一大捧向日葵拢进怀里，花瓣蹭过他的白 T 恤。他转身踏上滑板时，花摊老板笑着喊了句 “小心花瓣飞啦！”，他冲老板挥了挥手，然后才开始滑行，几片金黄的花瓣已经先一步从花束里挣脱出来，落在了滑板的板面。
-```
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-1.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`向前延长10s，温暖的午后光线里，镜头先从街角那排被微风掀动的遮阳篷开始，慢慢下移到墙根处几株探出头的小雏菊。紧接着，画面里出现主人公的红色板鞋，他正蹲在街边花摊前，笑着把一大捧向日葵拢进怀里，花瓣蹭过他的白 T 恤。他转身踏上滑板时，花摊老板笑着喊了句 “小心花瓣飞啦！”，他冲老板挥了挥手，然后才开始滑行，几片金黄的花瓣已经先一步从花束里挣脱出来，落在了滑板的板面。`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-4-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-4-2.mp4"
+/>

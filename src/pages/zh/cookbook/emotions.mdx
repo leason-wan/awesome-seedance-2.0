@@ -1,58 +1,47 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: 情绪演绎
+lang: zh
+activeId: cookbook/emotions
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
 ## 情绪演绎更好
 
-## Case 1
-### Input
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-1-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-1-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/11-1-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/11-1-4.mp4"
+/>
 
-#### 📝 Prompt
-```
-海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
-```
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-2.png" alt="1" width="400" height="auto">
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-2-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-2-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-2-3.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/11-2-4.mp4"
+/>
 
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-3.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 2
-### Input
-
-#### 📝 Prompt
-```
-海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
-```
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-3.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 3
-### Input
-
-#### 📝 Prompt
-```
-海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频
-```
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-4.png" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`海报中的女生在不停的换装，服装参考@图片1@图片2的样式，手中提着@图片3的包，视频节奏参考@视频`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-3-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-3-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-3-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/11-3-4.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/11-3-5.mp4"
+/>

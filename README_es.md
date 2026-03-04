@@ -50,10 +50,10 @@ La chica estaba secando su ropa con elegancia. Después de secarse, sacó otro t
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-1.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-1.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-1.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-1.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-1.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -67,10 +67,10 @@ El personaje del cuadro tiene una expresión de culpa. Mira a izquierda y derech
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-2.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -84,10 +84,10 @@ La cámara se aleja ligeramente (revelando una vista panorámica de la calle) y 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -101,10 +101,10 @@ La cámara sigue al hombre de negro mientras huye rápidamente, seguido por un g
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/1-4.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/1-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -143,10 +143,10 @@ Hombre@Imagen 1 Después de salir del trabajo, caminó cansado por el pasillo, s
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-1-1.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-1-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -162,7 +162,7 @@ Reemplaza a las chicas del @Video 1 con actrices de ópera. La escena está en u
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-2-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -178,7 +178,7 @@ Consulte todas las transiciones y movimientos de cámara en @Video 1, un plano h
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -194,10 +194,10 @@ Pantalla de 0-2 segundos: Corte rápido de cuatro fotogramas. Cuatro lazos (rojo
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-1.png" width="600">
+<img src="https://cdn.weniai.com/seedance/2-4-1.png" width="600">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-4-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -210,12 +210,12 @@ Realice una exhibición de fotografía comercial del bolso desde @Imagen 2. El c
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-5-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-5-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-5-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -231,12 +231,12 @@ Tome @Imagen 1 como el primer cuadro de la imagen, perspectiva en primera person
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-5.gif" alt="1" width="400" height="auto">
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/2-6-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/2-6-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/2-6-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-6-6.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -252,15 +252,15 @@ Consulte la imagen del hombre en @Imagen 1. Está en el ascensor en @Imagen 2. C
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-1-3.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-4.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-1-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -273,17 +273,17 @@ Haciendo referencia a la imagen del hombre en @Imagen 1, se encuentra en el pasi
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-2-5.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-6.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-2-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-7.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-2-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-2-7.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -296,13 +296,13 @@ Haciendo referencia a la imagen del hombre en @Imagen 1, se encuentra en el pasi
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-3-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-3-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -315,13 +315,13 @@ La actriz en @Imagen 1 actúa como tema, refiriéndose al método de movimiento 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-4-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-4-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -334,17 +334,17 @@ Consulte @Imagen 1 @Imagen 2 para el personaje de lanza, @Imagen 3 @Imagen 4 par
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-5-5.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-6.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-5-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-7.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-5-7.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-5-7.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -357,15 +357,15 @@ En referencia a los movimientos de los personajes en el Video 1 y el lenguaje de
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-6-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-3.gif" alt="1" width="400" height="auto">
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-4.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-6-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-6-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-6-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -378,13 +378,13 @@ Consulte el movimiento de la cámara y el ritmo de cambio de pantalla en el Vide
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/3-7-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/3-7-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/3-7-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/3-7-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -400,16 +400,16 @@ Reemplace los personajes en @Video 1 con @Picture 1, @Picture 1 es el primer fot
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-1-4.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-5.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-1-6.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -422,18 +422,18 @@ Consulte los rasgos faciales del modelo en la primera imagen. Las modelos usan l
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-2-6.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-7.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-2-8.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -446,15 +446,15 @@ Consulte la creatividad publicitaria del video, utilice las imágenes de chaquet
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-3-3.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-4.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-3-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -467,13 +467,13 @@ En estilo de tinta en blanco y negro, los personajes de @Imagen 1 hacen referenc
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-4-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-4-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -486,14 +486,14 @@ Reemplace el personaje en el primer cuadro de @Video 1 con @Imagen 1, completame
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-5-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-5-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-5-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -506,14 +506,14 @@ Comenzando desde el techo de @Imagen 1, consulte el efecto de ruptura de rompeca
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-6-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-6-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-6-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-6-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-6-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -526,13 +526,13 @@ Comienza con una pantalla negra. Consulte los efectos de partículas y materiale
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-7-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-7-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-7-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-7-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -545,13 +545,13 @@ Los personajes de @Imagen 1 se refieren a los movimientos y cambios de expresió
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/4-8-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/4-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/4-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/4-8-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -566,13 +566,13 @@ Realice una interpretación cómica de @Imagen 1 en orden de izquierda a derecha
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-1.jpg" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-1-1.jpg" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -585,13 +585,13 @@ Consulte el guión gráfico del largometraje de @Picture1, consulte los guiones 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-2-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -604,13 +604,13 @@ Consulte el audio del video 1 y use las Figuras 1, 2, 3, 4 y 5 como inspiración
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/5-4-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/5-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -628,14 +628,14 @@ Imagen 3: El fondo es una toma de montañas nevadas, con un burro montado en un 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-1-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-1-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -648,13 +648,13 @@ El vídeo se prolonga durante 6 segundos, y aparece la emocionante música de gu
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/6-2-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-2-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -670,7 +670,7 @@ Extiende @video1 por 15 segundos. 1-5 segundos: la luz y la sombra se deslizan l
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-3-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -686,7 +686,7 @@ Extendiéndose hacia adelante durante 10 segundos, bajo la cálida luz de la tar
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/6-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/6-4-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -706,7 +706,7 @@ Lente fija, la lente ojo de pez central mira hacia abajo a través del orificio 
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -719,15 +719,15 @@ A partir de las fotografías promocionales del edificio de oficinas proporcionad
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-2-3.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-4.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -742,10 +742,10 @@ Wang Zai (anfitrión del perro, inclinando la cabeza y moviendo la cola): "¿Tod
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-3-1.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -761,7 +761,7 @@ Sonó el acompañamiento de "El caso de la belleza de la guillotina" en el prelu
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -774,10 +774,10 @@ Genera un vídeo MV de 15 segundos. Palabras clave: encuadre estable / empujar y
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-5-1.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -793,7 +793,7 @@ La niña con sombrero en el medio de la imagen canta suavemente "¡Estoy tan org
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -806,10 +806,10 @@ Lente fija. El hombre fuerte de pie (capitán) apretó los puños, agitó los br
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-7-1.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -825,14 +825,14 @@ Lente fija. El hombre fuerte de pie (capitán) apretó los puños, agitó los br
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-8-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-8-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -849,12 +849,12 @@ Se rascó la cabeza y murmuró algo: "¿Está todo bien...? ¡Tengo algo que hac
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-9-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -867,10 +867,10 @@ Utilice el estilo y el tono de la ciencia popular para interpretar el contenido 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-1.jpg" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/7-10-1.jpg" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -885,12 +885,12 @@ Utilice el estilo y el tono de la ciencia popular para interpretar el contenido 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-1-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -903,12 +903,12 @@ Tomando @Picture 1 como primer cuadro, la imagen se aleja de la ventana del plan
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-2-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-2-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-2-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -921,13 +921,13 @@ Al estilo de una película de espías, la @Imagen 1 es el primer fotograma. La c
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-3-4.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-1-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-1-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -940,13 +940,13 @@ Basada en la toma exterior de la @Imagen 1, la perspectiva subjetiva en primera 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-4-4.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-4-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-4-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-4-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-4-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -959,14 +959,14 @@ Basada en la toma exterior de la @Imagen 1, la perspectiva subjetiva en primera 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/8-5-5.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/8-5-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-5-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/8-5-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/8-5-6.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -985,7 +985,7 @@ Subvirtiendo la trama en @Video 1, los ojos del hombre repentinamente cambiaron 
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1006,7 +1006,7 @@ Pantalla de 13 a 15 segundos: el hombre de traje saca una bolsa de bocadillos pa
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-1.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-2-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-2-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1019,13 +1019,13 @@ La cantante principal femenina en el video 1 es reemplazada por el cantante prin
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-3-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-3-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-3-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1038,13 +1038,13 @@ Cambie el peinado de la mujer en el video 1 a cabello largo y rojo, y el gran ti
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-4-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-4-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-4-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-4-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1057,13 +1057,13 @@ En el Video 1, la cámara se desplaza hacia la derecha. El jefe del pollo frito 
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-5-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/9-5-1.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-2.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-5-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-3.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-5-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-5-3.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1077,16 +1077,16 @@ En el Video 1, la cámara se desplaza hacia la derecha. El jefe del pollo frito 
 La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al estilo de @Imagen 1 @Imagen 2. Ella sostiene el bolso de @Imagen 3. El ritmo del video hace referencia a @Video.
 ```
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-1-4.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-5.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-6.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-1-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-1-6.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1099,18 +1099,18 @@ La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-2-6.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-7.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-2-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-2-8.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1123,18 +1123,18 @@ La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al
 ```
 
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-5.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-6.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-5.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/10-3-6.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-7.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/10-3-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-8.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/10-3-8.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/10-3-8.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1147,7 +1147,7 @@ Un clip de animación de combate de estilo juego intelectual de 8 segundos que e
 ```
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/9-1-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/9-1-2.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1161,14 +1161,14 @@ Un clip de animación de combate de estilo juego intelectual de 8 segundos que e
 La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al estilo de @Imagen 1 @Imagen 2. Ella sostiene el bolso de @Imagen 3. El ritmo del video hace referencia a @Video.
 ```
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-1-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-1-2.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-3.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-1-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1180,12 +1180,12 @@ La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al
 La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al estilo de @Imagen 1 @Imagen 2. Ella sostiene el bolso de @Imagen 3. El ritmo del video hace referencia a @Video.
 ```
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-2-3.png" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-2-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-2-4.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 
@@ -1197,16 +1197,16 @@ La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al
 La chica del cartel se cambia constantemente de ropa. La ropa hace referencia al estilo de @Imagen 1 @Imagen 2. Ella sostiene el bolso de @Imagen 3. El ritmo del video hace referencia a @Video.
 ```
 #### Imagen
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-4.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-1.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-2.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-3.png" alt="1" width="400" height="auto">
+<img src="https://cdn.weniai.com/seedance/11-3-4.png" alt="1" width="400" height="auto">
 
 #### Video
 <img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" alt="1" width="400" height="auto">
 
 ### Producción
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
+<a href="https://cdn.weniai.com/seedance/11-3-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/11-3-5.gif" width="600"></a>
 
 📥 *Haz clic en la imagen Gif para descargar el vídeo*
 

@@ -1,183 +1,128 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: 音效与音频
+lang: zh
+activeId: cookbook/sound-audio
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
 ## 音色更准，声音更真
 
-## Case 1
-### Input
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`固定镜头，中央鱼眼镜头透过圆形孔洞向下窥视，参考视频1的鱼眼镜头，让@视频2中的马看向鱼眼镜头，参考@视频1中的说话动作，背景BGM参考@视频3中的音效。`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-1.mp4' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-2.mp4' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-1-4.mp4"
+/>
 
-#### 📝 Prompt
-```
-固定镜头，中央鱼眼镜头透过圆形孔洞向下窥视，参考视频1的鱼眼镜头，让@视频2中的马看向鱼眼镜头，参考@视频1中的说话动作，背景BGM参考@视频3中的音效。
-```
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`根据提供的写字楼宣传照，生成一段15秒电影级写实风格的地产纪录片，采用2.35:1宽银幕，24fps，细腻的画面风格，其中旁白的音色参考@视频1，拍摄 “写字楼的生态”，呈现楼内不同企业的运作，结合旁白阐述写字楼如何成为一个充满活力的商业生态系统.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-3.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-2-4.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-2-5.mp4"
+/>
 
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-1.gif" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-2.gif" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-3.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-1-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-1-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 2
-### Input
-
-#### 📝 Prompt
-```
-根据提供的写字楼宣传照，生成一段15秒电影级写实风格的地产纪录片，采用2.35:1宽银幕，24fps，细腻的画面风格，其中旁白的音色参考@视频1，拍摄 “写字楼的生态”，呈现楼内不同企业的运作，结合旁白阐述写字楼如何成为一个充满活力的商业生态系统.
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-3.png" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-4.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-2-5.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-2-5.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 3
-### Input
-
-#### 📝 Prompt
-```
-在“猫狗吐槽间”里的一段吐槽对话，要求情感丰沛，符合脱口秀表演：
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`在“猫狗吐槽间”里的一段吐槽对话，要求情感丰沛，符合脱口秀表演：
 喵酱（猫主持，舔毛翻眼）："家人们谁懂啊，我身边这位，每天除了摇尾巴、拆沙发，就只会用那种“我超乖求摸摸”的眼神骗人类零食，明明拆家的时候比谁都凶，还好意思叫旺仔，我看叫“旺拆”还差不多哈哈哈“
-旺仔（狗主持，歪头晃尾巴）："你还好意思说我？你每天睡18个小时，醒了就蹭人类腿要罐头，掉毛掉得人类黑衣服上全是你的毛，人家扫完地，你转身又在沙发上滚一圈，还好意思装高冷贵族？"
-```
+旺仔（狗主持，歪头晃尾巴）："你还好意思说我？你每天睡18个小时，醒了就蹭人类腿要罐头，掉毛掉得人类黑衣服上全是你的毛，人家扫完地，你转身又在沙发上滚一圈，还好意思装高冷贵族？"`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-3-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-3-2.mp4"
+/>
 
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-1.png" alt="1" width="400" height="auto">
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`豫剧经前桥段《铡美案》的伴奏响起，左侧的黑衣包拯指着右侧的红衣陈世美，咬牙切齿地唱着豫剧：“刀对鞘，真凭实据你敢不招？” 陈世美的眼珠左右滴溜溜乱转，寻找着权宜之策，面色窘迫至极。此时，画面外传来一声豫剧旦角的念白：“且慢！”包拯和陈世美一齐向画面右侧看去。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-4-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-4-2.mp4"
+/>
 
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-3-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-3-2.gif" width="600"></a>
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`生成一个15秒的MV视频。关键词：稳重构图 / 轻推拉 / 低角度英雄感 / 纪实但高级A超广角建立镜头，低机位轻微仰拍，悬崖土路与复古旅行车占画面下三分之一，远处海面与地平线拉开空间，夕阳侧逆光体积光穿过尘粒，电影级构图，真实胶片颗粒，微风吹动衣角。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-5-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-5-2.mp4"
+/>
 
-📥 *点击 Gif 图片下载视频*
+<CookbookCase 
+  client:load
+  title="Case 6"
+  prompt={`画面中间戴帽子的女孩温柔地唱着说"I'm so proud of my family!"，之后转身拥抱中间的黑人女孩。黑人女孩感动地回应"My sweetie, you're the heart of our family"，回抱她。左侧的黄衣服男孩开心地说"Folks, let's dance together to celebrate!” 最右侧的女孩紧接着回复： “I'll bring the music!"，背景拉美音乐响起，左侧穿橙色裙的女性（朱丽叶塔）笑着点头，右侧扎辫女性（路易莎）握紧拳头挥动手臂。人群中有人开始踏起步子，孩子们跟着节奏拍手，整个家族即将围成圈，伴着欢快的音乐，裙摆飞扬，在五彩的街道上尽情舞动，传递着喜悦与温暖。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-6-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-6-2.mp4"
+/>
 
-## Case 4
-### Input
+<CookbookCase 
+  client:load
+  title="Case 7"
+  prompt={`固定镜头。站着的壮汉（队长）握拳挥臂用西班牙语说着：“三分钟后突袭！”，金发队员站在检查枪械，绿发队员握紧战术手电。黑人队员搭肩问同伴用西班牙语说：“侧翼包抄？”队长点头用西班牙语说：“老规矩，活口留审讯。”全员肃然，装备碰撞声中完成战术手势，默契起身，大家都严阵以待，左侧两个男生也争先站起来准备战斗。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-7-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-7-2.mp4"
+/>
 
-#### 📝 Prompt
-```
-豫剧经前桥段《铡美案》的伴奏响起，左侧的黑衣包拯指着右侧的红衣陈世美，咬牙切齿地唱着豫剧：“刀对鞘，真凭实据你敢不招？” 陈世美的眼珠左右滴溜溜乱转，寻找着权宜之策，面色窘迫至极。此时，画面外传来一声豫剧旦角的念白：“且慢！”包拯和陈世美一齐向画面右侧看去。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-1.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-4-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-4-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 5
-### Input
-
-#### 📝 Prompt
-```
-生成一个15秒的MV视频。关键词：稳重构图 / 轻推拉 / 低角度英雄感 / 纪实但高级A超广角建立镜头，低机位轻微仰拍，悬崖土路与复古旅行车占画面下三分之一，远处海面与地平线拉开空间，夕阳侧逆光体积光穿过尘粒，电影级构图，真实胶片颗粒，微风吹动衣角。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-1.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-5-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-5-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 6
-### Input
-
-#### 📝 Prompt
-```
-画面中间戴帽子的女孩温柔地唱着说"I'm so proud of my family!"，之后转身拥抱中间的黑人女孩。黑人女孩感动地回应"My sweetie, you're the heart of our family"，回抱她。左侧的黄衣服男孩开心地说"Folks, let's dance together to celebrate!” 最右侧的女孩紧接着回复： “I'll bring the music!"，背景拉美音乐响起，左侧穿橙色裙的女性（朱丽叶塔）笑着点头，右侧扎辫女性（路易莎）握紧拳头挥动手臂。人群中有人开始踏起步子，孩子们跟着节奏拍手，整个家族即将围成圈，伴着欢快的音乐，裙摆飞扬，在五彩的街道上尽情舞动，传递着喜悦与温暖。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-1.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-6-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-6-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 7
-### Input
-
-#### 📝 Prompt
-```
-固定镜头。站着的壮汉（队长）握拳挥臂用西班牙语说着：“三分钟后突袭！”，金发队员站在检查枪械，绿发队员握紧战术手电。黑人队员搭肩问同伴用西班牙语说：“侧翼包抄？”队长点头用西班牙语说：“老规矩，活口留审讯。”全员肃然，装备碰撞声中完成战术手势，默契起身，大家都严阵以待，左侧两个男生也争先站起来准备战斗。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-1.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-7-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-7-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 8
-### Input
-
-#### 📝 Prompt
-```
-0-3秒：开头闹钟响起来，画面朦胧中出现画面1； 
+<CookbookCase 
+  client:load
+  title="Case 8"
+  prompt={`0-3秒：开头闹钟响起来，画面朦胧中出现画面1； 
 3-10秒：快速摇镜头，转向对面特写男人面部，男人无奈的叫女生起床，语气和音色参考@视频1； 
 10-12秒：女生撅着嘴躲进被子里面； 
-12-15秒：切换到男主全身，他叹着气说：”真拿你没办法！“
-```
+12-15秒：切换到男主全身，他叹着气说：”真拿你没办法！“`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-8-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-8-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-8-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-8-4.mp4"
+/>
 
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-2.png" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-3.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-8-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-8-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 9
-### Input
-
-#### 📝 Prompt
-```
-@图片1的猴子走向奶茶店柜台，镜头跟随在他身后，一位@图片2的比熊服务员正在吧台处擦拭制作工具，猴子向服务员用四川口音点单：“幺妹儿，霸王别姬有得没得？”
+<CookbookCase 
+  client:load
+  title="Case 9"
+  prompt={`@图片1的猴子走向奶茶店柜台，镜头跟随在他身后，一位@图片2的比熊服务员正在吧台处擦拭制作工具，猴子向服务员用四川口音点单：“幺妹儿，霸王别姬有得没得？”
 切镜，特写。
 服务员放下手里的活，怪异地看了老头一眼后回答：“没得，美式要不要得嘛”
 切镜，镜头给到猴子。
-他挠了挠头念念有词：“没事……？我有事！孙儿叫我来买个奶茶，就叫个撒子霸王别姬嘛”
-```
+他挠了挠头念念有词：“没事……？我有事！孙儿叫我来买个奶茶，就叫个撒子霸王别姬嘛”`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-3.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-9-4.mp4"
+/>
 
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-3.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-9-4.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-9-4.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 10
-### Input
-
-#### 📝 Prompt
-```
-用科普风格和音色，将图片1中的内容演绎出来，内容包括悟空为过火焰山，到翠云山向铁扇公主借芭蕉扇。铁扇公主因红孩儿被悟空降伏拜观音为童子，母子分离，不肯借扇还欲报仇。悟空好言相劝无果，二人随即起了争执的小故事进行讲解。
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-1.jpg" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/7-10-2.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/7-10-2.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
+<CookbookCase 
+  client:load
+  title="Case 10"
+  prompt={`用科普风格和音色，将图片1中的内容演绎出来，内容包括悟空为过火焰山，到翠云山向铁扇公主借芭蕉扇。铁扇公主因红孩儿被悟空降伏拜观音为童子，母子分离，不肯借扇还欲报仇。悟空好言相劝无果，二人随即起了争执的小故事进行讲解。`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-10-1.jpg' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/7-10-2.mp4"
+/>

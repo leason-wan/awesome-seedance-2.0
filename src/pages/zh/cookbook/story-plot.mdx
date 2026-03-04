@@ -1,56 +1,46 @@
+---
+layout: ../../../layouts/DocsLayout.astro
+title: 创意与剧情
+lang: zh
+activeId: cookbook/story-plot
+---
+
+import CookbookCase from '../../../components/CookbookCase.tsx';
+
 ## 模型的创意性、剧情补全能力
 
-## Case 1
-### Input
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`将@图1以从左到右从上到下的顺序进行漫画演绎，保持人物说的台词与图片上的一致，分镜切换以及重点的情节演绎加入特殊音效，整体风格诙谐幽默；演绎方式参考@视频1`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-1-1.jpg' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/5-1-2.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-1-3.mp4"
+/>
 
-#### 📝 Prompt
-```
-将@图1以从左到右从上到下的顺序进行漫画演绎，保持人物说的台词与图片上的一致，分镜切换以及重点的情节演绎加入特殊音效，整体风格诙谐幽默；演绎方式参考@视频1
-```
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`参考@图片1的专题片的分镜头脚本，参考@图片1的分镜、景别、运镜、画面和文案，创作一段15s的关于“童年的四季”的治愈系片头`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-2-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-2-3.mp4"
+/>
 
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-1.jpg" alt="1" width="400" height="auto">
-
-#### Video
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-2.gif" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-1-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-1-3.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 2
-### Input
-
-#### 📝 Prompt
-```
-参考@图片1的专题片的分镜头脚本，参考@图片1的分镜、景别、运镜、画面和文案，创作一段15s的关于“童年的四季”的治愈系片头
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-1.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-2-3.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-2-3.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
-
-## Case 3
-### Input
-
-#### 📝 Prompt
-```
-参考视频1的音频，根据图1、图2、图3、图4、图5为灵感，发散出一条情绪向的视频。背景音乐参考@视频1
-```
-
-#### Image
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-1.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-2.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-3.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-4.png" alt="1" width="400" height="auto">
-<img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-5.png" alt="1" width="400" height="auto">
-
-### Output
-<a href="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-1/5-4-6.mp4"><img src="https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/5-4-6.gif" width="600"></a>
-
-📥 *点击 Gif 图片下载视频*
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`参考视频1的音频，根据图1、图2、图3、图4、图5为灵感，发散出一条情绪向的视频。背景音乐参考@视频1`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-4.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-5.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/5-4-5.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-4-6.mp4"
+/>
