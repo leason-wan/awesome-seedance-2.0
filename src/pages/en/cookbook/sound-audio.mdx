@@ -7,18 +7,16 @@ activeId: cookbook/sound-audio
 
 import CookbookCase from '../../../components/CookbookCase.tsx';
 
-# The timbre is more accurate and the sound is more realistic
-
-Support for specifying reference audio, accurately restoring the specified timbre, and synchronization between sound and picture.
+## Truer Timbre, More Authentic Voice
 
 <CookbookCase 
   client:load
   title="Case 1"
-  prompt={`固定镜头，中央鱼眼镜头透过圆形孔洞向下窥视，参考视频1的鱼眼镜头，让@视频2中的马看向鱼眼镜头，参考@视频1中的说话动作，背景BGM参考@视频3中的音效。`}
+  prompt={`Static camera, a fish-eye lens looking downward through a circular hole in the center, referring to the fish-eye lens in Video1. Have the horse in @Video2 look into the fish-eye lens, reference the speaking action in @Video1, and the background BGM references the sound effects in @Video3.`}
   inputAssets={[
     { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-1.mp4' },
     { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-2.mp4' },
-    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-3.mp4' }
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-1-3.mp4' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-1-4.mp4"
 />
@@ -26,12 +24,12 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 2"
-  prompt={`根据提供的写字楼宣传照，生成一段15秒电影级写实风格的地产纪录片，采用2.35:1宽银幕，24fps，细腻的画面风格，其中旁白的音色参考@视频1，拍摄 "写字楼的生态"，呈现楼内不同企业的运作，结合旁白阐述写字楼如何成为一个充满活力的商业生态系统.`}
+  prompt={`Based on the provided promotional photo of the office building, generate a 15-second cinematic photorealistic style real estate documentary using a 2.35:1 widescreen aspect ratio, 24fps, and delicate visual style. The voiceover's timbre refers to @Video1. Shoot "the ecology of the office building", showing how various enterprises operate within the building, combined with the voiceover explaining how the office building becomes a vibrant business ecosystem.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-2.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-2-3.png' },
-    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-2-4.mp4' }
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-2-4.mp4' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-2-5.mp4"
 />
@@ -39,9 +37,11 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 3"
-  prompt={`在"猫狗吐槽间"里的一段吐槽对话，要求情感丰沛，符合脱口秀表演：\n喵酱（猫主持，舔毛翻眼）："家人们谁懂啊，我身边这位，每天除了摇尾巴、拆沙发，就只会用那种"我超乖求摸摸"的眼神骗人类零食，明明拆家的时候比谁都凶，还好意思叫旺仔，我看叫"旺拆"还差不多哈哈哈"\n旺仔（狗主持，歪头晃尾巴）："你还好意思说我？你每天睡18个小时，醒了就蹭人类腿要罐头，掉毛掉得人类黑衣服上全是你的毛，人家扫完地，你转身又在沙发上滚一圈，还好意思装高冷贵族？"`}
+  prompt={`A roasting conversation in the "Cat & Dog Roasting Room", requiring rich emotion, fitting a stand-up comedy performance:
+Meow-chan (Cat host, licking fur and rolling eyes): "Who understands, family? The one next to me only knows how to wag his tail, tear apart the sofa all day, and use that 'I'm super good, please pet me' look to scam humans for snacks. He is clearly the fiercest when tearing down the house, how can he be called Wang Zai [Prosperous Boy], I think he should be called 'Wang Chai' [Prosperous Tear-Down], hahaha."
+Wang Zai (Dog host, tilting head and wagging tail): "You have the nerve to talk about me? You spend 18 hours sleeping a day, wake up to rub against human legs for cans, and shed fur all over humans' black clothes. When they're done sweeping, you turn around and roll directly on the sofa. How do you have the face to act like aloof royalty?"`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-3-1.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-3-1.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-3-2.mp4"
 />
@@ -49,9 +49,9 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 4"
-  prompt={`豫剧经前桥段《铡美案》的伴奏响起，左侧的黑衣包拯指着右侧的红衣陈世美，咬牙切齿地唱着豫剧："刀对鞘，真凭实据你敢不招？" 陈世美的眼珠左右滴溜溜乱转，寻找着权宜之策，面色窘迫至极。此时，画面外传来一声豫剧旦角的念白："且慢！"包拯和陈世美一齐向画面右侧看去。`}
+  prompt={`The accompaniment of the intro to the Henan Opera "Executing Chen Shimei" plays. Bao Zheng in black clothes on the left points at Chen Shimei in red clothes on the right, singing the Henan Opera through gritted teeth: "When the blade meets the sheath, with absolutely solid evidence, do you dare not confess?" Chen Shimei's eyes dart left and right wildly, searching for an expedient strategy, his face extremely embarrassed. At this moment, a Henan Opera Dan (female role) character's spoken line comes from off-screen: "Hold on!" Bao Zheng and Chen Shimei simultaneously look toward the right side of the screen.`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-4-1.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-4-1.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-4-2.mp4"
 />
@@ -59,9 +59,9 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 5"
-  prompt={`生成一个15秒的MV视频。关键词：稳重构图 / 轻推拉 / 低角度英雄感 / 纪实但高级A超广角建立镜头，低机位轻微仰拍，悬崖土路与复古旅行车占画面下三分之一，远处海面与地平线拉开空间，夕阳侧逆光体积光穿过尘粒，电影级构图，真实胶片颗粒，微风吹动衣角。`}
+  prompt={`Generate a 15-second music video. Keywords: steady composition / subtle push and pull / low-angle heroic feel / documentary but premium wide-angle establishing shot. Low camera angle slight tilt-up, a cliff dirt road and a vintage station wagon occupy the lower third of the frame, with the distant ocean and horizon opening up the space. Sunset backlight casts volumetric light through the dust particles. Cinematic level composition, authentic film grain, as the breeze flutters the corners of clothes.`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-5-1.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-5-1.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-5-2.mp4"
 />
@@ -69,9 +69,9 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 6"
-  prompt={`画面中间戴帽子的女孩温柔地唱着说"I'm so proud of my family!"，之后转身拥抱中间的黑人女孩。黑人女孩感动地回应"My sweetie, you're the heart of our family"，回抱她。左侧的黄衣服男孩开心地说"Folks, let's dance together to celebrate!" 最右侧的女孩紧接着回复： "I'll bring the music!"，背景拉美音乐响起，左侧穿橙色裙的女性（朱丽叶塔）笑着点头，右侧扎辫女性（路易莎）握紧拳头挥动手臂。人群中有人开始踏起步子，孩子们跟着节奏拍手，整个家族即将围成圈，伴着欢快的音乐，裙摆飞扬，在五彩的街道上尽情舞动，传递着喜悦与温暖。`}
+  prompt={`The girl wearing the hat in the middle gently sings saying "I'm so proud of my family!", then turns around and embraces the Black girl in the middle. The Black girl is touched and responds, "My sweetie, you're the heart of our family," returning the hug. The boy in yellow on the left happily says, "Folks, let's dance together to celebrate!" The girl on the far right follows up replying: "I'll bring the music!" Latin music starts playing in the background; the woman in the orange dress on the left (Julieta) smiles and nods, while the woman with braided hair on the right (Luisa) clenches her fists and waves her arms. People in the crowd start stepping, kids clap to the rhythm, and the whole family is about to form a circle. Along with the joyful music, dresses twirl, as they dance freely on the colorful streets, conveying joy and warmth.`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-6-1.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-6-1.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-6-2.mp4"
 />
@@ -79,9 +79,9 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 7"
-  prompt={`固定镜头。站着的壮汉（队长）握拳挥臂用西班牙语说着："三分钟后突袭！"，金发队员站在检查枪械，绿发队员握紧战术手电。黑人队员搭肩问同伴用西班牙语说："侧翼包抄？"队长点头用西班牙语说："老规矩，活口留审讯。"全员肃然，装备碰撞声中完成战术手势，默契起身，大家都严阵以待，左侧两个男生也争先站起来准备战斗。`}
+  prompt={`Static camera. The burly standing man (Team Leader) clenches his fist, waves his arm, and says in Spanish: "Raid in three minutes!" A blonde team member stands checking their gun, and a green-haired team member grips a tactical flashlight tightly. A Black team member puts a hand on his comrade's shoulder and asks in Spanish: "Flank?" The leader nods and says in Spanish: "Usual rules, leave them alive for interrogation." Everyone looks serious; amidst the clatter of equipment colliding, they complete their tactical hand signals, stand up with tacit understanding, and everyone is braced for action. Two boys on the left also scramble to stand up, getting ready to fight.`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-7-1.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-7-1.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-7-2.mp4"
 />
@@ -89,11 +89,14 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 8"
-  prompt={`0-3秒：开头闹钟响起来，画面朦胧中出现画面1； \n3-10秒：快速摇镜头，转向对面特写男人面部，男人无奈的叫女生起床，语气和音色参考@视频1； \n10-12秒：女生撅着嘴躲进被子里面； \n12-15秒：切换到男主全身，他叹着气说："真拿你没办法！"`}
+  prompt={`0-3 seconds: At the beginning, the alarm goes off, and Image 1 appears hazily. 
+3-10 seconds: A swift pan cuts to a close-up of the man's face opposite; the man helplessly calls for the girl to wake up, with his tone and timbre referencing @Video1. 
+10-12 seconds: The girl pouts and buries herself under the covers. 
+12-15 seconds: Cuts to a full-body shot of the male lead; he sighs, saying: "There's really nothing I can do with you!"`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-8-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-8-2.png' },
-    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-8-3.mp4' }
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/7-8-3.mp4' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-8-4.mp4"
 />
@@ -101,11 +104,15 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 9"
-  prompt={`@图片1的猴子走向奶茶店柜台，镜头跟随在他身后，一位@图片2的比熊服务员正在吧台处擦拭制作工具，猴子向服务员用四川口音点单："幺妹儿，霸王别姬有得没得？"\n切镜，特写。\n服务员放下手里的活，怪异地看了老头一眼后回答："没得，美式要不要得嘛"\n切镜，镜头给到猴子。\n他挠了挠头念念有词："没事……？我有事！孙儿叫我来买个奶茶，就叫个撒子霸王别姬嘛"`}
+  prompt={`The monkey from @Image1 walks toward the counter of a milk tea shop. The camera follows closely from behind. A Bichon Frise server from @Image2 is wiping coffee making tools at the bar. The monkey orders from the server using a Sichuan accent: "Girl, do you have Bawang Chaji (Chagee)?"
+Camera cut, close-up.
+The server puts down her work, gives the old man a strange look, and replies: "No, do you want an Americano?"
+Camera cut, camera on the monkey.
+He scratches his head, mumbling: "No matter...? I have a matter! My grandson asked me to buy some milk tea, told me to get some Bawang Chaji."`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-2.png' },
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-3.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-9-3.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-9-4.mp4"
 />
@@ -113,10 +120,9 @@ Support for specifying reference audio, accurately restoring the specified timbr
 <CookbookCase 
   client:load
   title="Case 10"
-  prompt={`用科普风格和音色，将图片1中的内容演绎出来，内容包括悟空为过火焰山，到翠云山向铁扇公主借芭蕉扇。铁扇公主因红孩儿被悟空降伏拜观音为童子，母子分离，不肯借扇还欲报仇。悟空好言相劝无果，二人随即起了争执的小故事进行讲解。`}
+  prompt={`Perform the contents of Image 1 using a scientific popularization (edutainment) style and timbre. The content involves explaining the short story of Wukong going to Mount Cuiyun to borrow the Plantain Fan from Princess Iron Fan in order to cross the Flaming Mountains. Because her son Red Boy was subdued by Wukong and made a disciple by Guanyin, leading to mother and son separating, Princess Iron Fan refuses to lend the fan and even wants revenge. Wukong's kind persuasion fails, and the two consequently get into a dispute.`}
   inputAssets={[
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-10-1.jpg' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/7-10-1.jpg' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/7-10-2.mp4"
 />
-

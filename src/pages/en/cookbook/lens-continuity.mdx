@@ -7,12 +7,12 @@ activeId: cookbook/lens-continuity
 
 import CookbookCase from '../../../components/CookbookCase.tsx';
 
-# Lens continuity (one shot to the end) is stronger
+## Stronger Lens Continuity (One-Take Capability)
 
 <CookbookCase 
   client:load
   title="Case 1"
-  prompt={`@Picture 1@Picture 2@Picture 3@Picture 4@Picture 5, a one-shot tracking shot, following the runner from the street up the stairs, through the corridor, onto the roof, and finally overlooking the city.`}
+  prompt={`@Image1 @Image2 @Image3 @Image4 @Image5, a one-take tracking shot, following a runner from the street up the stairs, through a corridor, onto the roof, ultimately overlooking the city.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-2.png' },
@@ -26,11 +26,11 @@ import CookbookCase from '../../../components/CookbookCase.tsx';
 <CookbookCase 
   client:load
   title="Case 2"
-  prompt={`Taking @Picture 1 as the first frame, the picture is zoomed out of the plane window. Clouds slowly float into the frame. One of them is a cloud decorated with colorful jelly beans, always in the center of the picture, and then slowly transforms into the ice cream of @Picture 2. The camera zooms back to the cabin. @Picture 3, who is sitting by the window, reaches out to take the ice cream from the window and takes a bite. His mouth is covered with cream and a sweet smile spreads on his face.`}
+  prompt={`Using @Image1 as the starting frame, the screen zooms out to the airplane window. Clusters of clouds slowly drift into the frame, one of which is adorned with colorful jelly beans, remaining centered in the shot. It slowly transforms into the ice cream from @Image2. The camera then pulls back into the cabin, where the person in @Image3 sitting by the window reaches out to take the ice cream, takes a bite, getting cream all over their mouth, and shows a sweet smile.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-2.png' },
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-3.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-3.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/8-2-4.mp4"
 />
@@ -38,12 +38,12 @@ import CookbookCase from '../../../components/CookbookCase.tsx';
 <CookbookCase 
   client:load
   title="Case 3"
-  prompt={`In the style of a spy film, @Picture 1 is the first frame. The camera follows the female agent in a red windbreaker walking forward. The camera follows the panoramic view. Passers-by keep blocking the woman in red as she walks to a corner. Refer to the corner building in @Picture 2. The fixed shot of the woman in red leaves the screen and disappears around the corner. A girl wearing a mask hides in the corner and stares at her fiercely. The image of the masked girl refers to @Picture 3. Only the image is referenced. The girl is standing at the corner. The camera panned forward to the female agent in red. She walked into a mansion and disappeared. For the mansion, please refer to @Picture 4. Don’t cut the camera during the whole process, just take one shot to the end.`}
+  prompt={`Spy movie style, using @Image1 as the starting frame, the camera follows head-on a female agent in a red trench coat walking forward. A panoramic tracking shot, with passersby constantly obstructing the lady in red. Walking to a corner, referring to the corner building in @Image2, a static shot of the woman in red leaving the frame, disappearing around the corner. A girl wearing a mask is hiding at the corner glaring at her viciously, the mask girl's image refers to @Image3 (only reference the image). The girl stands at the corner. The camera pans forward toward the female agent in red, who enters a mansion and disappears. The mansion refers to @Image4. Do not cut the camera throughout the entire process, keep it as a one-take.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-2.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-3.png' },
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-4.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-4.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/8-3-5.mp4"
 />
@@ -51,12 +51,12 @@ import CookbookCase from '../../../components/CookbookCase.tsx';
 <CookbookCase 
   client:load
   title="Case 4"
-  prompt={`Based on the outdoor shot of @Picture 1, the first-person subjective perspective zooms in to a close-up view of the environment inside the wooden house. A deer @Picture 2 and a sheep @Picture 3 are drinking tea and chatting by the fire. The style of the close-up tea cup when the camera moves forward is referred to @Picture 4.`}
+  prompt={`Based on the exterior shot of @Image1, the first-person subjective perspective quickly pushes into a close-up of the environment inside the wooden house. A small deer @Image2 and a sheep @Image3 are drinking tea and chatting by the hearth. The camera pushes in for a close-up of the teacup, with the style referring to @Image4.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-2.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-3.png' },
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-4.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-4.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/8-4-5.mp4"
 />
@@ -64,13 +64,13 @@ import CookbookCase from '../../../components/CookbookCase.tsx';
 <CookbookCase 
   client:load
   title="Case 5"
-  prompt={`@Picture 1@Picture 2@Picture 3@Picture 4@Picture 5, a thrilling shot of the roller coaster from the subjective perspective. The speed of the roller coaster is getting faster and faster.`}
+  prompt={`@Image1 @Image2 @Image3 @Image4 @Image5, a subjective first-person perspective, one-take thrilling roller coaster ride, with the roller coaster getting faster and faster.`}
   inputAssets={[
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-1.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-2.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-3.png' },
     { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-4.png' },
-    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-5.png' }
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-5.png' },
   ]}
   outputVideo="https://cdn.weniai.com/seedance/8-5-6.mp4"
 />
