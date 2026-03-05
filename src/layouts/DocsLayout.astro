@@ -36,6 +36,8 @@ const tocTitle = lang === 'en' ? 'ON THIS PAGE' : '本页内容';
 const langSwitchUrl = localizedPath(lang === 'en' ? 'zh' : 'en', activeId);
 const editOnGitHubText = lang === 'en' ? 'Edit this page on GitHub' : '在 GitHub 上编辑此页';
 const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues`;
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 ---
 
 <!DOCTYPE html>
@@ -45,6 +47,20 @@ const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | lytai API Documentation</title>
   <link rel="icon" type="image/svg+xml" href={`${baseUrl}logo.svg`}>
+  {googleSiteVerification && (
+    <meta name="google-site-verification" content={googleSiteVerification} />
+  )}
+  {gaMeasurementId && (
+    <>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
+      <script is:inline>{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${gaMeasurementId}');
+      `}</script>
+    </>
+  )}
 </head>
 <body class="bg-[#000000] text-[#f0f6fc] overflow-x-hidden antialiased">
   <div class="min-h-screen w-full">
