@@ -51,18 +51,8 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang, switch
               }
             }}
           >
-            <svg className="w-8 h-6 mr-3 rounded" viewBox="0 0 60 30">
-              <clipPath id="t">
-                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-              </clipPath>
-              <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-              <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#t)" stroke="#C8102E" strokeWidth="4" />
-              <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
-              <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6" />
-            </svg>
+
             <div className="flex-1">
-              <div className="text-sm font-medium text-gray-100">English</div>
               <div className="text-xs text-gray-400">English</div>
             </div>
             {currentLang === 'en' && (
@@ -83,16 +73,8 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang, switch
               }
             }}
           >
-            <svg className="w-8 h-6 mr-3 rounded" viewBox="0 0 60 40">
-              <rect width="60" height="40" fill="#de2910" />
-              <polygon points="15,8 16.18,11.82 20,13 16.18,14.18 15,18 13.82,14.18 10,13 13.82,11.82" fill="#ffde00" />
-              <polygon points="25,6 25.5,7.5 27,8 25.5,8.5 25,10 24.5,8.5 23,8 24.5,7.5" fill="#ffde00" />
-              <polygon points="28,11 28.5,12.5 30,13 28.5,13.5 28,15 27.5,13.5 26,13 27.5,12.5" fill="#ffde00" />
-              <polygon points="28,16 28.5,17.5 30,18 28.5,18.5 28,20 27.5,18.5 26,18 27.5,17.5" fill="#ffde00" />
-              <polygon points="25,21 25.5,22.5 27,23 25.5,23.5 25,25 24.5,23.5 23,23 24.5,22.5" fill="#ffde00" />
-            </svg>
+
             <div className="flex-1">
-              <div className="text-sm font-medium text-gray-100">Chinese</div>
               <div className="text-xs text-gray-400">中文</div>
             </div>
             {currentLang === 'zh' && (

@@ -216,6 +216,13 @@ const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues
 
         <!-- Main Content -->
         <main class="w-full max-w-4xl px-4 md:px-6 lg:px-8 py-6 md:py-8">
+          <!-- Mobile Header (Hidden on large screens) -->
+          <div class="lg:hidden flex justify-end mb-6">
+            <div class="w-48">
+              <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
+            </div>
+          </div>
+
           <article class="docs-content">
             <slot />
           </article>
@@ -257,7 +264,25 @@ const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
           <!-- Copyright -->
           <div class="text-sm text-gray-600">
-            © 2026 lytai. All rights reserved.
+            © 2026 lytai.studio All rights reserved.
+          </div>
+          <div class="text-sm text-gray-500 flex flex-wrap items-center gap-4">
+            <span>Models:</span>
+            <a href="https://seed.bytedance.com/en/seedance2_0" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+              Seedance 2.0
+            </a>
+            <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+              DeepSeek
+            </a>
+            <a href="https://klingai.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+              Kling
+            </a>
+            <a href="https://deepmind.google/technologies/veo/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+              Veo
+            </a>
+            <a href="https://openai.com/sora" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+              Sora
+            </a>
           </div>
         </div>
       </div>
