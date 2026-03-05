@@ -1,0 +1,46 @@
+---
+layout: ../../layouts/DocsLayout.astro
+title: Creativity & Plot
+lang: en
+activeId: cookbook/story-plot
+---
+
+import CookbookCase from '../../components/CookbookCase.tsx';
+
+## Model's Creativity and Plot Completion Capabilities
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Perform a comic adaptation of @Image1 in order from left to right, top to bottom. Keep the characters' dialogue consistent with what's on the image, add special sound effects for storyboard transitions and key plot moments, with an overall humorous and witty style; the performance method refers to @Video1.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-1-1.jpg' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/5-1-2.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-1-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Reference the storyboard script of the featurette in @Image1, reference the storyboards, framing, camera movement, visuals, and copywriting of @Image1, to create a 15s healing intro sequence about the "Four Seasons of Childhood".`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-2-1.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-2-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Reference the audio of Video 1, and using Image 1, Image 2, Image 3, Image 4, and Image 5 as inspiration, diverge into an emotionally driven video. The background music refers to @Video1.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-4.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/5-4-5.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/5-4-5.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/5-4-6.mp4"
+/>

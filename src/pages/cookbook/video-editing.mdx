@@ -1,0 +1,69 @@
+---
+layout: ../../layouts/DocsLayout.astro
+title: Video Editing
+lang: en
+activeId: cookbook/video-editing
+---
+
+import CookbookCase from '../../components/CookbookCase.tsx';
+
+## High Usability of Video Editing
+Sometimes you already have a video and don't want to find images or redo it from scratch; you just hope to adjust a specific short segment of action, extend it by a few seconds, or make the character's performance closer to your ideas. Now you can directly use the existing video as input to make targeted modifications to specified segments, actions, or rhythms without changing the rest of the content. You can quickly complete adjustments without generating it from scratch.
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Subvert the plot in @Video1. The man's eyes instantly turn from gentle to cold and ruthless. In the moment the female lead is caught off guard, he abruptly pushes her over the bridge and into the water. The action is crisp and clear, carrying premeditated resoluteness, without the slightest hesitation, completely subverting the original affectionate character setting. The moment the female lead falls into the water, there is no scream, only a look of disbelief. She looks up and yells at the male lead: "You were lying to me from the very beginning!" The male lead stands on the bridge, a sinister smile on his face, muttering quietly to the water's surface: "This is what you owe my family."`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/9-1-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/9-1-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Subvert the entire plot of @Video1
+0–3s visuals: A man in a suit sits in a bar, looking calm, lightly swirling a wine glass in his hand. The camera slowly pushes in, with premium lighting and shadows, and a serious atmosphere. The ambient sound is low, and the suited man whispers, "This deal, is huge."
+3–6s visuals: The woman behind him asks nervously, "How huge?" The suited man looks up, lowering his voice: "Extremely huge." The camera cuts to a close-up of his hand—he puts the glass down, full aura.
+6–9s visuals: Suddenly the suited man takes out from under the table—a huge snack gift bag of exaggerated volume, and heavily sets it on the table with a "thud".
+9–12s visuals: The woman behind him, moving her hand that was originally on her waist from tense to relaxed, loosens up her entire expression. The visual atmosphere becomes lighthearted.
+13–15s visuals: The suited man takes out a pack of snacks to give to the woman, the camera zooms out showing a panoramic view of the tavern, the picture becomes transparent and blurry—Subtitles pop up: "No matter how busy you are, remember to eat some snacks~"`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/9-2-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/9-2-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Replace the female lead singer in Video 1 with the male lead singer from Image 1, completely mimicking the actions of the original video without camera cuts. The band plays music.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/9-3-1.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/9-3-2.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/9-3-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`Change the woman's hairstyle in Video 1 to long red hair. The great white shark from Image 1 slowly emerges half a head out behind her.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/9-4-1.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/9-4-2.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/9-4-3.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`Video 1 camera pans right. The busy fried chicken shop boss hands the fried chicken to the queuing customer, saying in Mandarin "finishing his, then yours, everyone please queue politely." Right after speaking, he goes to grab a paper bag to pack the fried chicken. A close-up shows the boss holding a paper bag printed with Image 1, followed by a hand close-up showing it being handed to the customer.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/9-5-1.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/9-5-2.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/9-5-3.mp4"
+/>

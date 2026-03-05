@@ -1,0 +1,57 @@
+---
+layout: ../../layouts/DocsLayout.astro
+title: Video Extension
+lang: en
+activeId: cookbook/video-extension
+---
+
+import CookbookCase from '../../components/CookbookCase.tsx';
+
+## Video Extension
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`Extend the video for 15s. Reference the image of the donkey riding a motorcycle from @Image1 and @Image2, adding a wildly imaginative advertisement section.
+Visual 1: Fixed side camera shot, a donkey riding a motorcycle rushes out of a fence, the chicken next to it is startled.
+Visual 2: The donkey rides the motorcycle circling on the sand. First a close-up of the motorcycle tire, then cut to an overhead shot in mid-air of the donkey riding the motorcycle performing circling stunts, kicking up smoke.
+Visual 3: The background is a snowy mountain scene, the donkey rides the motorcycle flying over a hillside. The ad slogan is behind the subject in a masked form (when the donkey and motorcycle fly past) showing "Inspire Creativity, Enrich Life" in the middle. Finally, the motorcycle flies past, kicking up a cloud of dust.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-1-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-1-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-1-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-1-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Extend the video by 6s. Passionate electric guitar music plays, and the ad font "JUST DO IT" appears in the middle of the video and gradually fades out. The camera tilts up to the ceiling, a robust man is pulling gymnastic rings. His upper body wears the tight fitness clothing from @Image1, with the "Fitness" logo from @Image2 printed on the back. The man pulls up the rings with his muscular upper limbs, and subsequently the closing ad text "DO SOME SPORT" appears in the middle of the video.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-2-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/6-2-2.png' },
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-2-3.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-2-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Extend @Video1 by 15 seconds. 1-5 seconds: Light and shadows through the blinds smoothly slide over the wooden table and the cup wall, tree branches sway with slight breathing-like movements. 6-10 seconds: A coffee bean gently falls from the top of the frame. The camera pushes into the coffee bean until the screen fades to black. 11-15 seconds: English text gradually appears: Line 1 "Lucky Coffee ", Line 2 "Breakfast", Line 3 "AM 7:00-10:00".`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-3-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-3-2.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`Extend forward by 10s. In the warm afternoon light, the camera starts from a row of awnings at the corner of the street rustled by the breeze, slowly pans down to a few small daisies popping up at the base of the wall. Following that, the protagonist's red canvas shoes appear in the frame. He is squatting in front of the street flower stall, smiling as he gathers a large bouquet of sunflowers into his arms, petals brushing against his white T-shirt. As he turns to step on his skateboard, the flower stall boss smilingly shouts, "Careful, the petals might fly away!" He waves at the boss, and then begins to glide. A few golden petals have already freed themselves from the bouquet ahead of time, falling onto the deck of the skateboard.`}
+  inputAssets={[
+    { type: 'video', url: 'https://cdn.weniai.com/seedance/6-4-1.mp4' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/6-4-2.mp4"
+/>

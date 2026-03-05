@@ -1,0 +1,76 @@
+---
+layout: ../../layouts/DocsLayout.astro
+title: Lens Continuity
+lang: en
+activeId: cookbook/lens-continuity
+---
+
+import CookbookCase from '../../components/CookbookCase.tsx';
+
+## Stronger Lens Continuity (One-Take Capability)
+
+<CookbookCase 
+  client:load
+  title="Case 1"
+  prompt={`@Image1 @Image2 @Image3 @Image4 @Image5, a one-take tracking shot, following a runner from the street up the stairs, through a corridor, onto the roof, ultimately overlooking the city.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-4.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-1-5.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/8-1-6.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 2"
+  prompt={`Using @Image1 as the starting frame, the screen zooms out to the airplane window. Clusters of clouds slowly drift into the frame, one of which is adorned with colorful jelly beans, remaining centered in the shot. It slowly transforms into the ice cream from @Image2. The camera then pulls back into the cabin, where the person in @Image3 sitting by the window reaches out to take the ice cream, takes a bite, getting cream all over their mouth, and shows a sweet smile.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-2-3.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/8-2-4.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 3"
+  prompt={`Spy movie style, using @Image1 as the starting frame, the camera follows head-on a female agent in a red trench coat walking forward. A panoramic tracking shot, with passersby constantly obstructing the lady in red. Walking to a corner, referring to the corner building in @Image2, a static shot of the woman in red leaving the frame, disappearing around the corner. A girl wearing a mask is hiding at the corner glaring at her viciously, the mask girl's image refers to @Image3 (only reference the image). The girl stands at the corner. The camera pans forward toward the female agent in red, who enters a mansion and disappears. The mansion refers to @Image4. Do not cut the camera throughout the entire process, keep it as a one-take.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-3-4.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/8-3-5.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 4"
+  prompt={`Based on the exterior shot of @Image1, the first-person subjective perspective quickly pushes into a close-up of the environment inside the wooden house. A small deer @Image2 and a sheep @Image3 are drinking tea and chatting by the hearth. The camera pushes in for a close-up of the teacup, with the style referring to @Image4.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-4-4.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/8-4-5.mp4"
+/>
+
+<CookbookCase 
+  client:load
+  title="Case 5"
+  prompt={`@Image1 @Image2 @Image3 @Image4 @Image5, a subjective first-person perspective, one-take thrilling roller coaster ride, with the roller coaster getting faster and faster.`}
+  inputAssets={[
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-1.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-2.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-3.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-4.png' },
+    { type: 'image', url: 'https://cdn.weniai.com/seedance/8-5-5.png' },
+  ]}
+  outputVideo="https://cdn.weniai.com/seedance/8-5-6.mp4"
+/>
