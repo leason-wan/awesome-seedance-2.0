@@ -15,6 +15,7 @@ const { frontmatter } = Astro.props as any;
 const title = frontmatter?.title || Astro.props.title;
 const lang = frontmatter?.lang || Astro.props.lang || 'en';
 const activeId = frontmatter?.activeId || Astro.props.activeId;
+const baseUrl = import.meta.env.BASE_URL;
 
 // Create refs for use in template expressions
 const navItems = navigation.map(group => ({
@@ -24,13 +25,13 @@ const navItems = navigation.map(group => ({
     title: item.title[lang],
     icon: item.icon || '',
     isActive: item.id === activeId,
-    href: `/docs/${lang}/${item.id}/`
+    href: `${baseUrl}${lang}/${item.id}/`
   }))
 }));
 
 const backHomeText = lang === 'en' ? 'Back to Home' : '返回首页';
 const tocTitle = lang === 'en' ? 'ON THIS PAGE' : '本页内容';
-const langSwitchUrl = `/docs/${lang === 'en' ? 'zh' : 'en'}/${activeId}/`;
+const langSwitchUrl = `${baseUrl}${lang === 'en' ? 'zh' : 'en'}/${activeId}/`;
 const editOnGitHubText = lang === 'en' ? 'Edit this page on GitHub' : '在 GitHub 上编辑此页';
 const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues`;
 ---
@@ -41,7 +42,7 @@ const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | lytai API Documentation</title>
-  <link rel="icon" type="image/svg+xml" href="/docs/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href={`${baseUrl}logo.svg`}>
 </head>
 <body class="bg-[#000000] text-[#f0f6fc] overflow-x-hidden antialiased">
   <div class="min-h-screen w-full">

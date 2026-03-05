@@ -11,7 +11,7 @@ export default defineConfig({
 		mdx(),
 		tailwind(),
 	],
-	base: '/docs',
+	base: '/',
 	output: 'static',
 	i18n: {
 		defaultLocale: 'en',
