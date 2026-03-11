@@ -38,6 +38,12 @@ const editOnGitHubText = lang === 'en' ? 'Edit this page on GitHub' : '在 GitHu
 const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues`;
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const gaInitScript = gaMeasurementId
+  ? `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaMeasurementId}');`
+  : '';
 ---
 
 <!DOCTYPE html>
@@ -53,12 +59,7 @@ const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.
   {gaMeasurementId && (
     <>
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
-      <script is:inline>{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${gaMeasurementId}');
-      `}</script>
+      <script is:inline set:html={gaInitScript}></script>
     </>
   )}
 </head>

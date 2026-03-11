@@ -6,6 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "cf:deploy": "npx wrangler pages deploy dist",
+    "deploy": "node scripts/deploy.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

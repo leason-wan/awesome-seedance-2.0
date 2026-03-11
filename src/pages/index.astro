@@ -3,6 +3,13 @@ const baseUrl = import.meta.env.BASE_URL;
 const targetUrl = `${baseUrl}cookbook/`;
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const gaInitScript = gaMeasurementId
+  ? `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaMeasurementId}');`
+  : '';
+const redirectScript = `window.location.replace('${targetUrl}');`;
 ---
 
 <!DOCTYPE html>
@@ -18,17 +25,12 @@ const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.
   {gaMeasurementId && (
     <>
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
-      <script is:inline>{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${gaMeasurementId}');
-      `}</script>
+      <script is:inline set:html={gaInitScript}></script>
     </>
   )}
 </head>
 <body>
   <p>Redirecting to <a href={targetUrl}>{targetUrl}</a>...</p>
-  <script is:inline>{`window.location.replace('${targetUrl}');`}</script>
+  <script is:inline set:html={redirectScript}></script>
 </body>
 </html>
