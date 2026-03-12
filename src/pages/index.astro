@@ -1,6 +1,6 @@
 ---
-const baseUrl = import.meta.env.BASE_URL;
-const targetUrl = `${baseUrl}cookbook/`;
+import Home from "../components/Home";
+
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 const gaInitScript = gaMeasurementId
@@ -9,7 +9,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${gaMeasurementId}');`
   : '';
-const redirectScript = `window.location.replace('${targetUrl}');`;
 ---
 
 <!DOCTYPE html>
@@ -17,8 +16,7 @@ const redirectScript = `window.location.replace('${targetUrl}');`;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content={`0;url=${targetUrl}`} />
-  <title>Redirecting...</title>
+  <title>Lytai Studio</title>
   {googleSiteVerification && (
     <meta name="google-site-verification" content={googleSiteVerification} />
   )}
@@ -29,8 +27,7 @@ const redirectScript = `window.location.replace('${targetUrl}');`;
     </>
   )}
 </head>
-<body>
-  <p>Redirecting to <a href={targetUrl}>{targetUrl}</a>...</p>
-  <script is:inline set:html={redirectScript}></script>
+<body class="m-0 bg-black">
+  <Home client:load />
 </body>
 </html>
