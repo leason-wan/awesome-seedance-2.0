@@ -3,11 +3,19 @@ import React, { useState, useRef, useEffect } from 'react';
 interface LanguageSwitcherProps {
   currentLang: 'en' | 'zh';
   switchUrl: string;
+  dropdownPosition?: 'top' | 'bottom';
 }
 
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang, switchUrl }) => {
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+  currentLang,
+  switchUrl,
+  dropdownPosition = 'top'
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownClassName = dropdownPosition === 'bottom'
+    ? 'absolute top-full left-0 mt-2 w-full bg-gray-900 rounded-lg shadow-2xl border border-gray-800 py-2 z-50'
+    : 'absolute bottom-full left-0 mb-2 w-full bg-gray-900 rounded-lg shadow-2xl border border-gray-800 py-2 z-50';
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -39,7 +47,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang, switch
       </button>
 
       {isOpen && (
-        <div className="absolute bottom-full left-0 mb-2 w-full bg-gray-900 rounded-lg shadow-2xl border border-gray-800 py-2 z-50">
+        <div className={dropdownClassName}>
           {/* English */}
           <a
             href={currentLang === 'en' ? '#' : switchUrl}

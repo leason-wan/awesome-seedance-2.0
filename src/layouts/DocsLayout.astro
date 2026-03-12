@@ -85,7 +85,12 @@ gtag('config', '${gaMeasurementId}');`
           <div class="truncate text-xs uppercase tracking-[0.2em] text-gray-500">lytai docs</div>
         </div>
         <div class="w-[7.5rem] shrink-0">
-          <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
+          <LanguageSwitcher
+            client:load
+            currentLang={lang}
+            switchUrl={langSwitchUrl}
+            dropdownPosition="bottom"
+          />
         </div>
       </div>
     </div>
