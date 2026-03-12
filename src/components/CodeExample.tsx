@@ -122,7 +122,7 @@ const CodeExample: React.FC<CodeExampleProps> = ({ examples, title }) => {
   };
 
   return (
-    <div className="space-y-4 not-content max-w-full overflow-x-visible">
+    <div className="not-content max-w-full overflow-x-visible space-y-4">
       {title && (
         <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50 mb-4 tracking-tight">
           {title}
@@ -131,17 +131,17 @@ const CodeExample: React.FC<CodeExampleProps> = ({ examples, title }) => {
 
       <div className="rounded-lg overflow-hidden bg-white dark:bg-[#1e1e1e] shadow-lg max-w-full">
         <div
-          className="px-4 py-2 flex items-center justify-between overflow-x-auto"
+          className="flex items-center justify-between gap-3 overflow-x-auto px-3 py-2 sm:px-4"
           style={{
             backgroundColor: '#252526'
           }}
         >
-          <div className="flex gap-1 flex-nowrap">
+          <div className="flex min-w-0 flex-1 gap-1 overflow-x-auto flex-nowrap">
             {examples.map((example) => (
               <button
                 key={example.key}
                 onClick={() => setActiveTab(example.key)}
-                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-50 whitespace-nowrap ${
+                className={`shrink-0 whitespace-nowrap rounded-t-md px-3 py-2 text-xs font-medium transition-all duration-50 sm:px-4 sm:text-sm ${
                   activeTab === example.key
                     ? 'text-white border-b-2 border-blue-500'
                     : 'hover:text-white hover:bg-gray-700/30'
@@ -158,7 +158,7 @@ const CodeExample: React.FC<CodeExampleProps> = ({ examples, title }) => {
           </div>
           <button
             onClick={handleCopy}
-            className="p-2 hover:bg-gray-700/50 rounded transition-all duration-50 flex items-center justify-center"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded hover:bg-gray-700/50 transition-all duration-50"
             style={{
               color: '#cccccc',
               transition: 'all 0.05s ease'
@@ -180,7 +180,7 @@ const CodeExample: React.FC<CodeExampleProps> = ({ examples, title }) => {
           </button>
         </div>
 
-        <div className="bg-[#1e1e1e] dark:bg-[#1e1e1e] p-3 sm:p-4 overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
+        <div className="overflow-x-auto bg-[#1e1e1e] p-3 dark:bg-[#1e1e1e] sm:p-4" style={{ WebkitOverflowScrolling: 'touch' }}>
           <pre
             className="text-xs sm:text-sm font-mono leading-relaxed m-0"
             style={{

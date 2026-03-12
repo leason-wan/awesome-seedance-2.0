@@ -1,8 +1,7 @@
 ---
 import { navigation } from '../config/navigation';
 import LanguageSwitcher from '../components/LanguageSwitcher';
-
-import CopyPageButton from '../components/CopyPageButton';
+import DocsNav from '../components/DocsNav.astro';
 
 interface Props {
   title: string;
@@ -33,6 +32,8 @@ const navItems = navigation.map(group => ({
 
 const backHomeText = lang === 'en' ? 'Back to Home' : '返回首页';
 const tocTitle = lang === 'en' ? 'ON THIS PAGE' : '本页内容';
+const menuText = lang === 'en' ? 'Menu' : '菜单';
+const closeText = lang === 'en' ? 'Close navigation' : '关闭导航';
 const langSwitchUrl = localizedPath(lang === 'en' ? 'zh' : 'en', activeId);
 const editOnGitHubText = lang === 'en' ? 'Edit this page on GitHub' : '在 GitHub 上编辑此页';
 const githubEditUrl = `https://github.com/leason-wan/awesome-seedance-2.0/issues`;
@@ -65,182 +66,98 @@ gtag('config', '${gaMeasurementId}');`
 </head>
 <body class="bg-[#000000] text-[#f0f6fc] overflow-x-hidden antialiased">
   <div class="min-h-screen w-full">
+    <div class="lg:hidden border-b border-gray-800/80 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/80">
+      <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-5">
+        <button
+          type="button"
+          data-mobile-nav-toggle
+          class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gray-800 bg-gray-950 text-gray-200 transition-colors hover:border-gray-700 hover:text-white"
+          aria-controls="mobile-docs-nav"
+          aria-expanded="false"
+          aria-label={menuText}
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+        <div class="min-w-0 flex-1">
+          <div class="truncate text-sm font-semibold text-white">{title}</div>
+          <div class="truncate text-xs uppercase tracking-[0.2em] text-gray-500">lytai docs</div>
+        </div>
+        <div class="w-[7.5rem] shrink-0">
+          <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
+        </div>
+      </div>
+    </div>
 
+    <div
+      id="mobile-nav-backdrop"
+      data-mobile-nav-backdrop
+      class="pointer-events-none fixed inset-0 z-40 bg-black/70 opacity-0 transition-opacity duration-200 lg:hidden"
+      aria-hidden="true"
+    ></div>
 
+    <aside
+      id="mobile-docs-nav"
+      data-mobile-nav-drawer
+      class="fixed inset-y-0 left-0 z-50 w-[min(88vw,22rem)] -translate-x-full overflow-y-auto border-r border-gray-800 bg-black px-4 py-5 shadow-2xl transition-transform duration-200 lg:hidden"
+      aria-hidden="true"
+    >
+      <div class="mb-4 flex items-center justify-between gap-3">
+        <div>
+          <div class="text-xs uppercase tracking-[0.2em] text-gray-500">{menuText}</div>
+          <div class="text-sm font-semibold text-white">{title}</div>
+        </div>
+        <button
+          type="button"
+          data-mobile-nav-close
+          class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gray-800 bg-gray-950 text-gray-200 transition-colors hover:border-gray-700 hover:text-white"
+          aria-label={closeText}
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <DocsNav
+        navItems={navItems}
+        backHomeText={backHomeText}
+        lang={lang}
+        langSwitchUrl={langSwitchUrl}
+        mobile={true}
+      />
+    </aside>
 
-
-    <div class="flex min-h-screen">
+    <div class="flex min-h-screen min-w-0">
       <!-- Left Sidebar - Navigation (Hidden on mobile) -->
       <aside class="hidden lg:block w-64 flex-shrink-0 bg-[#000000] border-r border-gray-700/50">
         <div class="sticky top-8 px-6 py-8">
-
-
-            <!-- Back to Home -->
-            <a href="https://lytai.com/" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-              {backHomeText}
-            </a>
-
-            <nav class="space-y-4">
-              {navItems.map((group) => (
-                <div>
-                    <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                      {group.title}
-                    </h3>
-                  <ul class="space-y-1">
-                    {group.items.map((item) => (
-                      <li>
-                        <a
-                          href={item.href}
-                          class:list={[
-                            'flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all duration-200',
-                            item.isActive
-                              ? 'bg-blue-600/20 text-blue-300 font-semibold shadow-inner'
-                              : 'text-gray-400 hover:text-white hover:bg-gray-700/40'
-                          ]}
-                        >
-                          {item.icon === 'rocket' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'key' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'file-text' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'message-square' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'file-code' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'image' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'terminal' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'alert-triangle' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'code' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'help-circle' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                              <circle cx="12" cy="12" r="10"></circle>
-                              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                              <path d="M12 17h.01"></path>
-                            </svg>
-                          )}
-                          {item.icon === 'book' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
-                          )}
-                          {item.icon === 'zap' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                          )}
-                          {item.icon === 'layers' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M17.5 19L12 21.5L6.5 19M17.5 14L12 16.5L6.5 14M12 4L4.5 7.5L12 11L19.5 7.5L12 4Z" />
-                            </svg>
-                          )}
-                          {item.icon === 'video' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                          )}
-                          {item.icon === 'layout' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                            </svg>
-                          )}
-                          {item.icon === 'edit-3' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                            </svg>
-                          )}
-                          {item.icon === 'trending-up' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                          )}
-                          {item.icon === 'music' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                            </svg>
-                          )}
-                          {item.icon === 'repeat' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                            </svg>
-                          )}
-                          {item.icon === 'scissors' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M7 11a2 2 0 100-4 2 2 0 000 4zM17 11a2 2 0 100-4 2 2 0 000 4zM16 11l-2.001 2.001M8 11l6.5 6.5M14 13l1 1h4m-12 3h4l1-1" />
-                            </svg>
-                          )}
-                          {item.icon === 'activity' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                            </svg>
-                          )}
-                          {item.icon === 'smile' && (
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                              <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          )}
-                          {item.title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </nav>
-
-            <!-- Language Switcher at Bottom -->
-            <div class="mt-8 pt-8 border-t border-gray-700">
-              <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
-            </div>
-          </div>
+          <DocsNav
+            navItems={navItems}
+            backHomeText={backHomeText}
+            lang={lang}
+            langSwitchUrl={langSwitchUrl}
+          />
+        </div>
       </aside>
 
       <!-- Main Content Area -->
-      <div class="flex-1 flex">
+      <div class="flex min-w-0 flex-1">
         <!-- Spacer for centering (hidden on mobile) -->
         <div class="hidden xl:block flex-1"></div>
 
         <!-- Main Content -->
-        <main class="w-full max-w-4xl px-4 md:px-6 lg:px-8 py-6 md:py-8">
-          <!-- Mobile Header (Hidden on large screens) -->
-          <div class="lg:hidden flex justify-end mb-6">
-            <div class="w-48">
-              <LanguageSwitcher client:load currentLang={lang} switchUrl={langSwitchUrl} />
-            </div>
+        <main class="min-w-0 w-full max-w-4xl px-4 py-5 sm:px-5 sm:py-6 md:px-6 md:py-8 lg:px-8">
+          <div class="mb-5 lg:hidden">
+            <details class="group rounded-2xl border border-gray-800 bg-gray-950/70">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-medium text-gray-200">
+                <span>{tocTitle}</span>
+                <svg class="h-4 w-4 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </summary>
+              <div id="mobile-toc" class="border-t border-gray-800 px-4 py-3 text-sm space-y-2"></div>
+            </details>
           </div>
 
           <article class="docs-content">
@@ -248,12 +165,12 @@ gtag('config', '${gaMeasurementId}');`
           </article>
 
           <!-- Edit on GitHub -->
-          <div class="mt-12 pt-6 border-t border-gray-700">
+          <div class="mt-10 border-t border-gray-700 pt-6 sm:mt-12">
             <a
               href={githubEditUrl}
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+              class="inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
             >
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
@@ -280,27 +197,27 @@ gtag('config', '${gaMeasurementId}');`
 
     <!-- Footer -->
     <footer class="border-t border-gray-700/50 bg-[#000000]">
-      <div class="max-w-7xl mx-auto px-6 py-8">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+        <div class="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
           <!-- Copyright -->
           <div class="text-sm text-gray-600">
             © 2026 lytai.studio All rights reserved.
           </div>
-          <div class="text-sm text-gray-500 flex flex-wrap items-center gap-4">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-500">
             <span>Models:</span>
-            <a href="https://seed.bytedance.com/en/seedance2_0" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+            <a href="https://seed.bytedance.com/en/seedance2_0" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors hover:text-white">
               Seedance 2.0
             </a>
-            <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+            <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors hover:text-white">
               DeepSeek
             </a>
-            <a href="https://klingai.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+            <a href="https://klingai.com/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors hover:text-white">
               Kling
             </a>
-            <a href="https://deepmind.google/technologies/veo/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+            <a href="https://deepmind.google/technologies/veo/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors hover:text-white">
               Veo
             </a>
-            <a href="https://openai.com/sora" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap hover:text-white transition-colors">
+            <a href="https://openai.com/sora" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors hover:text-white">
               Sora
             </a>
           </div>
@@ -335,26 +252,40 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     /* Docs content styling - mobile-first approach */
+    html.docs-nav-open,
+    body.docs-nav-open {
+      overflow: hidden;
+    }
+
     .docs-content {
       color: #e1e4e8;
-      font-size: 16px;
-      line-height: 1.8;
+      font-size: 0.975rem;
+      line-height: 1.75;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .docs-content > * {
+      max-width: 100%;
+      min-width: 0;
     }
 
     @media (min-width: 768px) {
       .docs-content {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.7;
       }
     }
 
     .docs-content h1 {
-      font-size: 2.25rem;
+      font-size: clamp(1.9rem, 6vw, 2.5rem);
       font-weight: 800;
       color: #ffffff;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       margin-top: 0;
       letter-spacing: -0.02em;
+      line-height: 1.15;
     }
 
     @media (min-width: 768px) {
@@ -364,14 +295,15 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     .docs-content h2 {
-      font-size: 1.75rem;
+      font-size: clamp(1.35rem, 4.8vw, 1.8rem);
       font-weight: 700;
       color: #ffffff;
-      margin-top: 3rem;
-      margin-bottom: 1.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #3e4451;
       letter-spacing: -0.01em;
+      line-height: 1.25;
     }
 
     @media (min-width: 768px) {
@@ -382,11 +314,12 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     .docs-content h3 {
-      font-size: 1.375rem;
+      font-size: clamp(1.1rem, 4vw, 1.4rem);
       font-weight: 600;
       color: #ffffff;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
     }
 
     @media (min-width: 768px) {
@@ -397,10 +330,10 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     .docs-content p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: 0.875rem;
+      margin-bottom: 0.875rem;
       color: #e1e4e8;
-      line-height: 1.75;
+      line-height: 1.72;
     }
 
     .docs-content a {
@@ -415,8 +348,8 @@ gtag('config', '${gaMeasurementId}');`
 
     .docs-content ul,
     .docs-content ol {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: 0.875rem;
+      margin-bottom: 0.875rem;
       padding-left: 1.5rem;
     }
 
@@ -429,10 +362,10 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     .docs-content li {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
       color: #e1e4e8;
-      line-height: 1.8;
+      line-height: 1.72;
     }
 
     .docs-content li::marker {
@@ -461,7 +394,7 @@ gtag('config', '${gaMeasurementId}');`
       padding: 1rem;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      margin: 1rem 0;
+      margin: 0.875rem 0;
       font-size: 0.8125rem;
       line-height: 1.7;
       max-width: 100%;
@@ -490,11 +423,20 @@ gtag('config', '${gaMeasurementId}');`
       font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     }
 
+    .docs-content img,
+    .docs-content video,
+    .docs-content svg,
+    .docs-content iframe {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
     /* Tables - mobile-first */
     .docs-content table {
       width: 100%;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
       border-collapse: collapse;
       display: block;
       overflow-x: auto;
@@ -512,7 +454,7 @@ gtag('config', '${gaMeasurementId}');`
 
     .docs-content th {
       background-color: #282c34;
-      padding: 0.75rem;
+      padding: 0.65rem 0.75rem;
       text-align: left;
       font-weight: 600;
       border-bottom: 2px solid #3e4451;
@@ -526,7 +468,7 @@ gtag('config', '${gaMeasurementId}');`
     }
 
     .docs-content td {
-      padding: 0.5rem;
+      padding: 0.5rem 0.65rem;
       border-bottom: 1px solid #3e4451;
     }
 
@@ -538,10 +480,10 @@ gtag('config', '${gaMeasurementId}');`
 
     .docs-content blockquote {
       border-left: 4px solid #4b5263;
-      padding-left: 1.25rem;
-      margin: 1.5rem 0;
+      padding-left: 1rem;
+      margin: 1.25rem 0;
       color: #abb2bf;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     /* Prevent docs-content styles from affecting CodeExample components */
@@ -574,7 +516,14 @@ gtag('config', '${gaMeasurementId}');`
     /* Touch target improvements for mobile devices */
     @media (pointer: coarse) and (max-width: 768px) {
       /* Ensure minimum touch target size of 44x44px for touch devices */
-      button, a {
+      button,
+      summary,
+      [data-mobile-nav-toggle],
+      [data-mobile-nav-close],
+      aside a,
+      footer a,
+      #toc a,
+      #mobile-toc a {
         min-height: 44px;
         display: inline-flex;
         align-items: center;
@@ -583,6 +532,7 @@ gtag('config', '${gaMeasurementId}');`
       /* Improve link spacing on mobile */
       .docs-content a {
         padding: 2px 0;
+        overflow-wrap: anywhere;
       }
     }
   </style>
@@ -595,9 +545,9 @@ gtag('config', '${gaMeasurementId}');`
     // Generate table of contents
     function generateTOC() {
       const article = document.querySelector('article');
-      const toc = document.getElementById('toc');
+      const tocTargets = [document.getElementById('toc'), document.getElementById('mobile-toc')].filter(Boolean);
 
-      if (!article || !toc) return;
+      if (!article || tocTargets.length === 0) return;
 
       const headings = article.querySelectorAll('h2, h3');
       const tocItems: string[] = [];
@@ -616,12 +566,48 @@ gtag('config', '${gaMeasurementId}');`
         `);
       });
 
-      toc.innerHTML = tocItems.join('');
+      tocTargets.forEach((target) => {
+        target.innerHTML = tocItems.join('');
+      });
+    }
+
+    function initMobileNav() {
+      const root = document.documentElement;
+      const drawer = document.querySelector('[data-mobile-nav-drawer]');
+      const backdrop = document.querySelector('[data-mobile-nav-backdrop]');
+      const toggle = document.querySelector('[data-mobile-nav-toggle]');
+      const closeButton = document.querySelector('[data-mobile-nav-close]');
+
+      if (!drawer || !backdrop || !toggle || !closeButton) return;
+
+      const setOpen = (open) => {
+        root.classList.toggle('docs-nav-open', open);
+        drawer.classList.toggle('-translate-x-full', !open);
+        drawer.setAttribute('aria-hidden', String(!open));
+        backdrop.classList.toggle('pointer-events-none', !open);
+        backdrop.classList.toggle('opacity-0', !open);
+        toggle.setAttribute('aria-expanded', String(open));
+      };
+
+      toggle.addEventListener('click', () => setOpen(true));
+      closeButton.addEventListener('click', () => setOpen(false));
+      backdrop.addEventListener('click', () => setOpen(false));
+
+      drawer.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setOpen(false));
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          setOpen(false);
+        }
+      });
     }
 
     // Run on load
     document.addEventListener('DOMContentLoaded', () => {
       generateTOC();
+      initMobileNav();
     });
   </script>
 </body>

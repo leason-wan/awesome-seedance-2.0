@@ -61,7 +61,7 @@ const VideoModal = ({ src, onClose }: { src: string; onClose: () => void }) => {
             onClick={onClose}
         >
             <div
-                className="relative w-[90vw] max-w-5xl aspect-video rounded-xl overflow-hidden shadow-2xl"
+                className="relative aspect-video w-[94vw] max-w-5xl overflow-hidden rounded-xl shadow-2xl sm:w-[90vw]"
                 onClick={(e) => e.stopPropagation()}
             >
                 <video
@@ -77,7 +77,7 @@ const VideoModal = ({ src, onClose }: { src: string; onClose: () => void }) => {
                 {/* Close button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-md text-white/80 hover:text-white hover:bg-black/80 transition-all border border-white/10 cursor-pointer"
+                    className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/80 backdrop-blur-md transition-all hover:bg-black/80 hover:text-white sm:h-9 sm:w-9"
                 >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -93,19 +93,19 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
 
     return (
         <>
-            <div className="cookbook-case border border-white/10 rounded-xl overflow-hidden mb-12 bg-[#000000] shadow-2xl transition-all">
+            <div className="cookbook-case mb-8 overflow-hidden rounded-xl border border-white/10 bg-[#000000] shadow-2xl transition-all sm:mb-10 lg:mb-12">
                 {/* Header */}
-                <div className="px-4 py-1.5 bg-white/5 flex justify-between items-center border-b border-white/5">
-                    <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/5 bg-white/5 px-4 py-2 sm:px-4 sm:py-2.5">
+                    <div className="flex min-w-0 items-center gap-2">
                         <div className="text-blue-400">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <h3 className="font-medium text-gray-300 tracking-tight" style={{ margin: 0, fontSize: '14px' }}>{title}</h3>
+                        <h3 className="truncate font-medium tracking-tight text-gray-300" style={{ margin: 0, fontSize: '14px' }}>{title}</h3>
                     </div>
-                    <div className="hidden sm:flex items-center">
+                    <div className="flex items-center">
                         <span className="text-[9px] text-gray-500 tracking-widest uppercase">
                             AI Showcase
                         </span>
@@ -113,7 +113,7 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
                 </div>
 
                 {/* Body */}
-                <div className="p-5 flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+                <div className="flex flex-col items-start gap-5 p-4 sm:gap-6 sm:p-5 lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-10">
                     {/* Left Column */}
                     <div className="flex flex-col gap-6 lg:col-span-5 w-full">
                         {/* Source Assets */}
@@ -123,7 +123,7 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
                                     <span className="w-1 h-1 rounded-full bg-gray-600"></span>
                                     Source Assets
                                 </h4>
-                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                                     {inputAssets.map((asset, index) => (
                                         <div
                                             key={index}
@@ -160,8 +160,8 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
                                 <span className="w-1 h-1 rounded-full bg-gray-500/50"></span>
                                 Generation Prompt
                             </h4>
-                            <div className="bg-white/5 rounded-lg p-4 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20">
-                                <p className="text-[13px] text-gray-300 font-mono m-0 leading-relaxed opacity-90">
+                            <div className="max-h-56 overflow-y-auto rounded-lg bg-white/5 p-3.5 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20 sm:max-h-48 sm:p-4">
+                                <p className="m-0 font-mono text-[12px] leading-relaxed text-gray-300 opacity-90 sm:text-[13px]">
                                     {prompt}
                                 </p>
                             </div>
@@ -170,7 +170,7 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
 
                     {/* Right Column (Output Video) */}
                     <div className="flex flex-col gap-4 lg:col-span-7 w-full h-full">
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
                             <h4 className="text-[11px] font-semibold text-emerald-400/70 uppercase tracking-widest flex items-center gap-2">
                                 <span className="w-1 h-1 rounded-full bg-emerald-500/50"></span>
                                 Output Result
@@ -199,12 +199,12 @@ const CookbookCase: React.FC<CookbookCaseProps> = ({ title, prompt, inputAssets,
                         </div>
 
                         {/* Footer/Action bar */}
-                        <div className="flex justify-between items-center mt-1 px-1">
+                        <div className="mt-1 flex items-center justify-between gap-3 px-1">
                             <a
                                 href={outputVideo}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-[11px] font-semibold text-blue-400/80 hover:text-blue-300 transition-colors no-underline uppercase tracking-tight"
+                                className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-tight text-blue-400/80 no-underline transition-colors hover:text-blue-300"
                             >
                                 Download
                                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
