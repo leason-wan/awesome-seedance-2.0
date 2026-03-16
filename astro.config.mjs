@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	site: process.env.PUBLIC_SERVER_ADDRESS,
+	site: process.env.PUBLIC_SERVER_ADDRESS || "https://seedance.weniai.com",
 	integrations: [
 		react(),
 		mdx(),

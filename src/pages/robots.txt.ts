@@ -5,7 +5,6 @@ const baseUrl = import.meta.env.SITE.replace(/\/+$/, '');
 export const GET: APIRoute = () => {
   const body = `User-agent: *
 Allow: /
-
 Sitemap: ${baseUrl}/sitemap.xml
 `;
 
