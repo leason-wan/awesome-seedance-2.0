@@ -2,9 +2,22 @@
 import { navigation } from '../config/navigation';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import DocsNav from '../components/DocsNav.astro';
+import {
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  SITE_TITLE_SUFFIX,
+  getHomeDescription,
+  getHomeKeywords,
+  getLocale,
+  toAbsoluteUrl,
+} from '../site-meta';
 
 interface Props {
   title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  ogImageAlt?: string;
   lang: 'en' | 'zh';
   activeId: string;
 }
@@ -15,6 +28,20 @@ const title = frontmatter?.title || Astro.props.title;
 const lang = frontmatter?.lang || Astro.props.lang || 'en';
 const activeId = frontmatter?.activeId || Astro.props.activeId;
 const baseUrl = import.meta.env.BASE_URL;
+const pagePath = `/${lang === 'en' ? '' : `${lang}/`}${activeId}/`.replace(/\/+/g, '/');
+const canonicalUrl = toAbsoluteUrl(pagePath);
+const alternateEnUrl = toAbsoluteUrl(`/${activeId}/`);
+const alternateZhUrl = toAbsoluteUrl(`/zh/${activeId}/`);
+const pageTitle = `${title} | ${SITE_TITLE_SUFFIX}`;
+const pageDescription = frontmatter?.description || Astro.props.description || getHomeDescription(lang);
+const pageKeywords = frontmatter?.keywords || Astro.props.keywords || getHomeKeywords(lang);
+const ogImage = frontmatter?.ogImage || Astro.props.ogImage || DEFAULT_OG_IMAGE;
+const ogImageUrl = ogImage.startsWith('http://') || ogImage.startsWith('https://')
+  ? ogImage
+  : toAbsoluteUrl(ogImage);
+const ogImageAlt = frontmatter?.ogImageAlt || Astro.props.ogImageAlt || `${SITE_NAME} logo`;
+const ogLocale = getLocale(lang);
+const alternateLocale = lang === 'zh' ? 'en_US' : 'zh_CN';
 const localizedPath = (targetLang: 'en' | 'zh', id: string) =>
   `${baseUrl}${targetLang === 'en' ? '' : `${targetLang}/`}${id}/`;
 
@@ -52,8 +79,33 @@ gtag('config', '${gaMeasurementId}');`
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title} | lytai API Documentation</title>
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDescription} />
+  <meta name="keywords" content={pageKeywords} />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content={SITE_NAME} />
+  <meta name="theme-color" content="#050505" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" hreflang="en" href={alternateEnUrl} />
+  <link rel="alternate" hreflang="zh-CN" href={alternateZhUrl} />
+  <link rel="alternate" hreflang="x-default" href={alternateEnUrl} />
   <link rel="icon" type="image/svg+xml" href={`${baseUrl}logo.svg`}>
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content={SITE_NAME} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDescription} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:locale" content={ogLocale} />
+  <meta property="og:locale:alternate" content={alternateLocale} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:alt" content={ogImageAlt} />
+  <meta property="article:author" content={SITE_NAME} />
+  <meta property="article:section" content="Documentation" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDescription} />
+  <meta name="twitter:image" content={ogImageUrl} />
+  <meta name="twitter:image:alt" content={ogImageAlt} />
   {googleSiteVerification && (
     <meta name="google-site-verification" content={googleSiteVerification} />
   )}

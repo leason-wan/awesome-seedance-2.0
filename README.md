@@ -18,6 +18,28 @@ Video creation is about more than just "generation"—it’s about controlling e
 
 Seedance 2.0: Multi-modal creation starts here. Imagine boldly, and let the model handle the rest.
 
+## GitHub Actions
+
+This repository includes GitHub Actions workflows for build validation and Cloudflare Pages deployment:
+
+- `.github/workflows/build.yml`: runs `npm ci` and `npm run build` on pull requests and pushes to `main`
+- `.github/workflows/deploy.yml`: builds the site and deploys `dist/` to Cloudflare Pages on pushes to `main` or manual trigger
+
+### Required repository secrets and variables
+
+- `CLOUDFLARE_API_TOKEN`: Cloudflare API token with Pages deployment permission
+- `CLOUDFLARE_ACCOUNT_ID`: Cloudflare account ID
+- `PUBLIC_GA_MEASUREMENT_ID`: public GA4 measurement ID used at build time
+- `PUBLIC_GOOGLE_SITE_VERIFICATION`: public Google Search Console verification token
+- `PUBLIC_SERVER_ADDRESS`: optional repository variable for overriding the default server address (`https://awesome-seedance-2-0.pages.dev`)
+
+### Manual local build
+
+```bash
+npm ci
+npm run build
+```
+
 ## Quick Start: Parameter Guide
 
 | Core Specifications | Seedance 2.0 |

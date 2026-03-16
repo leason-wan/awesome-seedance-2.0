@@ -1,5 +1,4 @@
 import type { APIRoute } from 'astro';
-import { SERVER_ADDRESS } from '../config';
 
 const routes = [
   '/',
@@ -30,7 +29,7 @@ const routes = [
   '/zh/cookbook/video-extension/',
 ];
 
-const baseUrl = SERVER_ADDRESS.replace(/\/+$/, '');
+const baseUrl = import.meta.env.SITE.replace(/\/+$/, '');
 
 export const GET: APIRoute = () => {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
