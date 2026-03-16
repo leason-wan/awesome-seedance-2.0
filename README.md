@@ -31,7 +31,7 @@ This repository includes GitHub Actions workflows for build validation and Cloud
 - `CLOUDFLARE_ACCOUNT_ID`: Cloudflare account ID
 - `PUBLIC_GA_MEASUREMENT_ID`: public GA4 measurement ID used at build time
 - `PUBLIC_GOOGLE_SITE_VERIFICATION`: public Google Search Console verification token
-- `PUBLIC_SERVER_ADDRESS`: optional repository variable for overriding the default server address (`https://awesome-seedance-2-0.pages.dev`)
+- `PUBLIC_SERVER_ADDRESS`: optional repository variable for overriding the default server address (`https://seedance.weniai.com`)
 
 ### Manual local build
 

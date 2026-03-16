@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	site: process.env.PUBLIC_SERVER_ADDRESS || 'https://awesome-seedance-2-0.pages.dev',
+	site: process.env.PUBLIC_SERVER_ADDRESS,
 	integrations: [
 		react(),
 		mdx(),
