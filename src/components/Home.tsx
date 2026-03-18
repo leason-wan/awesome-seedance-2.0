@@ -2,6 +2,18 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
+import AuthDialog from "./AuthDialog";
+import {
+  AUTH_REQUIRED_EVENT,
+  ApiError,
+  clearAuthSession,
+  fetchCurrentUser,
+  loadAuthSession,
+  saveAuthSession,
+  type AuthSession,
+  type AuthUser,
+} from "../lib/auth";
+
 type GenerationConfig = {
   mode: "video" | "image";
   aspectRatio: "16:9" | "9:16";
@@ -42,6 +54,14 @@ const homeCopy = {
     navCreate: "Create",
     navCookbook: "Cookbook",
     navAssets: "Assets",
+    signIn: "Sign in",
+    signingIn: "Syncing...",
+    signOut: "Sign out",
+    account: "Account",
+    guest: "Guest",
+    coins: "Coins",
+    vip: "VIP",
+    accountHint: "Stored locally and ready for authenticated API calls.",
     subtitle: "Describe your idea and click generate to create your first video or image.",
     discover: "Discover",
     shorts: "Shorts",
@@ -58,6 +78,14 @@ const homeCopy = {
     navCreate: "创作",
     navCookbook: "指南",
     navAssets: "素材",
+    signIn: "登录",
+    signingIn: "同步中...",
+    signOut: "退出登录",
+    account: "账户",
+    guest: "访客",
+    coins: "灵感币",
+    vip: "VIP",
+    accountHint: "登录信息已保存在本地，可直接用于后续鉴权接口调用。",
     subtitle: "输入描述并点击生成，开始创建第一个视频或图片。",
     discover: "发现",
     shorts: "短片",
@@ -92,6 +120,71 @@ function useClickOutside<T extends HTMLElement>(
 
 const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
   const copy = homeCopy[lang];
+  const [authSession, setAuthSession] = useState<AuthSession | null>(null);
+  const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false);
+  const [isSyncingSession, setIsSyncingSession] = useState(true);
+
+  useEffect(() => {
+    const storedSession = loadAuthSession();
+
+    if (!storedSession) {
+      setIsSyncingSession(false);
+      return;
+    }
+
+    setAuthSession(storedSession);
+
+    let isCancelled = false;
+
+    void (async () => {
+      try {
+        const user = await fetchCurrentUser(storedSession);
+
+        if (isCancelled) {
+          return;
+        }
+
+        const refreshedSession = {
+          ...storedSession,
+          user,
+        };
+
+        saveAuthSession(refreshedSession);
+        setAuthSession(refreshedSession);
+      } catch (error) {
+        if (isCancelled) {
+          return;
+        }
+
+        if (error instanceof ApiError && (error.status === 401 || error.status === 403)) {
+          clearAuthSession();
+          setAuthSession(null);
+        }
+      } finally {
+        if (!isCancelled) {
+          setIsSyncingSession(false);
+        }
+      }
+    })();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const handleAuthRequired = () => {
+      setAuthSession(null);
+      setIsAuthDialogOpen(true);
+    };
+
+    window.addEventListener(AUTH_REQUIRED_EVENT, handleAuthRequired);
+    return () => window.removeEventListener(AUTH_REQUIRED_EVENT, handleAuthRequired);
+  }, []);
 
   const handleRedirectToCreate = (prompt: string, config: GenerationConfig) => {
     if (typeof window === "undefined") return;
@@ -104,40 +197,209 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
     window.location.href = `/create?${query.toString()}`;
   };
 
+  const handleAuthenticated = (session: AuthSession) => {
+    saveAuthSession(session);
+    setAuthSession(session);
+    setIsAuthDialogOpen(false);
+  };
+
+  const handleSignOut = () => {
+    clearAuthSession();
+    setAuthSession(null);
+  };
+
   return (
-    <AppShell lang={lang}>
-      <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#050505] text-white">
-        <div className="flex-1 overflow-y-auto p-6 pb-40 scroll-smooth">
-          <div className="mx-auto flex max-w-[1600px] flex-col gap-12">
-            <div className="flex min-h-56 items-center justify-center rounded-2xl">
-              <div className="text-center">
-                <h1 className="text-4xl font-semibold tracking-wide text-white">Lytai Studio</h1>
-                <p className="mt-6 text-xs text-white/40">{copy.subtitle}</p>
+    <>
+      <AppShell
+        lang={lang}
+        session={authSession}
+        isSyncingSession={isSyncingSession}
+        onOpenAuth={() => setIsAuthDialogOpen(true)}
+        onSignOut={handleSignOut}
+      >
+        <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#050505] text-white">
+          <div className="flex-1 overflow-y-auto p-6 pb-40 scroll-smooth">
+            <div className="mx-auto flex max-w-[1600px] flex-col gap-12">
+              <div className="flex min-h-56 items-center justify-center rounded-2xl">
+                <div className="text-center">
+                  <h1 className="text-4xl font-semibold tracking-wide text-white">Lytai Studio</h1>
+                  <p className="mt-6 text-xs text-white/40">{copy.subtitle}</p>
+                </div>
               </div>
+              <div className="pt-2">
+                <InputArea
+                  lang={lang}
+                  hasKey={true}
+                  isGenerating={false}
+                  onConnectKey={() => {}}
+                  onGenerate={handleRedirectToCreate}
+                />
+              </div>
+              <DiscoverFeed lang={lang} />
             </div>
-            <div className="pt-2">
-              <InputArea
-                lang={lang}
-                hasKey={true}
-                isGenerating={false}
-                onConnectKey={() => {}}
-                onGenerate={handleRedirectToCreate}
-              />
-            </div>
-            <DiscoverFeed lang={lang} />
           </div>
-        </div>
-      </main>
-    </AppShell>
+        </main>
+      </AppShell>
+      <AuthDialog
+        lang={lang}
+        open={isAuthDialogOpen}
+        onClose={() => setIsAuthDialogOpen(false)}
+        onAuthenticated={handleAuthenticated}
+      />
+    </>
   );
 };
+
+function AccountControl({
+  lang,
+  session,
+  isSyncing,
+  onOpenAuth,
+  onSignOut,
+  compact = false,
+}: {
+  lang: SupportedLanguage;
+  session: AuthSession | null;
+  isSyncing: boolean;
+  onOpenAuth: () => void;
+  onSignOut: () => void;
+  compact?: boolean;
+}) {
+  const copy = homeCopy[lang];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useClickOutside(menuRef, isMenuOpen, () => setIsMenuOpen(false));
+
+  if (!session) {
+    return (
+      <button
+        type="button"
+        onClick={onOpenAuth}
+        disabled={isSyncing}
+        className={`inline-flex items-center rounded-2xl border text-sm font-medium transition-all ${
+          compact ? "h-12 w-12 justify-center p-0" : "gap-3 px-4 py-3"
+        } ${
+          isSyncing
+            ? "cursor-not-allowed border-transparent bg-white/5 text-white/30"
+            : "border-transparent bg-[#121212] text-white hover:bg-[#181818]"
+        }`}
+      >
+        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
+          <UserIcon />
+        </span>
+        {!compact ? <span>{isSyncing ? copy.signingIn : copy.signIn}</span> : null}
+      </button>
+    );
+  }
+
+  return (
+    <div ref={menuRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setIsMenuOpen((current) => !current)}
+        className={`inline-flex items-center rounded-2xl border border-transparent bg-[#121212] text-left transition-all hover:bg-[#181818] ${
+          compact ? "h-12 w-12 justify-center p-0" : "gap-3 px-4 py-3"
+        }`}
+      >
+        <UserAvatar user={session.user} />
+        {!compact ? (
+          <>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-medium text-white">{session.user.username || copy.account}</p>
+              <p className="truncate text-xs text-white/40">{session.user.email ?? copy.guest}</p>
+            </div>
+            <ChevronDownIcon expanded={isMenuOpen} />
+          </>
+        ) : null}
+      </button>
+
+      {isMenuOpen ? (
+        <div className="absolute bottom-full left-0 z-30 mb-3 w-[280px] rounded-3xl border border-white/10 bg-[#121212] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
+          <div className="flex items-center gap-3">
+            <UserAvatar user={session.user} className="h-12 w-12 text-sm" />
+            <div className="min-w-0">
+              <p className="truncate text-sm font-medium text-white">{session.user.username || copy.account}</p>
+              <p className="truncate text-xs text-white/45">{session.user.email ?? copy.guest}</p>
+            </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-white/30">{copy.coins}</p>
+              <p className="mt-2 text-lg font-semibold text-white">{session.user.coins}</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-white/30">{copy.vip}</p>
+              <p className="mt-2 text-lg font-semibold text-white">{session.user.vip_level}</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-xs leading-5 text-white/40">{copy.accountHint}</p>
+
+          <button
+            type="button"
+            onClick={() => {
+              setIsMenuOpen(false);
+              onSignOut();
+            }}
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
+          >
+            <LogoutIcon />
+            <span>{copy.signOut}</span>
+          </button>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function UserAvatar({
+  user,
+  className = "h-9 w-9 text-xs",
+}: {
+  user: AuthUser;
+  className?: string;
+}) {
+  if (user.avatar_url) {
+    return (
+      <img
+        src={user.avatar_url}
+        alt={user.username || "User avatar"}
+        className={`${className} rounded-full object-cover`}
+        referrerPolicy="no-referrer"
+      />
+    );
+  }
+
+  return (
+    <div
+      className={`${className} flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#00d1b2_0%,#0c8ef0_100%)] font-semibold uppercase text-black`}
+    >
+      {getUserInitials(user)}
+    </div>
+  );
+}
+
+function getUserInitials(user: AuthUser) {
+  const source = (user.username || user.email || "U").trim();
+  return source.slice(0, 2).toUpperCase();
+}
 
 function AppShell({
   children,
   lang,
+  session,
+  isSyncingSession,
+  onOpenAuth,
+  onSignOut,
 }: {
   children: React.ReactNode;
   lang: SupportedLanguage;
+  session: AuthSession | null;
+  isSyncingSession: boolean;
+  onOpenAuth: () => void;
+  onSignOut: () => void;
 }) {
   const handleSidebarNavigate = (page: HomePageKey) => {
     if (typeof window === "undefined") return;
@@ -164,6 +426,10 @@ function AppShell({
         currentLang={lang}
         onNavigate={handleSidebarNavigate}
         onLanguageSwitch={handleLanguageSwitch}
+        session={session}
+        isSyncing={isSyncingSession}
+        onOpenAuth={onOpenAuth}
+        onSignOut={onSignOut}
       />
       <div className="flex min-w-0 flex-1">{children}</div>
     </div>
@@ -175,11 +441,19 @@ function Sidebar({
   currentLang,
   onNavigate,
   onLanguageSwitch,
+  session,
+  isSyncing,
+  onOpenAuth,
+  onSignOut,
 }: {
   currentPage: HomePageKey;
   currentLang: SupportedLanguage;
   onNavigate: (page: HomePageKey) => void;
   onLanguageSwitch: () => void;
+  session: AuthSession | null;
+  isSyncing: boolean;
+  onOpenAuth: () => void;
+  onSignOut: () => void;
 }) {
   const copy = homeCopy[currentLang];
 
@@ -348,7 +622,7 @@ function Sidebar({
         />
       </div>
 
-      <div className="mt-auto flex w-full flex-col items-center gap-4">
+      <div className="mt-auto flex w-full flex-col items-center gap-4 px-2">
         <div ref={languageMenuRef} className="relative flex w-full flex-col items-center">
           {isLanguageMenuOpen ? (
             <div className="absolute bottom-full mb-2 flex min-w-[88px] flex-col overflow-hidden rounded-xl border border-white/10 bg-[#141414] shadow-2xl">
@@ -389,8 +663,15 @@ function Sidebar({
             ) : null}
           </button>
         </div>
-        <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 shadow-sm">
-          <div className="h-2 w-2 rounded-full bg-white/40" />
+        <div className="flex w-full justify-center">
+          <AccountControl
+            lang={currentLang}
+            session={session}
+            isSyncing={isSyncing}
+            onOpenAuth={onOpenAuth}
+            onSignOut={onSignOut}
+            compact={!isExpanded}
+          />
         </div>
       </div>
     </div>
@@ -785,6 +1066,35 @@ const PanelIcon = ({ collapsed }: { collapsed: boolean }) => (
     <rect x="3" y="4" width="18" height="16" rx="2" />
     <path d="M9 4v16" />
     {collapsed ? <path d="m13 12 3-3v6l-3-3Z" fill="currentColor" stroke="none" /> : <path d="m11 12 3 3V9l-3 3Z" fill="currentColor" stroke="none" />}
+  </svg>
+);
+
+const UserIcon = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M15.75 6.75a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 0 1 15 0"
+    />
+  </svg>
+);
+
+const ChevronDownIcon = ({ expanded }: { expanded: boolean }) => (
+  <svg
+    className={`h-4 w-4 shrink-0 text-white/40 transition-transform ${expanded ? "rotate-180" : ""}`}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={1.8}
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+  </svg>
+);
+
+const LogoutIcon = () => (
+  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6A2.25 2.25 0 0 0 5.25 5.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H9.75m0 0 2.25-2.25M9.75 12l2.25 2.25" />
   </svg>
 );
 

@@ -12,6 +12,11 @@ export default defineConfig({
 		mdx(),
 		tailwind(),
 	],
+	vite: {
+		optimizeDeps: {
+			force: true,
+		},
+	},
 	base: '/',
 	output: 'static',
 	i18n: {
