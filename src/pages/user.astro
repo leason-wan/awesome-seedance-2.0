@@ -1,0 +1,32 @@
+---
+import UserPage from "../components/UserPage";
+import { DEFAULT_OG_IMAGE, SITE_NAME, toAbsoluteUrl } from "../site-meta";
+
+const title = `${SITE_NAME} | Account`;
+const description = "Review your current Lytai Studio account details and manage your session.";
+const canonicalUrl = toAbsoluteUrl("/user");
+const alternateZhUrl = toAbsoluteUrl("/zh/user");
+const ogImageUrl = toAbsoluteUrl(DEFAULT_OG_IMAGE);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" hreflang="en" href={canonicalUrl} />
+  <link rel="alternate" hreflang="zh-CN" href={alternateZhUrl} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={ogImageUrl} />
+</head>
+<body class="m-0 bg-black">
+  <UserPage client:load />
+</body>
+</html>

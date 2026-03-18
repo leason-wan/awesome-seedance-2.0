@@ -1,0 +1,32 @@
+---
+import UserPage from "../../components/UserPage";
+import { DEFAULT_OG_IMAGE, SITE_NAME, toAbsoluteUrl } from "../../site-meta";
+
+const title = `${SITE_NAME} | 用户详情`;
+const description = "查看当前 Lytai Studio 用户资料并管理登录状态。";
+const canonicalUrl = toAbsoluteUrl("/zh/user");
+const alternateEnUrl = toAbsoluteUrl("/user");
+const ogImageUrl = toAbsoluteUrl(DEFAULT_OG_IMAGE);
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" hreflang="zh-CN" href={canonicalUrl} />
+  <link rel="alternate" hreflang="en" href={alternateEnUrl} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={ogImageUrl} />
+</head>
+<body class="m-0 bg-black">
+  <UserPage client:load lang="zh" />
+</body>
+</html>
