@@ -17,12 +17,13 @@ interface NavGroup {
 interface Props {
   navItems: NavGroup[];
   backHomeText: string;
+  homeHref: string;
   lang: 'en' | 'zh';
   langSwitchUrl: string;
   mobile?: boolean;
 }
 
-const { navItems, backHomeText, lang, langSwitchUrl, mobile = false } = Astro.props;
+const { navItems, backHomeText, homeHref, lang, langSwitchUrl, mobile = false } = Astro.props;
 
 const iconPaths: Record<string, string> = {
   rocket: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>',
@@ -51,7 +52,7 @@ const iconPaths: Record<string, string> = {
 ---
 
 <div class:list={['docs-nav', mobile ? 'docs-nav-mobile' : 'docs-nav-desktop']}>
-  <a href="/" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-6 transition-colors">
+  <a href={homeHref} class="flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-6 transition-colors">
     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
     </svg>

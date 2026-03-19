@@ -58,6 +58,7 @@ const navItems = navigation.map(group => ({
 }));
 
 const backHomeText = lang === 'en' ? 'Back to Home' : '返回首页';
+const homeHref = `${baseUrl}${lang === 'en' ? '' : 'zh/'}`;
 const tocTitle = lang === 'en' ? 'ON THIS PAGE' : '本页内容';
 const menuText = lang === 'en' ? 'Menu' : '菜单';
 const closeText = lang === 'en' ? 'Close navigation' : '关闭导航';
@@ -179,6 +180,7 @@ gtag('config', '${gaMeasurementId}');`
       <DocsNav
         navItems={navItems}
         backHomeText={backHomeText}
+        homeHref={homeHref}
         lang={lang}
         langSwitchUrl={langSwitchUrl}
         mobile={true}
@@ -192,6 +194,7 @@ gtag('config', '${gaMeasurementId}');`
           <DocsNav
             navItems={navItems}
             backHomeText={backHomeText}
+            homeHref={homeHref}
             lang={lang}
             langSwitchUrl={langSwitchUrl}
           />

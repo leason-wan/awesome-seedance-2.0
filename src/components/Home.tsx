@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { Languages } from "lucide-react";
 
 import AuthDialog from "./AuthDialog";
 import {
@@ -20,8 +21,8 @@ type GenerationConfig = {
   resolution: "720p" | "1080p";
 };
 
-type HomePageKey = "home" | "create" | "cookbook" | "assets";
-type SupportedLanguage = "en" | "zh";
+export type HomePageKey = "home" | "create" | "cookbook" | "user";
+export type SupportedLanguage = "en" | "zh";
 
 type DiscoverItem = {
   id: number;
@@ -48,12 +49,11 @@ type HomePageProps = {
   lang?: SupportedLanguage;
 };
 
-const homeCopy = {
+export const homeCopy = {
   en: {
     navHome: "Home",
     navCreate: "Create",
     navCookbook: "Cookbook",
-    navAssets: "Assets",
     signIn: "Sign in",
     signingIn: "Syncing...",
     signOut: "Sign out",
@@ -77,7 +77,6 @@ const homeCopy = {
     navHome: "首页",
     navCreate: "创作",
     navCookbook: "指南",
-    navAssets: "素材",
     signIn: "登录",
     signingIn: "同步中...",
     signOut: "退出登录",
@@ -212,6 +211,7 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
     <>
       <AppShell
         lang={lang}
+        currentPage="home"
         session={authSession}
         isSyncingSession={isSyncingSession}
         onOpenAuth={() => setIsAuthDialogOpen(true)}
@@ -255,6 +255,7 @@ function AccountControl({
   session,
   isSyncing,
   onOpenAuth,
+  onOpenUserPage,
   onSignOut,
   compact = false,
 }: {
@@ -262,6 +263,7 @@ function AccountControl({
   session: AuthSession | null;
   isSyncing: boolean;
   onOpenAuth: () => void;
+  onOpenUserPage: () => void;
   onSignOut: () => void;
   compact?: boolean;
 }) {
@@ -270,6 +272,19 @@ function AccountControl({
   const menuRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(menuRef, isMenuOpen, () => setIsMenuOpen(false));
+
+  if (compact) {
+    return (
+      <button
+        type="button"
+        onClick={onOpenUserPage}
+        className="inline-flex h-12 w-12 items-center justify-center rounded-2xl p-0 text-left transition-all hover:bg-[#181818]"
+        aria-label={session ? copy.account : isSyncing ? copy.signingIn : copy.signIn}
+      >
+        {session ? <UserAvatar user={session.user} /> : <UserIcon />}
+      </button>
+    );
+  }
 
   if (!session) {
     return (
@@ -285,9 +300,7 @@ function AccountControl({
             : "border-transparent bg-[#121212] text-white hover:bg-[#181818]"
         }`}
       >
-        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-          <UserIcon />
-        </span>
+        <UserIcon />
         {!compact ? <span>{isSyncing ? copy.signingIn : copy.signIn}</span> : null}
       </button>
     );
@@ -298,7 +311,7 @@ function AccountControl({
       <button
         type="button"
         onClick={() => setIsMenuOpen((current) => !current)}
-        className={`inline-flex items-center rounded-2xl border border-transparent bg-[#121212] text-left transition-all hover:bg-[#181818] ${
+        className={`inline-flex items-center rounded-2xl text-left transition-all hover:bg-[#181818] ${
           compact ? "h-12 w-12 justify-center p-0" : "gap-3 px-4 py-3"
         }`}
       >
@@ -354,7 +367,7 @@ function AccountControl({
   );
 }
 
-function UserAvatar({
+export function UserAvatar({
   user,
   className = "h-9 w-9 text-xs",
 }: {
@@ -374,7 +387,7 @@ function UserAvatar({
 
   return (
     <div
-      className={`${className} flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#00d1b2_0%,#0c8ef0_100%)] font-semibold uppercase text-black`}
+      className={`${className} flex items-center justify-center rounded-full font-semibold text-black`}
     >
       {getUserInitials(user)}
     </div>
@@ -386,9 +399,10 @@ function getUserInitials(user: AuthUser) {
   return source.slice(0, 2).toUpperCase();
 }
 
-function AppShell({
+export function AppShell({
   children,
   lang,
+  currentPage,
   session,
   isSyncingSession,
   onOpenAuth,
@@ -396,6 +410,7 @@ function AppShell({
 }: {
   children: React.ReactNode;
   lang: SupportedLanguage;
+  currentPage: HomePageKey;
   session: AuthSession | null;
   isSyncingSession: boolean;
   onOpenAuth: () => void;
@@ -409,20 +424,40 @@ function AppShell({
           ? "/zh/"
           : "/"
         : page === "cookbook" && lang === "zh"
-          ? "/zh/cookbook"
-          : `/${page}`;
+          ? "/zh/seedance2.0"
+          : page === "cookbook"
+            ? "/seedance2.0"
+            : page === "user" && lang === "zh"
+              ? "/zh/user"
+              : page === "user"
+                ? "/user"
+            : `/${page}`;
     window.location.href = target;
   };
 
   const handleLanguageSwitch = () => {
     if (typeof window === "undefined") return;
-    window.location.href = lang === "en" ? "/zh/" : "/";
+    const target =
+      currentPage === "home"
+        ? lang === "en"
+          ? "/zh/"
+          : "/"
+        : currentPage === "cookbook"
+          ? lang === "en"
+            ? "/zh/seedance2.0"
+            : "/seedance2.0"
+          : currentPage === "user"
+            ? lang === "en"
+              ? "/zh/user"
+              : "/user"
+            : `/${currentPage}`;
+    window.location.href = target;
   };
 
   return (
     <div className="relative flex h-screen w-full overflow-hidden bg-black font-sans text-white">
       <Sidebar
-        currentPage="home"
+        currentPage={currentPage}
         currentLang={lang}
         onNavigate={handleSidebarNavigate}
         onLanguageSwitch={handleLanguageSwitch}
@@ -456,20 +491,14 @@ function Sidebar({
   onSignOut: () => void;
 }) {
   const copy = homeCopy[currentLang];
-
-  const [isExpanded, setIsExpanded] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const languageMenuRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(languageMenuRef, isLanguageMenuOpen, () => setIsLanguageMenuOpen(false));
 
   return (
-    <div
-      className={`z-20 flex h-full shrink-0 flex-col border-r border-white/10 bg-[#0a0a0a] py-6 transition-[width] duration-200 ${
-        isExpanded ? "w-40" : "w-16"
-      }`}
-    >
-      <div className={`mb-10 flex items-center ${isExpanded ? "justify-between px-3" : "justify-center"}`}>
+    <div className="z-20 flex h-full w-16 shrink-0 flex-col border-r border-white/10 bg-[#0a0a0a] py-6">
+      <div className="mb-10 flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" className="h-12 w-12">
           <defs>
             <linearGradient id="monolithFront" x1="0%" y1="50%" x2="100%" y2="50%">
@@ -562,63 +591,29 @@ function Sidebar({
             <line x1="400" y1="145" x2="439" y2="122.5" stroke="#3b3d45" strokeWidth="1.5" />
           </g>
         </svg>
-
-        {isExpanded ? (
-          <button
-            type="button"
-            onClick={() => {
-              setIsExpanded(false);
-              setIsLanguageMenuOpen(false);
-            }}
-            className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/5 hover:text-white/80"
-            aria-label="Collapse sidebar"
-          >
-            <PanelIcon collapsed={false} />
-          </button>
-        ) : null}
       </div>
-
-      {!isExpanded ? (
-        <div className="mb-6 flex justify-center">
-          <button
-            type="button"
-            onClick={() => setIsExpanded(true)}
-            className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/5 hover:text-white/80"
-            aria-label="Expand sidebar"
-          >
-            <PanelIcon collapsed={true} />
-          </button>
-        </div>
-      ) : null}
 
       <div className="flex w-full flex-col gap-4 px-2">
         <NavItem
           icon={<HomeIcon />}
           label={copy.navHome}
-          expanded={isExpanded}
+          expanded={false}
           active={currentPage === "home"}
           onClick={() => onNavigate("home")}
         />
         <NavItem
           icon={<SparklesIcon />}
           label={copy.navCreate}
-          expanded={isExpanded}
+          expanded={false}
           active={currentPage === "create"}
           onClick={() => onNavigate("create")}
         />
         <NavItem
           icon={<BookOpenIcon />}
           label={copy.navCookbook}
-          expanded={isExpanded}
+          expanded={false}
           active={currentPage === "cookbook"}
           onClick={() => onNavigate("cookbook")}
-        />
-        <NavItem
-          icon={<FolderIcon />}
-          label={copy.navAssets}
-          expanded={isExpanded}
-          active={currentPage === "assets"}
-          onClick={() => onNavigate("assets")}
         />
       </div>
 
@@ -648,19 +643,12 @@ function Sidebar({
           <button
             type="button"
             onClick={() => setIsLanguageMenuOpen((prev) => !prev)}
-            className={`group flex w-full items-center p-2 text-white/40 transition-colors hover:text-white/80 ${
-              isExpanded ? "gap-3 pl-3 pr-2 md:pl-4 md:pr-2" : "justify-center"
-            }`}
+            className="group flex w-full items-center justify-center p-2 text-white/40 transition-colors hover:text-white/80"
             aria-label="Open language switcher"
           >
             <div className="rounded-xl p-2 transition-all group-hover:bg-white/5">
-              <GlobeIcon />
+              <Languages className="h-5 w-5" strokeWidth={1.75} />
             </div>
-            {isExpanded ? (
-              <span className="text-[11px] font-medium tracking-wide md:text-xs">
-                {currentLang === "en" ? "English" : "中文"}
-              </span>
-            ) : null}
           </button>
         </div>
         <div className="flex w-full justify-center">
@@ -669,8 +657,9 @@ function Sidebar({
             session={session}
             isSyncing={isSyncing}
             onOpenAuth={onOpenAuth}
+            onOpenUserPage={() => onNavigate("user")}
             onSignOut={onSignOut}
-            compact={!isExpanded}
+            compact={true}
           />
         </div>
       </div>
@@ -1046,26 +1035,6 @@ const BookOpenIcon = () => (
       strokeLinejoin="round"
       d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5A4.5 4.5 0 003 9.5v9.75A.75.75 0 003.75 20h6.75c.519 0 1.024.134 1.5.39m0-14.137C13.168 5.477 14.754 5 16.5 5A4.5 4.5 0 0121 9.5v9.75a.75.75 0 01-.75.75H13.5a2.99 2.99 0 00-1.5.39"
     />
-  </svg>
-);
-
-const GlobeIcon = () => (
-  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18" />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 3a15.3 15.3 0 010 18m0-18a15.3 15.3 0 000 18"
-    />
-    <circle cx="12" cy="12" r="9" />
-  </svg>
-);
-
-const PanelIcon = ({ collapsed }: { collapsed: boolean }) => (
-  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <rect x="3" y="4" width="18" height="16" rx="2" />
-    <path d="M9 4v16" />
-    {collapsed ? <path d="m13 12 3-3v6l-3-3Z" fill="currentColor" stroke="none" /> : <path d="m11 12 3 3V9l-3 3Z" fill="currentColor" stroke="none" />}
   </svg>
 );
 
