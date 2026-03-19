@@ -15,6 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      NODE_VERSION: 24
+      CLOUDFLARE_PAGES_PROJECT_NAME: awesome-seedance-2-0
+      PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.PUBLIC_GOOGLE_SITE_VERIFICATION }}
+      PUBLIC_SERVER_ADDRESS: ${{ vars.PUBLIC_SERVER_ADDRESS }}
+      PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.PUBLIC_GOOGLE_CLIENT_ID }}
+      PUBLIC_API_BASE_URL: ${{ vars.PUBLIC_API_BASE_URL }}
+      PUBLIC_GOOGLE_REDIRECT_URI: ${{ vars.PUBLIC_GOOGLE_REDIRECT_URI }}
 
     steps:
       - name: Checkout
@@ -23,22 +32,43 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: ${{ env.NODE_VERSION }}
           cache: npm
+
+      - name: Validate public environment variables
+        run: |
+          missing=0
+
+          require_env() {
+            local name="$1"
+            local value="$2"
+
+            if [ -z "$value" ]; then
+              echo "::error title=Missing environment variable::$name is required for deployment."
+              missing=1
+            fi
+          }
+
+          require_env "PUBLIC_GA_MEASUREMENT_ID" "${PUBLIC_GA_MEASUREMENT_ID}"
+          require_env "PUBLIC_GOOGLE_SITE_VERIFICATION" "${PUBLIC_GOOGLE_SITE_VERIFICATION}"
+          require_env "PUBLIC_SERVER_ADDRESS" "${PUBLIC_SERVER_ADDRESS}"
+          require_env "PUBLIC_GOOGLE_CLIENT_ID" "${PUBLIC_GOOGLE_CLIENT_ID}"
+          require_env "PUBLIC_API_BASE_URL" "${PUBLIC_API_BASE_URL}"
+          require_env "PUBLIC_GOOGLE_REDIRECT_URI" "${PUBLIC_GOOGLE_REDIRECT_URI}"
+
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build site
         run: npm run build
-        env:
-          PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
-          PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.PUBLIC_GOOGLE_SITE_VERIFICATION }}
-          PUBLIC_SERVER_ADDRESS: ${{ vars.PUBLIC_SERVER_ADDRESS }}
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=awesome-seedance-2-0
+          command: pages deploy dist --project-name=${{ env.CLOUDFLARE_PAGES_PROJECT_NAME }}
