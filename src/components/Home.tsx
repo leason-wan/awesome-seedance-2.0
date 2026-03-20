@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Languages } from "lucide-react";
 
 import AuthDialog from "./AuthDialog";
+import GoogleOneTap from "./GoogleOneTap";
 import {
   AUTH_REQUIRED_EVENT,
   ApiError,
@@ -14,6 +15,7 @@ import {
   type AuthSession,
   type AuthUser,
 } from "../lib/auth";
+import { disableGoogleAutoSelect } from "../lib/googleAuth";
 
 type GenerationConfig = {
   mode: "video" | "image";
@@ -203,12 +205,20 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
   };
 
   const handleSignOut = () => {
+    disableGoogleAutoSelect();
     clearAuthSession();
     setAuthSession(null);
   };
 
   return (
     <>
+      {!authSession && !isSyncingSession ? (
+        <GoogleOneTap
+          lang={lang}
+          disabled={isAuthDialogOpen}
+          onAuthenticated={handleAuthenticated}
+        />
+      ) : null}
       <AppShell
         lang={lang}
         currentPage="home"

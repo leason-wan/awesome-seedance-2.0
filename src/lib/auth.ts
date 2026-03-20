@@ -349,14 +349,27 @@ export async function loginWithEmail(email: string, code: string) {
 
 export async function loginWithGoogle({
   code,
+  credential,
   redirectUri,
   nonce,
+  clientId,
 }: {
-  code: string;
+  code?: string;
+  credential?: string;
   redirectUri?: string;
   nonce?: string | null;
+  clientId?: string;
 }) {
-  const body: Record<string, string> = { code };
+  const body: Record<string, string> = {};
+
+  if (code) {
+    body.code = code;
+  }
+
+  if (credential) {
+    body.credential = credential;
+    body.id_token = credential;
+  }
 
   if (redirectUri) {
     body.redirect_uri = redirectUri;
@@ -364,6 +377,14 @@ export async function loginWithGoogle({
 
   if (nonce) {
     body.nonce = nonce;
+  }
+
+  if (clientId) {
+    body.client_id = clientId;
+  }
+
+  if (!body.code && !body.credential) {
+    throw new ApiError("Google login requires an authorization code or credential.");
   }
 
   return requestJson<TokenResponse>("/auth/google/login", {

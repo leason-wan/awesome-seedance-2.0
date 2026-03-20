@@ -13,7 +13,10 @@ import {
   type AuthSession,
   type LoginCodeResponse,
 } from "../lib/auth";
-import { resolveGoogleRedirectUri } from "../lib/googleAuth";
+import {
+  ensureGoogleIdentityScript,
+  resolveGoogleRedirectUri,
+} from "../lib/googleAuth";
 
 type SupportedLanguage = "en" | "zh";
 
@@ -23,42 +26,6 @@ type AuthDialogProps = {
   onClose: () => void;
   onAuthenticated: (session: AuthSession) => void;
 };
-
-type GoogleCodeResponse = {
-  code?: string;
-  error?: string;
-  error_description?: string;
-};
-
-type GoogleCodeClientConfig = {
-  client_id: string;
-  scope: string;
-  ux_mode?: "popup" | "redirect";
-  redirect_uri?: string;
-  state?: string;
-  callback?: (response: GoogleCodeResponse) => void;
-  error_callback?: (error: { type: string }) => void;
-};
-
-type GoogleCodeClient = {
-  requestCode: () => void;
-};
-
-declare global {
-  interface Window {
-    google?: {
-      accounts?: {
-        oauth2?: {
-          initCodeClient: (config: GoogleCodeClientConfig) => GoogleCodeClient;
-        };
-      };
-    };
-  }
-}
-
-const GOOGLE_IDENTITY_SCRIPT_SRC = "https://accounts.google.com/gsi/client";
-
-let googleIdentityScriptPromise: Promise<void> | null = null;
 
 const dialogCopy = {
   en: {
@@ -134,70 +101,6 @@ function formatCopy(template: string, values: Record<string, string | number>) {
     (result, [key, value]) => result.replace(`{${key}}`, String(value)),
     template,
   );
-}
-
-function resetGoogleScriptPromise() {
-  googleIdentityScriptPromise = null;
-}
-
-function ensureGoogleIdentityScript() {
-  if (typeof window === "undefined") {
-    return Promise.reject(new Error("Google login is only available in the browser."));
-  }
-
-  if (window.google?.accounts?.oauth2) {
-    return Promise.resolve();
-  }
-
-  if (googleIdentityScriptPromise) {
-    return googleIdentityScriptPromise;
-  }
-
-  googleIdentityScriptPromise = new Promise<void>((resolve, reject) => {
-    const existingScript = document.querySelector<HTMLScriptElement>(
-      `script[src="${GOOGLE_IDENTITY_SCRIPT_SRC}"]`,
-    );
-
-    const cleanup = () => {
-      if (existingScript) {
-        existingScript.removeEventListener("load", handleLoad);
-        existingScript.removeEventListener("error", handleError);
-      }
-    };
-
-    const handleLoad = () => {
-      cleanup();
-      resolve();
-    };
-
-    const handleError = () => {
-      cleanup();
-      resetGoogleScriptPromise();
-      reject(new Error("Failed to load Google Identity Services."));
-    };
-
-    if (existingScript) {
-      existingScript.addEventListener("load", handleLoad);
-      existingScript.addEventListener("error", handleError);
-
-      if (window.google?.accounts?.oauth2) {
-        cleanup();
-        resolve();
-      }
-
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = GOOGLE_IDENTITY_SCRIPT_SRC;
-    script.async = true;
-    script.defer = true;
-    script.addEventListener("load", handleLoad);
-    script.addEventListener("error", handleError);
-    document.head.appendChild(script);
-  });
-
-  return googleIdentityScriptPromise;
 }
 
 const AuthDialog: React.FC<AuthDialogProps> = ({ lang, open, onClose, onAuthenticated }) => {
