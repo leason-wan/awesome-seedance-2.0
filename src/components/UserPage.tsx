@@ -34,6 +34,10 @@ const userCopy = {
     userId: "User ID",
     coins: "Coins",
     vip: "VIP",
+    vipTier: "Current tier",
+    walletLabel: "Account status",
+    balanceLabel: "Available balance",
+    benefitsLabel: "Tier access",
   },
   zh: {
     signInTitle: "登录后查看用户详情",
@@ -50,6 +54,10 @@ const userCopy = {
     userId: "用户 ID",
     coins: "灵感币",
     vip: "VIP",
+    vipTier: "当前等级",
+    walletLabel: "账户状态",
+    balanceLabel: "可用余额",
+    benefitsLabel: "等级权益",
   },
 } as const;
 
@@ -145,15 +153,15 @@ const UserPage: React.FC<UserPageProps> = ({ lang = "en" }) => {
         onSignOut={handleSignOut}
       >
         <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#050505] text-white">
-          <div className="flex-1 overflow-y-auto p-4 pb-10">
-            <div className="mx-auto flex w-full max-w-6xl flex-col gap-4">
+          <div className="flex-1 overflow-y-auto p-12 pb-40 scroll-smooth">
+            <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4">
               {authSession ? (
-                <section className="grid gap-6 xl:grid-cols-[300px_minmax(0,1fr)]">
-                  <div className="pt-2">
-                    <div className="flex items-center gap-4">
-                      <UserAvatar user={authSession.user} className="h-16 w-16 text-lg" />
+                <section className="grid gap-4 xl:grid-cols-[280px_minmax(0,1fr)]">
+                  <div className="pt-1">
+                    <div className="flex items-center gap-3">
+                      <UserAvatar user={authSession.user} className="h-12 w-12 text-base" />
                       <div className="min-w-0">
-                        <h2 className="truncate text-xl font-semibold text-white">
+                        <h2 className="truncate text-lg font-semibold text-white">
                           {authSession.user.username || copy.account}
                         </h2>
                       </div>
@@ -161,32 +169,39 @@ const UserPage: React.FC<UserPageProps> = ({ lang = "en" }) => {
 
                     <button
                       type="button"
-                      className="mt-6 inline-flex h-10 min-w-[180px] items-center justify-center rounded-xl bg-[#1b1b25] px-4 text-sm font-medium text-white transition-colors hover:bg-[#232330]"
+                      className="mt-4 inline-flex h-9 min-w-[152px] items-center justify-center rounded-lg bg-[#1b1b25] px-3 text-sm font-medium text-white transition-colors hover:bg-[#232330]"
                     >
                       <ShareIcon />
                       {detailCopy.shareProfile}
                     </button>
 
-                    <div className="mt-6 grid gap-3">
+                    <div className="mt-4 grid gap-2.5">
                       <ProfileEmailCard label={detailCopy.email} value={authSession.user.email ?? "—"} />
                       <ProfileIdCard label={detailCopy.userId} value={authSession.user.id} />
-                      <div className="grid gap-3 sm:grid-cols-2">
-                        <ProfileCoinCard label={detailCopy.coins} value={String(authSession.user.coins)} />
-                        <ProfileVipCard label={detailCopy.vip} value={String(authSession.user.vip_level)} />
-                      </div>
+                      <ProfileAccountStatusPanel
+                        walletLabel={detailCopy.walletLabel}
+                        balanceLabel={detailCopy.balanceLabel}
+                        benefitsLabel={detailCopy.benefitsLabel}
+                        coinLabel={detailCopy.coins}
+                        vipLabel={detailCopy.vip}
+                        vipTierLabel={detailCopy.vipTier}
+                        coinValue={authSession.user.coins}
+                        vipLevel={authSession.user.vip_level}
+                        lang={lang}
+                      />
                     </div>
 
                     <button
                       type="button"
                       onClick={handleSignOut}
-                      className="mt-6 flex w-full items-center justify-center rounded-xl bg-white/[0.06] px-3 py-2.5 text-sm font-medium text-white/80 transition-colors hover:bg-white/[0.1] hover:text-white"
+                      className="mt-4 flex w-full items-center justify-center rounded-lg bg-white/[0.06] px-3 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-white/[0.1] hover:text-white"
                     >
                       {detailCopy.signOut}
                     </button>
                   </div>
 
-                  <section className="min-h-[520px] pt-0.5">
-                    <div className="flex items-center justify-center gap-5">
+                  <section className="min-h-[420px] w-full max-w-[980px] pt-0.5 xl:justify-self-center">
+                    <div className="flex items-center justify-center gap-4">
                       <AssetTab
                         label={detailCopy.images}
                         active={activeAssetType === "image"}
@@ -207,15 +222,15 @@ const UserPage: React.FC<UserPageProps> = ({ lang = "en" }) => {
                   </section>
                 </section>
               ) : (
-                <section className="rounded-3xl border border-white/10 bg-[#101010] p-5">
-                  <h2 className="text-2xl font-semibold text-white">{detailCopy.signInTitle}</h2>
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-white/45">
+                <section className="rounded-2xl border border-white/10 bg-[#101010] p-4">
+                  <h2 className="text-xl font-semibold text-white">{detailCopy.signInTitle}</h2>
+                  <p className="mt-2 max-w-xl text-sm leading-5 text-white/45">
                     {detailCopy.signInDescription}
                   </p>
                   <button
                     type="button"
                     onClick={() => setIsAuthDialogOpen(true)}
-                    className="mt-6 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-white/90"
+                    className="mt-4 inline-flex items-center justify-center rounded-lg bg-white px-3.5 py-2 text-sm font-medium text-black transition-colors hover:bg-white/90"
                   >
                     {detailCopy.signIn}
                   </button>
@@ -238,12 +253,12 @@ const UserPage: React.FC<UserPageProps> = ({ lang = "en" }) => {
 
 function ProfileEmailCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex w-full min-w-0 items-center gap-3 px-1 py-1">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/6 text-white/65">
+    <div className="flex w-full min-w-0 items-center gap-2.5 px-1 py-0.5">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/6 text-white/65">
         <MailIcon />
       </div>
       <div className="min-w-0 flex-1">
-        <p className="mt-1 break-all text-sm leading-6 text-white/88">{value}</p>
+        <p className="break-all text-sm leading-5 text-white/88">{value}</p>
       </div>
     </div>
   );
@@ -251,46 +266,106 @@ function ProfileEmailCard({ label, value }: { label: string; value: string }) {
 
 function ProfileIdCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex w-full min-w-0 items-center gap-3 px-1 py-1">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/6 text-white/65">
+    <div className="flex w-full min-w-0 items-center gap-2.5 px-1 py-0.5">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/6 text-white/65">
         <IdIcon />
       </div>
       <div className="min-w-0 flex-1">
-        <p className="mt-1 truncate font-mono text-sm leading-6 text-white/82">{value}</p>
+        <p className="truncate font-mono text-sm leading-5 text-white/82">{value}</p>
       </div>
     </div>
   );
 }
 
-function ProfileCoinCard({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="relative overflow-hidden rounded-2xl border border-[#f7d66b]/20 bg-[radial-gradient(circle_at_top_left,rgba(247,214,107,0.22),transparent_55%),#13110c] px-4 py-3">
-      <div className="absolute -right-6 top-1 h-16 w-16 rounded-full bg-[#f7d66b]/10 blur-2xl" />
-      <div className="relative flex items-center justify-between gap-3">
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.22em] text-[#f7d66b]/70">{label}</p>
-          <p className="mt-2 text-2xl font-semibold leading-none text-[#ffe7a3]">{value}</p>
-        </div>
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#f7d66b]/20 bg-[#f7d66b]/10 text-[#f7d66b]">
-          <CoinIcon />
-        </div>
-      </div>
-    </div>
-  );
-}
+function ProfileAccountStatusPanel({
+  walletLabel,
+  balanceLabel,
+  benefitsLabel,
+  coinLabel,
+  vipLabel,
+  vipTierLabel,
+  coinValue,
+  vipLevel,
+  lang,
+}: {
+  walletLabel: string;
+  balanceLabel: string;
+  benefitsLabel: string;
+  coinLabel: string;
+  vipLabel: string;
+  vipTierLabel: string;
+  coinValue: number;
+  vipLevel: number;
+  lang: SupportedLanguage;
+}) {
+  const normalizedVipLevel = Number.isFinite(vipLevel) ? Math.max(0, Math.floor(vipLevel)) : 0;
+  const vipDisplay = normalizedVipLevel > 0 ? `${vipLabel} ${normalizedVipLevel}` : lang === "zh" ? "基础会员" : "Standard";
+  const vipTone = normalizedVipLevel > 0 ? (lang === "zh" ? "权益已生效" : "Benefits active") : lang === "zh" ? "升级后解锁更多权益" : "Upgrade to unlock more";
+  const activeMilestones = Math.min(Math.max(normalizedVipLevel, 1), 4);
 
-function ProfileVipCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-[#8ab4ff]/16 bg-[linear-gradient(120deg,rgba(88,112,255,0.18),rgba(15,19,30,0.94)_55%,rgba(255,255,255,0.04))] px-4 py-3">
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.22em] text-white/38">{label}</p>
+    <section className="relative w-full max-w-[360px] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_top_left,rgba(247,214,107,0.22),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(212,162,67,0.18),transparent_42%),linear-gradient(160deg,#17130b_0%,#0d0b08_52%,#16120c_100%)] p-3.5">
+      <div className="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(247,214,107,0.42)] to-transparent" />
+      <div className="absolute -left-10 top-10 h-20 w-20 rounded-full bg-[#f7d66b]/14 blur-3xl" />
+      <div className="absolute -right-8 bottom-8 h-24 w-24 rounded-full bg-[rgba(212,162,67,0.14)] blur-3xl" />
+
+      <div className="relative">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.24em] text-white/38">{walletLabel}</p>
+            <p className="mt-1.5 text-xs text-white/62">{balanceLabel}</p>
+          </div>
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[rgba(247,214,107,0.12)] text-[#f2cd69]">
+            <CoinIcon />
+          </div>
         </div>
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/8 text-[#a8c2ff]">
-          <VipIcon />
+
+        <div className="mt-4">
+          <div className="flex items-end gap-2.5">
+            <p className="text-[2rem] font-semibold leading-none tracking-[-0.04em] text-[#fff0bc]">
+              {coinValue.toLocaleString()}
+            </p>
+            <span className="mb-0.5 rounded-full bg-[rgba(247,214,107,0.12)] px-2 py-0.5 text-[10px] uppercase tracking-[0.18em] text-[#f0cf78]">
+              {coinLabel}
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-4 h-px bg-white/8" />
+
+        <div className="mt-4 rounded-[18px] border border-[rgba(247,214,107,0.14)] bg-white/[0.03] p-3 backdrop-blur-sm">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.24em] text-white/34">{benefitsLabel}</p>
+              <p className="mt-1.5 text-base font-semibold text-white">{vipDisplay}</p>
+            </div>
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[rgba(247,214,107,0.12)] text-[#f2cd69]">
+              <VipIcon />
+            </div>
+          </div>
+
+          <div className="mt-3 flex items-center gap-1.5">
+            {Array.from({ length: 4 }).map((_, index) => (
+              <span
+                key={index}
+                className={`h-1 flex-1 rounded-full ${
+                  index < activeMilestones
+                    ? "bg-gradient-to-r from-[#c9972f] via-[#f2cd69] to-[#fff1b3]"
+                    : "bg-white/8"
+                }`}
+              />
+            ))}
+          </div>
+
+          <div className="mt-3 flex items-end justify-between gap-3">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-white/28">{vipTierLabel}</p>
+              <p className="mt-1 text-xs font-medium text-white/84">{vipTone}</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -346,7 +421,7 @@ function AssetTab({
     <button
       type="button"
       onClick={onClick}
-      className={`px-2 py-1 text-sm font-medium transition-colors ${
+      className={`px-1.5 py-0.5 text-sm font-medium transition-colors ${
         active ? "text-white" : "text-white/45 hover:text-white/75"
       }`}
     >
@@ -370,12 +445,12 @@ function AssetPanel({
       : "from-[#4b87ff] via-[#8e7dff] to-transparent";
 
   return (
-    <div className="relative mt-5 min-h-[420px] overflow-hidden rounded-[28px] bg-[#0b0b10]">
-      <div className={`absolute bottom-8 right-6 h-36 w-36 rounded-full bg-gradient-to-br ${glowClassName} opacity-40 blur-3xl`} />
-      <div className="relative flex h-full min-h-[420px] items-center justify-center p-5">
-        <div className="flex max-w-[260px] flex-col items-center justify-center text-center">
+    <div className="relative mt-4 min-h-[340px] overflow-hidden rounded-[22px] bg-[#0b0b10]">
+      <div className={`absolute bottom-6 right-5 h-28 w-28 rounded-full bg-gradient-to-br ${glowClassName} opacity-40 blur-3xl`} />
+      <div className="relative flex h-full min-h-[340px] items-center justify-center p-4">
+        <div className="flex max-w-[240px] flex-col items-center justify-center text-center">
           <p className="text-xs font-medium tracking-[0.02em] text-white/34">{emptyTitle}</p>
-          <p className="mt-2 text-xs leading-5 text-white/18">{emptyHint}</p>
+          <p className="mt-1.5 text-[11px] leading-4 text-white/18">{emptyHint}</p>
         </div>
       </div>
     </div>
@@ -384,7 +459,7 @@ function AssetPanel({
 
 function ShareIcon() {
   return (
-    <svg className="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+    <svg className="mr-1.5 h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907 15 6.75m-7.783 6.343L15 17.25m-7.783-4.157a2.25 2.25 0 1 1-2.467-3.734 2.25 2.25 0 0 1 2.467 3.734Zm10.033-5.109a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm0 15a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
     </svg>
   );
