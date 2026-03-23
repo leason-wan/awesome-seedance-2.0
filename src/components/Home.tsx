@@ -28,24 +28,153 @@ export type SupportedLanguage = "en" | "zh";
 
 type DiscoverItem = {
   id: number;
-  src: string;
-  aspect: string;
+  title: {
+    en: string;
+    zh: string;
+  };
+  summary: {
+    en: string;
+    zh: string;
+  };
+  video: string;
+  poster: string;
+  tag: {
+    en: string;
+    zh: string;
+  };
 };
 
 const discoverItems: DiscoverItem[] = [
-  { id: 1, src: "https://picsum.photos/seed/1/400/300", aspect: "aspect-[4/3]" },
-  { id: 2, src: "https://picsum.photos/seed/2/400/600", aspect: "aspect-[2/3]" },
-  { id: 3, src: "https://picsum.photos/seed/3/400/800", aspect: "aspect-[1/2]" },
-  { id: 4, src: "https://picsum.photos/seed/4/400/400", aspect: "aspect-square" },
-  { id: 5, src: "https://picsum.photos/seed/5/400/500", aspect: "aspect-[4/5]" },
-  { id: 6, src: "https://picsum.photos/seed/6/400/700", aspect: "aspect-[4/7]" },
-  { id: 7, src: "https://picsum.photos/seed/7/400/400", aspect: "aspect-square" },
-  { id: 8, src: "https://picsum.photos/seed/8/400/600", aspect: "aspect-[2/3]" },
-  { id: 9, src: "https://picsum.photos/seed/9/400/300", aspect: "aspect-[4/3]" },
-  { id: 10, src: "https://picsum.photos/seed/10/400/500", aspect: "aspect-[4/5]" },
-  { id: 11, src: "https://picsum.photos/seed/11/400/600", aspect: "aspect-[2/3]" },
-  { id: 12, src: "https://picsum.photos/seed/12/400/400", aspect: "aspect-square" },
+  {
+    id: 1,
+    title: {
+      en: "Motion-directed fashion clip",
+      zh: "镜头驱动时尚短片",
+    },
+    summary: {
+      en: "Use one reference still and a prompt to shape camera motion, wardrobe detail, and ambient sound in a single pass.",
+      zh: "通过一张参考图和一段提示词，把镜头运动、服装细节和环境音整合进同一条创作链路。",
+    },
+    video: "https://cdn.weniai.com/seedance/1-3.mp4",
+    poster: "https://cdn.weniai.com/seedance/1-3.png",
+    tag: {
+      en: "Camera + atmosphere",
+      zh: "镜头 + 氛围",
+    },
+  },
+  {
+    id: 2,
+    title: {
+      en: "Commercial product montage",
+      zh: "商业产品蒙太奇",
+    },
+    summary: {
+      en: "Blend product stills, brand styling, and voiceover timing into a controllable ad sequence built for fast iteration.",
+      zh: "把商品静帧、品牌风格和口播节奏融合成一条可控的广告片序列，适合快速迭代。",
+    },
+    video: "https://cdn.weniai.com/seedance/2-4-2.mp4",
+    poster: "https://cdn.weniai.com/seedance/2-4-1.png",
+    tag: {
+      en: "Brand storytelling",
+      zh: "品牌叙事",
+    },
+  },
+  {
+    id: 3,
+    title: {
+      en: "One-shot continuity scene",
+      zh: "一镜到底连续场景",
+    },
+    summary: {
+      en: "Reference video movement and scene transitions to keep motion coherent while the setting evolves from shot to shot.",
+      zh: "参考视频的运动与转场逻辑，在场景变化中依然保持动作和镜头的连续性。",
+    },
+    video: "https://cdn.weniai.com/seedance/2-3-2.mp4",
+    poster: "https://github.com/leason-wan/awesome-seedance-2.0/releases/download/assets-2/2-3-1.gif",
+    tag: {
+      en: "Continuity control",
+      zh: "连续性控制",
+    },
+  },
 ];
+
+const capabilityItems = [
+  {
+    id: "multimodal",
+    accent: "from-[#8ec5ff]/20 via-[#0b1018] to-[#050505]",
+    title: {
+      en: "Multi-modal reference",
+      zh: "多模态参考",
+    },
+    body: {
+      en: "Bring in stills, footage, and sound cues to anchor style, action, and pacing before generation starts.",
+      zh: "在生成前引入图片、视频和音频线索，用于锚定画风、动作和节奏。",
+    },
+  },
+  {
+    id: "motion",
+    accent: "from-[#84f4d8]/20 via-[#07110f] to-[#050505]",
+    title: {
+      en: "Motion and camera control",
+      zh: "镜头与动作控制",
+    },
+    body: {
+      en: "Shape tracking shots, reframing, transitions, and character rhythm with prompts that read like direction notes.",
+      zh: "用接近导演分镜的提示词组织跟拍、构图变化、转场和角色节奏。",
+    },
+  },
+  {
+    id: "editing",
+    accent: "from-[#ffd49a]/16 via-[#120d06] to-[#050505]",
+    title: {
+      en: "Editing and extension",
+      zh: "编辑与续写",
+    },
+    body: {
+      en: "Continue an existing clip, replace subjects, or restructure a sequence without restarting the whole workflow.",
+      zh: "在不重做整条流程的情况下完成续写、替换主体或重组片段。",
+    },
+  },
+] as const;
+
+const workflowSteps = [
+  {
+    id: "prompt",
+    number: "01",
+    title: {
+      en: "Write the scene",
+      zh: "写下场景",
+    },
+    body: {
+      en: "Describe intent, camera movement, and pacing in plain language.",
+      zh: "用自然语言描述意图、镜头运动和节奏。",
+    },
+  },
+  {
+    id: "reference",
+    number: "02",
+    title: {
+      en: "Attach references",
+      zh: "加入参考",
+    },
+    body: {
+      en: "Add stills, clips, or sound that should influence the output.",
+      zh: "加入会影响结果的图像、片段或声音参考。",
+    },
+  },
+  {
+    id: "refine",
+    number: "03",
+    title: {
+      en: "Generate and refine",
+      zh: "生成并微调",
+    },
+    body: {
+      en: "Review the result, adjust constraints, and iterate into a production-ready cut.",
+      zh: "查看结果，调整约束条件，逐步迭代成可用成片。",
+    },
+  },
+] as const;
 
 type HomePageProps = {
   lang?: SupportedLanguage;
@@ -69,6 +198,42 @@ export const homeCopy = {
     shorts: "Shorts",
     events: "Events",
     reference: "Reference",
+    heroEyebrow: "Lytai Studio",
+    heroTitle: "Direct your next scene with prompts, references, and motion.",
+    heroDescription:
+      "A multimodal workspace for controllable video and image creation, with Seedance 2.0 integrated as one of the core generation engines.",
+    heroPrimary: "Start in Composer",
+    heroSecondary: "Explore Cookbook",
+    heroBadgeOne: "Text, image, video, and audio inputs",
+    heroBadgeTwo: "Motion-aware prompt workflows",
+    heroBadgeThree: "Seedance 2.0 inside the stack",
+    heroPanelLabel: "Featured output",
+    heroPanelTitle: "Built for controllable visual direction",
+    heroPanelBody:
+      "Move from prompt to reference-driven generation without leaving the main workspace.",
+    capabilityEyebrow: "Capabilities",
+    capabilityTitle: "Three control layers that make the system usable",
+    capabilityDescription:
+      "The homepage should prove what the studio does before it asks users to learn the docs.",
+    workflowEyebrow: "Workflow",
+    workflowTitle: "A short path from idea to first cut",
+    workflowDescription:
+      "The product should read like a creative tool, not a model announcement.",
+    showcaseEyebrow: "Output proof",
+    showcaseTitle: "Real cases instead of placeholder inspiration",
+    showcaseDescription:
+      "Each case demonstrates what changes when the workflow is guided by references and structured prompts.",
+    cookbookEyebrow: "Cookbook",
+    cookbookTitle: "Use the docs to deepen control, not to explain the brand",
+    cookbookDescription:
+      "Cookbook pages should help people prompt, edit, and iterate faster once they already understand the product.",
+    cookbookPrimary: "Open Cookbook",
+    cookbookSecondary: "View capabilities",
+    finalTitle: "Start with the workspace. Learn the system as you go.",
+    finalDescription:
+      "Lytai Studio is the product surface. Seedance 2.0 is one of the engines powering it.",
+    finalPrimary: "Open Composer",
+    finalSecondary: "Read the Cookbook",
     placeholderWithKey:
       "Upload 1-5 reference images or videos and combine people, props, outfits, or scenes. Example: use @Image1 as the first frame, @Image2 as the last frame, and follow the motion from @Video1 for a dance clip.",
     placeholderWithoutKey: "Please connect your API key to start generating...",
@@ -92,6 +257,35 @@ export const homeCopy = {
     shorts: "短片",
     events: "活动",
     reference: "参考内容",
+    heroEyebrow: "Lytai Studio",
+    heroTitle: "用提示词、参考素材和镜头控制，直接开始下一条作品。",
+    heroDescription: "面向视频与图像创作的多模态工作台，Seedance 2.0 作为核心生成能力之一接入其中。",
+    heroPrimary: "进入创作区",
+    heroSecondary: "查看 Cookbook",
+    heroBadgeOne: "支持文本、图片、视频、音频输入",
+    heroBadgeTwo: "面向镜头语言的提示词工作流",
+    heroBadgeThree: "Seedance 2.0 已集成到能力栈",
+    heroPanelLabel: "精选案例",
+    heroPanelTitle: "为可控创作而构建",
+    heroPanelBody: "从提示词到参考素材再到生成结果，完整创作链路都保留在同一个工作台里。",
+    capabilityEyebrow: "能力结构",
+    capabilityTitle: "真正决定可用性的三层控制力",
+    capabilityDescription: "首页应该先证明产品能做什么，再引导用户深入文档。",
+    workflowEyebrow: "工作流",
+    workflowTitle: "从想法到第一版成片，只保留最短路径",
+    workflowDescription: "产品首页应该像创作工具，而不是模型发布说明。",
+    showcaseEyebrow: "结果证明",
+    showcaseTitle: "用真实案例替代占位式灵感流",
+    showcaseDescription: "每个案例都展示了参考素材和结构化提示词对结果质量的实际影响。",
+    cookbookEyebrow: "Cookbook",
+    cookbookTitle: "文档负责加深控制，而不是解释品牌是谁",
+    cookbookDescription: "Cookbook 应帮助用户更快掌握提示词、编辑方式和迭代方法，而不是承担首页叙事。",
+    cookbookPrimary: "打开 Cookbook",
+    cookbookSecondary: "查看能力模块",
+    finalTitle: "先进入工作台，再在使用中理解系统。",
+    finalDescription: "Lytai Studio 是产品表面，Seedance 2.0 是其中一个核心引擎能力。",
+    finalPrimary: "进入创作区",
+    finalSecondary: "阅读 Cookbook",
     placeholderWithKey:
       "上传 1-5 张参考图或视频，可自由组合人物、角色、道具、服装、场景等元素，定义他们之间的精彩互动。例如：@图片1 作为首帧，@图片2 作为尾帧，模仿 @视频1 的动作跳舞。",
     placeholderWithoutKey: "请先连接你的 API Key 后再开始生成...",
@@ -210,6 +404,16 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
     setAuthSession(null);
   };
 
+  const handleScrollToComposer = () => {
+    if (typeof window === "undefined") return;
+    document.getElementById("home-composer")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleOpenCookbook = () => {
+    if (typeof window === "undefined") return;
+    window.location.href = lang === "zh" ? "/zh/seedance2.0" : "/seedance2.0";
+  };
+
   return (
     <>
       {!authSession && !isSyncingSession ? (
@@ -228,24 +432,209 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
         onSignOut={handleSignOut}
       >
         <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#050505] text-white">
-          <div className="flex-1 overflow-y-auto p-6 pb-40 scroll-smooth">
-            <div className="mx-auto flex max-w-[1600px] flex-col gap-12">
-              <div className="flex min-h-56 items-center justify-center rounded-2xl">
-                <div className="text-center">
-                  <h1 className="text-4xl font-semibold tracking-wide text-white">Lytai Studio</h1>
-                  <p className="mt-6 text-xs text-white/40">{copy.subtitle}</p>
+          <div className="flex-1 overflow-y-auto px-4 pb-28 pt-4 scroll-smooth sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-[1600px] flex-col gap-24">
+              <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(27,76,72,0.45),transparent_32%),radial-gradient(circle_at_85%_15%,rgba(94,117,255,0.22),transparent_22%),linear-gradient(135deg,#0a0d11_0%,#050505_55%,#070707_100%)] px-5 py-6 shadow-[0_32px_120px_rgba(0,0,0,0.45)] sm:px-8 sm:py-8 xl:px-10 xl:py-10">
+                <div className="pointer-events-none absolute inset-y-0 right-[18%] hidden w-px bg-gradient-to-b from-transparent via-white/12 to-transparent xl:block" />
+                <div className="grid gap-10 xl:grid-cols-[minmax(0,0.92fr)_minmax(380px,0.98fr)] xl:items-end">
+                  <div className="relative z-10 flex flex-col gap-8">
+                    <div className="max-w-3xl">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-[#84f4d8]">
+                        {copy.heroEyebrow}
+                      </p>
+                      <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl xl:text-[4.5rem] xl:leading-[0.94]">
+                        {copy.heroTitle}
+                      </h1>
+                      <p className="mt-5 max-w-2xl text-sm leading-7 text-white/62 sm:text-base">
+                        {copy.heroDescription}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3">
+                      <button
+                        type="button"
+                        onClick={handleScrollToComposer}
+                        className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-transform duration-200 hover:scale-[1.02] hover:bg-[#e9ecef]"
+                      >
+                        {copy.heroPrimary}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleOpenCookbook}
+                        className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-5 py-3 text-sm font-medium text-white/88 transition-colors hover:border-white/20 hover:bg-white/10"
+                      >
+                        {copy.heroSecondary}
+                      </button>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2.5">
+                      {[copy.heroBadgeOne, copy.heroBadgeTwo, copy.heroBadgeThree].map((badge) => (
+                        <span
+                          key={badge}
+                          className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] font-medium tracking-[0.02em] text-white/72"
+                        >
+                          {badge}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div id="home-composer" className="pt-2">
+                      <InputArea
+                        lang={lang}
+                        hasKey={true}
+                        isGenerating={false}
+                        onConnectKey={() => {}}
+                        onGenerate={handleRedirectToCreate}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="relative min-w-0">
+                    <div className="absolute -inset-6 rounded-[36px] bg-[radial-gradient(circle,rgba(132,244,216,0.16),transparent_56%)] blur-3xl" />
+                    <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-black/30 p-3 shadow-[0_24px_80px_rgba(0,0,0,0.42)]">
+                      <div className="mb-3 flex items-center justify-between gap-3 px-1 pt-1">
+                        <div>
+                          <p className="text-[11px] uppercase tracking-[0.28em] text-[#84f4d8]">
+                            {copy.heroPanelLabel}
+                          </p>
+                          <p className="mt-2 text-lg font-medium text-white">{copy.heroPanelTitle}</p>
+                        </div>
+                        <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] uppercase tracking-[0.24em] text-white/52">
+                          Seedance 2.0
+                        </span>
+                      </div>
+                      <div className="overflow-hidden rounded-[22px] border border-white/10 bg-black">
+                        <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          preload="metadata"
+                          poster={discoverItems[0].poster}
+                          className="aspect-[4/3] w-full object-cover"
+                        >
+                          <source src={discoverItems[0].video} type="video/mp4" />
+                        </video>
+                      </div>
+                      <p className="mt-4 max-w-xl text-sm leading-6 text-white/58">{copy.heroPanelBody}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="pt-2">
-                <InputArea
-                  lang={lang}
-                  hasKey={true}
-                  isGenerating={false}
-                  onConnectKey={() => {}}
-                  onGenerate={handleRedirectToCreate}
-                />
-              </div>
+              </section>
+
+              <section className="grid gap-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+                <div className="max-w-xl">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#84f4d8]">
+                    {copy.capabilityEyebrow}
+                  </p>
+                  <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                    {copy.capabilityTitle}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-white/58">{copy.capabilityDescription}</p>
+                </div>
+                <div className="grid gap-4 lg:grid-cols-3">
+                  {capabilityItems.map((item) => (
+                    <div
+                      key={item.id}
+                      className={`rounded-[26px] border border-white/10 bg-gradient-to-br ${item.accent} p-5`}
+                    >
+                      <div className="flex h-full flex-col justify-between gap-8">
+                        <span className="inline-flex w-fit rounded-full border border-white/10 bg-white/6 px-2.5 py-1 text-[10px] uppercase tracking-[0.24em] text-white/52">
+                          {item.id}
+                        </span>
+                        <div>
+                          <h3 className="text-lg font-medium text-white">{item.title[lang]}</h3>
+                          <p className="mt-3 text-sm leading-6 text-white/60">{item.body[lang]}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="grid gap-8 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] xl:items-start">
+                <div className="max-w-lg">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#84f4d8]">
+                    {copy.workflowEyebrow}
+                  </p>
+                  <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                    {copy.workflowTitle}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-white/58">{copy.workflowDescription}</p>
+                </div>
+                <div className="grid gap-4 md:grid-cols-3">
+                  {workflowSteps.map((step) => (
+                    <div key={step.id} className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#84f4d8]">
+                        {step.number}
+                      </p>
+                      <h3 className="mt-4 text-lg font-medium text-white">{step.title[lang]}</h3>
+                      <p className="mt-3 text-sm leading-6 text-white/58">{step.body[lang]}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
               <DiscoverFeed lang={lang} />
+
+              <section className="grid gap-6 rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-6 sm:p-8 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] xl:items-center">
+                <div className="max-w-xl">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#84f4d8]">
+                    {copy.cookbookEyebrow}
+                  </p>
+                  <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                    {copy.cookbookTitle}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-white/60">{copy.cookbookDescription}</p>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <button
+                    type="button"
+                    onClick={handleOpenCookbook}
+                    className="rounded-[24px] border border-white/10 bg-black/30 px-5 py-5 text-left transition-colors hover:border-white/20 hover:bg-white/5"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#84f4d8]">Guides</p>
+                    <p className="mt-3 text-lg font-medium text-white">{copy.cookbookPrimary}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/56">{copy.subtitle}</p>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleOpenCookbook}
+                    className="rounded-[24px] border border-white/10 bg-black/30 px-5 py-5 text-left transition-colors hover:border-white/20 hover:bg-white/5"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#84f4d8]">Engine</p>
+                    <p className="mt-3 text-lg font-medium text-white">{copy.cookbookSecondary}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/56">{copy.heroDescription}</p>
+                  </button>
+                </div>
+              </section>
+
+              <section className="pb-6">
+                <div className="flex flex-col gap-5 border-t border-white/10 pt-10 sm:flex-row sm:items-end sm:justify-between">
+                  <div className="max-w-2xl">
+                    <h2 className="text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                      {copy.finalTitle}
+                    </h2>
+                    <p className="mt-4 text-sm leading-7 text-white/58">{copy.finalDescription}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-3">
+                    <button
+                      type="button"
+                      onClick={handleScrollToComposer}
+                      className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-transform duration-200 hover:scale-[1.02] hover:bg-[#e9ecef]"
+                    >
+                      {copy.finalPrimary}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleOpenCookbook}
+                      className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-5 py-3 text-sm font-medium text-white/88 transition-colors hover:border-white/20 hover:bg-white/10"
+                    >
+                      {copy.finalSecondary}
+                    </button>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </main>
@@ -433,6 +822,10 @@ export function AppShell({
         ? lang === "zh"
           ? "/zh/"
           : "/"
+        : page === "create" && lang === "zh"
+          ? "/zh/create"
+          : page === "create"
+            ? "/create"
         : page === "cookbook" && lang === "zh"
           ? "/zh/seedance2.0"
           : page === "cookbook"
@@ -452,6 +845,10 @@ export function AppShell({
         ? lang === "en"
           ? "/zh/"
           : "/"
+        : currentPage === "create"
+          ? lang === "en"
+            ? "/zh/create"
+            : "/create"
         : currentPage === "cookbook"
           ? lang === "en"
             ? "/zh/seedance2.0"
@@ -739,77 +1136,107 @@ function DiscoverFeed({ lang }: { lang: SupportedLanguage }) {
   const copy = homeCopy[lang];
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] animate-fadeIn">
-      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-        <div className="flex w-fit items-center gap-1 rounded-lg border border-white/5 bg-white/5 p-1">
-          <button
-            type="button"
-            className="rounded-md bg-white/10 px-5 py-1.5 text-sm font-medium text-white shadow-sm"
-          >
+    <section className="mx-auto w-full max-w-[1600px] animate-fadeIn">
+      <div className="mb-8 grid gap-6 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] xl:items-end">
+        <div className="max-w-xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#84f4d8]">
+            {copy.showcaseEyebrow}
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+            {copy.showcaseTitle}
+          </h2>
+          <p className="mt-4 text-sm leading-7 text-white/58">{copy.showcaseDescription}</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] text-white/64">
             {copy.discover}
-          </button>
-          <button
-            type="button"
-            className="rounded-md px-5 py-1.5 text-sm font-medium text-white/50 transition-colors hover:text-white/80"
-          >
+          </span>
+          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] text-white/64">
             {copy.shorts}
-          </button>
-          <button
-            type="button"
-            className="rounded-md px-5 py-1.5 text-sm font-medium text-white/50 transition-colors hover:text-white/80"
-          >
-            {copy.events}
-          </button>
+          </span>
+          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] text-white/64">
+            Seedance 2.0
+          </span>
         </div>
       </div>
 
-      <div className="columns-2 gap-4 space-y-4 md:columns-3 lg:columns-4 xl:columns-5">
+      <div className="grid gap-5 lg:grid-cols-3">
         {discoverItems.map((item) => (
           <div
             key={item.id}
-            className="group relative cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-white/5 break-inside-avoid"
+            className="group overflow-hidden rounded-[26px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))]"
           >
-            <img
-              src={item.src}
-              alt="Gallery item"
-              className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${item.aspect}`}
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/20 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="flex items-center gap-2">
-                <div className="h-6 w-6 rounded-full border border-white/30 bg-white/20" />
-                <span className="text-xs font-medium text-white/90">Creator {item.id}</span>
+            <div className="overflow-hidden border-b border-white/10 bg-black">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                poster={item.poster}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              >
+                <source src={item.video} type="video/mp4" />
+              </video>
+            </div>
+            <div className="p-5">
+              <div className="flex items-center justify-between gap-3">
+                <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] uppercase tracking-[0.24em] text-white/52">
+                  {item.tag[lang]}
+                </span>
+                <span className="text-[11px] uppercase tracking-[0.24em] text-white/34">
+                  0{item.id}
+                </span>
               </div>
+              <h3 className="mt-4 text-xl font-medium tracking-[-0.03em] text-white">{item.title[lang]}</h3>
+              <p className="mt-3 text-sm leading-6 text-white/58">{item.summary[lang]}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
-function InputArea({
+export function InputArea({
   lang,
   onGenerate,
   isGenerating,
   hasKey,
   onConnectKey,
+  initialPrompt = "",
+  initialMode = "video",
+  initialAspectRatio = "4:3",
+  initialResolution = "720p",
+  resetKey,
 }: {
   lang: SupportedLanguage;
   onGenerate: (prompt: string, config: GenerationConfig) => void;
   isGenerating: boolean;
   hasKey: boolean;
   onConnectKey: () => void;
+  initialPrompt?: string;
+  initialMode?: "video" | "image";
+  initialAspectRatio?: "16:9" | "9:16" | "4:3";
+  initialResolution?: "720p" | "1080p";
+  resetKey?: string;
 }) {
   const copy = homeCopy[lang];
-  const [prompt, setPrompt] = useState("");
-  const [mode, setMode] = useState<"video" | "image">("video");
+  const [prompt, setPrompt] = useState(initialPrompt);
+  const [mode, setMode] = useState<"video" | "image">(initialMode);
   const [showModeMenu, setShowModeMenu] = useState(false);
-  const [aspectRatio, setAspectRatio] = useState<"16:9" | "9:16" | "4:3">("4:3");
-  const [resolution] = useState<"720p" | "1080p">("720p");
+  const [aspectRatio, setAspectRatio] = useState<"16:9" | "9:16" | "4:3">(initialAspectRatio);
+  const [resolution] = useState<"720p" | "1080p">(initialResolution);
   const modeMenuRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(modeMenuRef, showModeMenu, () => setShowModeMenu(false));
+
+  useEffect(() => {
+    setPrompt(initialPrompt);
+    setMode(initialMode);
+    setAspectRatio(initialAspectRatio);
+    setShowModeMenu(false);
+  }, [initialPrompt, initialMode, initialAspectRatio, initialResolution, resetKey]);
 
   const aspectRatioIcon = {
     "16:9": "M4 7h16v10H4V7zm2 2v6h12V9H6z",

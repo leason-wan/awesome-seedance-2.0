@@ -1,4 +1,4 @@
-# 🎬 Jimeng Seedance 2.0 User Manual (A New Multi-modal Creation Experience)
+# 🎬 seedance2.0
 
 [![English](https://img.shields.io/badge/English-Current-brightgreen)](README.md) [![中文](https://img.shields.io/badge/中文-Click-blue)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
 
@@ -1212,6 +1212,6 @@ The girl in the poster is constantly changing her clothes. The clothes refer to 
 
 
 # 🏁 Closing Words
-The multi-modal capabilities of Seedance 2.0 are constantly evolving. We are committed to updating our features and supporting even more input combinations. We hope this manual helps you unleash your creativity!
+The multi-modal capabilities of Seedance 2.0 are constantly evolving. We are committed to updating our features and supporting even more input combinations. We hope seedance2.0 helps you unleash your creativity!
 
 If you encounter bugs, have suggestions, or want to share specific use cases, please reach out to us! We will continue to optimize the model to ensure Jimeng remains a tool that brings both productivity and joy to your creative journey. ❤️

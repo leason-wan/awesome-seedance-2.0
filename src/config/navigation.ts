@@ -17,11 +17,11 @@ export interface NavGroup {
 
 export const navigation: NavGroup[] = [
   {
-    title: { en: 'SEEDANCE 2.0 COOKBOOK', zh: 'Seedance 2.0 用户手册' },
+    title: { en: 'seedance2.0', zh: 'seedance2.0' },
     items: [
       {
         id: 'seedance2.0',
-        title: { en: 'Introduction', zh: '手册简介' },
+        title: { en: 'Introduction', zh: '简介' },
         icon: 'book',
       },
       {

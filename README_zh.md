@@ -1,4 +1,4 @@
-# 🎬 即梦 Seedance 2.0 使用手册（全新多模态创作体验）
+# 🎬 seedance2.0
 
 [![English](https://img.shields.io/badge/English-Click-blue)](README.md) [![中文](https://img.shields.io/badge/中文-Current-brightgreen)](README_zh.md) [![繁體中文](https://img.shields.io/badge/繁體中文-Click-blue)](README_zh_TW.md) [![日本語](https://img.shields.io/badge/日本語-Click-blue)](README_ja.md) [![한국어](https://img.shields.io/badge/한국어-Click-blue)](README_ko.md) [![Español](https://img.shields.io/badge/Español-Click-blue)](README_es.md)
 
@@ -1210,6 +1210,6 @@
 
 
 # 🏁 最后说两句
-Seedance 2.0 的多模态能力正处于不断进化中，我们会持续更新能力、支持更多种输入组合方式。希望这份使用手册能帮你更自由地发挥创意！
+Seedance 2.0 的多模态能力正处于不断进化中，我们会持续更新能力、支持更多种输入组合方式。希望 seedance2.0 能帮你更自由地发挥创意！
 
 如果你遇到了 Bug，或者有用法建议、需求场景，欢迎留言、私信、敲锣打鼓告诉我们！我们会持续优化，一起把即梦变成真正让你们开心、方便的生产力工具 ❤️
