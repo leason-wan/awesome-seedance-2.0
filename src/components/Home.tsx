@@ -15,12 +15,24 @@ import {
   type AuthSession,
   type AuthUser,
 } from "../lib/auth";
+import { saveCreateDraft } from "../lib/createDraft";
 import { disableGoogleAutoSelect } from "../lib/googleAuth";
 
-type GenerationConfig = {
+export type GenerationConfig = {
   mode: "video" | "image";
   aspectRatio: "16:9" | "9:16";
   resolution: "720p" | "1080p";
+};
+
+export type ReferenceAsset = {
+  id: string;
+  name: string;
+  kind: "image" | "video";
+  previewUrl: string;
+};
+
+export type ReferenceDraftAsset = ReferenceAsset & {
+  file: File;
 };
 
 export type HomePageKey = "home" | "create" | "cookbook" | "user";
@@ -74,6 +86,8 @@ export const homeCopy = {
     placeholderWithoutKey: "Please connect your API key to start generating...",
     video: "Video",
     image: "Image",
+    referenceUploadCta: "Add",
+    referenceRemove: "Remove",
   },
   zh: {
     navHome: "首页",
@@ -97,8 +111,18 @@ export const homeCopy = {
     placeholderWithoutKey: "请先连接你的 API Key 后再开始生成...",
     video: "视频生成",
     image: "图片生成",
+    referenceUploadCta: "添加",
+    referenceRemove: "移除",
   },
 } as const;
+
+type MockReferenceAsset = {
+  id: string;
+  file: File;
+  previewUrl: string;
+};
+
+export const CREATE_DRAFT_STORAGE_KEY = "lytai:create-draft";
 
 function useClickOutside<T extends HTMLElement>(
   ref: React.RefObject<T | null>,
@@ -187,15 +211,29 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
     return () => window.removeEventListener(AUTH_REQUIRED_EVENT, handleAuthRequired);
   }, []);
 
-  const handleRedirectToCreate = (prompt: string, config: GenerationConfig) => {
+  const handleRedirectToCreate = async (prompt: string, config: GenerationConfig, references: ReferenceDraftAsset[]) => {
     if (typeof window === "undefined") return;
+    const draftId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
+    await saveCreateDraft(draftId, {
+      prompt,
+      config,
+      references: references.map((reference) => ({
+        id: reference.id,
+        name: reference.name,
+        kind: reference.kind,
+        file: reference.file,
+      })),
+    });
     const query = new URLSearchParams({
       prompt,
       mode: config.mode,
       aspectRatio: config.aspectRatio,
       resolution: config.resolution,
+      draftId,
     });
-    window.location.href = `/create?${query.toString()}`;
+    const target = lang === "zh" ? "/zh/create" : "/create";
+    window.location.href = `${target}?${query.toString()}`;
   };
 
   const handleAuthenticated = (session: AuthSession) => {
@@ -433,6 +471,10 @@ export function AppShell({
         ? lang === "zh"
           ? "/zh/"
           : "/"
+        : page === "create" && lang === "zh"
+          ? "/zh/create"
+          : page === "create"
+            ? "/create"
         : page === "cookbook" && lang === "zh"
           ? "/zh/seedance2.0"
           : page === "cookbook"
@@ -452,6 +494,10 @@ export function AppShell({
         ? lang === "en"
           ? "/zh/"
           : "/"
+        : currentPage === "create"
+          ? lang === "en"
+            ? "/zh/create"
+            : "/create"
         : currentPage === "cookbook"
           ? lang === "en"
             ? "/zh/seedance2.0"
@@ -788,7 +834,7 @@ function DiscoverFeed({ lang }: { lang: SupportedLanguage }) {
   );
 }
 
-function InputArea({
+export function InputArea({
   lang,
   onGenerate,
   isGenerating,
@@ -796,7 +842,7 @@ function InputArea({
   onConnectKey,
 }: {
   lang: SupportedLanguage;
-  onGenerate: (prompt: string, config: GenerationConfig) => void;
+  onGenerate: (prompt: string, config: GenerationConfig, references: ReferenceDraftAsset[]) => void;
   isGenerating: boolean;
   hasKey: boolean;
   onConnectKey: () => void;
@@ -805,11 +851,59 @@ function InputArea({
   const [prompt, setPrompt] = useState("");
   const [mode, setMode] = useState<"video" | "image">("video");
   const [showModeMenu, setShowModeMenu] = useState(false);
+  const [modeMenuPlacement, setModeMenuPlacement] = useState<"top" | "bottom">("bottom");
   const [aspectRatio, setAspectRatio] = useState<"16:9" | "9:16" | "4:3">("4:3");
   const [resolution] = useState<"720p" | "1080p">("720p");
   const modeMenuRef = useRef<HTMLDivElement>(null);
+  const modeMenuListRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const referenceAssetsRef = useRef<MockReferenceAsset[]>([]);
+  const [referenceAssets, setReferenceAssets] = useState<MockReferenceAsset[]>([]);
 
   useClickOutside(modeMenuRef, showModeMenu, () => setShowModeMenu(false));
+
+  useEffect(() => {
+    referenceAssetsRef.current = referenceAssets;
+  }, [referenceAssets]);
+
+  useEffect(() => {
+    return () => {
+      referenceAssetsRef.current.forEach((asset) => URL.revokeObjectURL(asset.previewUrl));
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!showModeMenu) {
+      return;
+    }
+
+    const updateModeMenuPlacement = () => {
+      const trigger = modeMenuRef.current;
+      const menu = modeMenuListRef.current;
+
+      if (!trigger) {
+        return;
+      }
+
+      const triggerRect = trigger.getBoundingClientRect();
+      const menuHeight = menu?.offsetHeight ?? 96;
+      const spaceBelow = window.innerHeight - triggerRect.bottom;
+      const spaceAbove = triggerRect.top;
+
+      setModeMenuPlacement(
+        spaceBelow < menuHeight + 12 && spaceAbove > spaceBelow ? "top" : "bottom",
+      );
+    };
+
+    updateModeMenuPlacement();
+    window.addEventListener("resize", updateModeMenuPlacement);
+    window.addEventListener("scroll", updateModeMenuPlacement, true);
+
+    return () => {
+      window.removeEventListener("resize", updateModeMenuPlacement);
+      window.removeEventListener("scroll", updateModeMenuPlacement, true);
+    };
+  }, [showModeMenu]);
 
   const aspectRatioIcon = {
     "16:9": "M4 7h16v10H4V7zm2 2v6h12V9H6z",
@@ -824,11 +918,21 @@ function InputArea({
       return;
     }
 
-    onGenerate(prompt, {
-      mode,
-      aspectRatio: aspectRatio === "4:3" ? "16:9" : aspectRatio,
-      resolution,
-    });
+    onGenerate(
+      prompt,
+      {
+        mode,
+        aspectRatio: aspectRatio === "4:3" ? "16:9" : aspectRatio,
+        resolution,
+      },
+      referenceAssets.map((asset) => ({
+        id: asset.id,
+        name: asset.file.name,
+        kind: asset.file.type.startsWith("video/") ? "video" : "image",
+        previewUrl: asset.previewUrl,
+        file: asset.file,
+      })),
+    );
     setPrompt("");
     setShowModeMenu(false);
   };
@@ -840,17 +944,112 @@ function InputArea({
     }
   };
 
+  const handleReferenceButtonClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleReferenceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFiles = Array.from(event.target.files ?? []);
+
+    if (selectedFiles.length === 0) {
+      return;
+    }
+
+    setReferenceAssets((current) => {
+      const nextFiles = selectedFiles.slice(0, Math.max(0, 5 - current.length));
+
+      if (nextFiles.length === 0) {
+        return current;
+      }
+
+      return [
+        ...current,
+        ...nextFiles.map((file, index) => ({
+          id: `${file.name}-${file.lastModified}-${current.length + index}`,
+          file,
+          previewUrl: URL.createObjectURL(file),
+        })),
+      ];
+    });
+
+    event.target.value = "";
+  };
+
+  const handleRemoveReference = (assetId: string) => {
+    setReferenceAssets((current) => {
+      const assetToRemove = current.find((asset) => asset.id === assetId);
+
+      if (assetToRemove) {
+        URL.revokeObjectURL(assetToRemove.previewUrl);
+      }
+
+      return current.filter((asset) => asset.id !== assetId);
+    });
+  };
+
   return (
     <div className="mx-auto w-full max-w-5xl px-4">
       <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-[#141414] p-4 shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:border-white/20">
-        <div className="flex gap-4">
-          <button
-            type="button"
-            className="-rotate-2 flex h-20 w-16 shrink-0 flex-col items-center justify-center rounded-lg border border-dashed border-white/20 bg-white/5 text-white/40 transition-all hover:rotate-0 hover:border-white/40 hover:bg-white/10 hover:text-white/80"
-          >
-            <span className="mb-1 text-xl font-light leading-none">+</span>
-            <span className="text-[10px] tracking-wider">{copy.reference}</span>
-          </button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/*,video/*"
+          multiple
+          className="hidden"
+          onChange={handleReferenceChange}
+        />
+
+        <div className="flex gap-3 rounded-xl bg-black/20 p-3">
+          <div className="h-24 w-[68px] shrink-0 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div className="flex min-h-full flex-col gap-2">
+              {referenceAssets.map((asset) => {
+                const isVideo = asset.file.type.startsWith("video/");
+
+                return (
+                  <div
+                    key={asset.id}
+                    title={asset.file.name}
+                    className="group relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white/5"
+                  >
+                    {isVideo ? (
+                      <video
+                        src={asset.previewUrl}
+                        className="h-full w-full object-cover"
+                        muted
+                        playsInline
+                        preload="metadata"
+                      />
+                    ) : (
+                      <img
+                        src={asset.previewUrl}
+                        alt={asset.file.name}
+                        className="h-full w-full object-cover"
+                      />
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => handleRemoveReference(asset.id)}
+                      className="absolute right-1 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-black/75 text-[10px] text-white/70 opacity-0 transition group-hover:opacity-100"
+                      aria-label={`${copy.referenceRemove} ${asset.file.name}`}
+                    >
+                      ×
+                    </button>
+                  </div>
+                );
+              })}
+
+              {referenceAssets.length < 5 ? (
+                <button
+                  type="button"
+                  onClick={handleReferenceButtonClick}
+                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-white/5 text-lg text-white/45 transition hover:bg-white/10 hover:text-white/80"
+                  aria-label={copy.referenceUploadCta}
+                >
+                  +
+                </button>
+              ) : null}
+            </div>
+          </div>
 
           <textarea
             value={prompt}
@@ -861,7 +1060,7 @@ function InputArea({
                 ? copy.placeholderWithKey
                 : copy.placeholderWithoutKey
             }
-            className="h-20 flex-1 resize-none border-none bg-transparent text-sm leading-relaxed text-white/90 outline-none placeholder:text-white/30"
+            className="h-24 flex-1 resize-none border-none bg-transparent pt-1 text-sm leading-relaxed text-white/90 outline-none placeholder:text-white/30"
             disabled={isGenerating}
           />
         </div>
@@ -900,7 +1099,12 @@ function InputArea({
               </button>
 
               {showModeMenu ? (
-                <div className="absolute left-0 top-full z-20 mt-2 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg">
+                <div
+                  ref={modeMenuListRef}
+                  className={`absolute left-0 z-50 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
+                    modeMenuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                  }`}
+                >
                   <button
                     type="button"
                     onClick={() => {
