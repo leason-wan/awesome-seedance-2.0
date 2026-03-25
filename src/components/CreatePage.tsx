@@ -35,6 +35,7 @@ type GeneratedVideo = {
   mode: GenerationConfig["mode"];
   aspectRatio: GenerationConfig["aspectRatio"];
   resolution: GenerationConfig["resolution"];
+  duration: GenerationConfig["duration"];
   status: "generating" | "completed";
   createdAt: number;
   preview: string;
@@ -68,6 +69,7 @@ const createCopy = {
     detailLabel: "i",
     fps: "Frame Rate",
     resolutionLabel: "Resolution",
+    durationLabel: "Duration",
     createdAtLabel: "Created",
     generationPrompt: "Generation Prompt",
     retrievalHint: "Reference Sources",
@@ -91,6 +93,7 @@ const createCopy = {
     detailLabel: "i",
     fps: "帧率",
     resolutionLabel: "分辨率",
+    durationLabel: "时长",
     createdAtLabel: "生成时间",
     generationPrompt: "生成提示",
     retrievalHint: "参考原图/视频",
@@ -207,6 +210,7 @@ const CreatePage: React.FC<CreatePageProps> = ({ lang = "en" }) => {
         mode: config.mode,
         aspectRatio: config.aspectRatio,
         resolution: config.resolution,
+        duration: config.duration,
         status: "generating",
         createdAt,
         preview: `https://picsum.photos/seed/${previewSeed}/1200/800`,
@@ -276,13 +280,33 @@ const CreatePage: React.FC<CreatePageProps> = ({ lang = "en" }) => {
       const mode = params.get("mode");
       const aspectRatio = params.get("aspectRatio");
       const resolution = params.get("resolution");
+      const duration = params.get("duration");
 
       handleGenerate(
         prompt,
         {
           mode: mode === "image" ? "image" : "video",
-          aspectRatio: aspectRatio === "9:16" ? "9:16" : "16:9",
-          resolution: resolution === "1080p" ? "1080p" : "720p",
+          aspectRatio:
+            aspectRatio === "4:3" ||
+            aspectRatio === "1:1" ||
+            aspectRatio === "3:4" ||
+            aspectRatio === "9:16" ||
+            aspectRatio === "21:9"
+              ? aspectRatio
+              : "16:9",
+          resolution: resolution === "480p" || resolution === "1080p" ? resolution : "720p",
+          duration:
+            duration === "4s" ||
+            duration === "5s" ||
+            duration === "6s" ||
+            duration === "7s" ||
+            duration === "8s" ||
+            duration === "9s" ||
+            duration === "10s" ||
+            duration === "11s" ||
+            duration === "12s"
+              ? duration
+              : "4s",
         },
         [],
       );
@@ -500,7 +524,7 @@ function VideoCard({
             <span>{modeText}</span>
             <span>3.0</span>
             <span>|</span>
-            <span>5s</span>
+            <span>{video.duration}</span>
             <span>|</span>
             <button
               type="button"
@@ -656,7 +680,7 @@ function ResultDetailModal({
                 <span>|</span>
                 <span>3.0</span>
                 <span>|</span>
-                <span>5s</span>
+                <span>{video.duration}</span>
               </div>
             </div>
 
@@ -664,7 +688,8 @@ function ResultDetailModal({
               <dl className="space-y-5 text-[15px]">
                 <DetailRow label={ratioLabelFor(lang)} value={video.aspectRatio} />
                 <DetailRow label={copy.fps} value="24" />
-                <DetailRow label={copy.resolutionLabel} value={video.resolution === "1080p" ? (lang === "zh" ? "高清" : "HD") : (lang === "zh" ? "标准" : "Standard")} />
+                <DetailRow label={copy.resolutionLabel} value={video.resolution} />
+                <DetailRow label={copy.durationLabel} value={video.duration} />
                 <DetailRow label={copy.createdAtLabel} value={createdAtText} />
               </dl>
             </div>

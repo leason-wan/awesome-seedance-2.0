@@ -20,8 +20,9 @@ import { disableGoogleAutoSelect } from "../lib/googleAuth";
 
 export type GenerationConfig = {
   mode: "video" | "image";
-  aspectRatio: "16:9" | "9:16";
-  resolution: "720p" | "1080p";
+  aspectRatio: "16:9" | "4:3" | "1:1" | "3:4" | "9:16" | "21:9";
+  resolution: "480p" | "720p" | "1080p";
+  duration: "4s" | "5s" | "6s" | "7s" | "8s" | "9s" | "10s" | "11s" | "12s";
 };
 
 export type ReferenceAsset = {
@@ -230,6 +231,7 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
       mode: config.mode,
       aspectRatio: config.aspectRatio,
       resolution: config.resolution,
+      duration: config.duration,
       draftId,
     });
     const target = lang === "zh" ? "/zh/create" : "/create";
@@ -851,16 +853,29 @@ export function InputArea({
   const [prompt, setPrompt] = useState("");
   const [mode, setMode] = useState<"video" | "image">("video");
   const [showModeMenu, setShowModeMenu] = useState(false);
-  const [modeMenuPlacement, setModeMenuPlacement] = useState<"top" | "bottom">("bottom");
-  const [aspectRatio, setAspectRatio] = useState<"16:9" | "9:16" | "4:3">("4:3");
-  const [resolution] = useState<"720p" | "1080p">("720p");
+  const [showAspectRatioMenu, setShowAspectRatioMenu] = useState(false);
+  const [showResolutionMenu, setShowResolutionMenu] = useState(false);
+  const [showDurationMenu, setShowDurationMenu] = useState(false);
+  const [menuPlacement, setMenuPlacement] = useState<"top" | "bottom">("bottom");
+  const [aspectRatio, setAspectRatio] = useState<GenerationConfig["aspectRatio"]>("16:9");
+  const [resolution, setResolution] = useState<GenerationConfig["resolution"]>("720p");
+  const [duration, setDuration] = useState<GenerationConfig["duration"]>("4s");
   const modeMenuRef = useRef<HTMLDivElement>(null);
   const modeMenuListRef = useRef<HTMLDivElement>(null);
+  const aspectRatioMenuRef = useRef<HTMLDivElement>(null);
+  const aspectRatioMenuListRef = useRef<HTMLDivElement>(null);
+  const resolutionMenuRef = useRef<HTMLDivElement>(null);
+  const resolutionMenuListRef = useRef<HTMLDivElement>(null);
+  const durationMenuRef = useRef<HTMLDivElement>(null);
+  const durationMenuListRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const referenceAssetsRef = useRef<MockReferenceAsset[]>([]);
   const [referenceAssets, setReferenceAssets] = useState<MockReferenceAsset[]>([]);
 
   useClickOutside(modeMenuRef, showModeMenu, () => setShowModeMenu(false));
+  useClickOutside(aspectRatioMenuRef, showAspectRatioMenu, () => setShowAspectRatioMenu(false));
+  useClickOutside(resolutionMenuRef, showResolutionMenu, () => setShowResolutionMenu(false));
+  useClickOutside(durationMenuRef, showDurationMenu, () => setShowDurationMenu(false));
 
   useEffect(() => {
     referenceAssetsRef.current = referenceAssets;
@@ -873,13 +888,24 @@ export function InputArea({
   }, []);
 
   useEffect(() => {
-    if (!showModeMenu) {
+    if (!showModeMenu && !showAspectRatioMenu && !showResolutionMenu && !showDurationMenu) {
       return;
     }
 
-    const updateModeMenuPlacement = () => {
-      const trigger = modeMenuRef.current;
-      const menu = modeMenuListRef.current;
+    const updateMenuPlacement = () => {
+      const entries = [
+        [showModeMenu, modeMenuRef.current, modeMenuListRef.current],
+        [showAspectRatioMenu, aspectRatioMenuRef.current, aspectRatioMenuListRef.current],
+        [showResolutionMenu, resolutionMenuRef.current, resolutionMenuListRef.current],
+        [showDurationMenu, durationMenuRef.current, durationMenuListRef.current],
+      ] as const;
+      const activeEntry = entries.find(([isOpen]) => isOpen);
+
+      if (!activeEntry) {
+        return;
+      }
+
+      const [, trigger, menu] = activeEntry;
 
       if (!trigger) {
         return;
@@ -890,26 +916,32 @@ export function InputArea({
       const spaceBelow = window.innerHeight - triggerRect.bottom;
       const spaceAbove = triggerRect.top;
 
-      setModeMenuPlacement(
+      setMenuPlacement(
         spaceBelow < menuHeight + 12 && spaceAbove > spaceBelow ? "top" : "bottom",
       );
     };
 
-    updateModeMenuPlacement();
-    window.addEventListener("resize", updateModeMenuPlacement);
-    window.addEventListener("scroll", updateModeMenuPlacement, true);
+    updateMenuPlacement();
+    window.addEventListener("resize", updateMenuPlacement);
+    window.addEventListener("scroll", updateMenuPlacement, true);
 
     return () => {
-      window.removeEventListener("resize", updateModeMenuPlacement);
-      window.removeEventListener("scroll", updateModeMenuPlacement, true);
+      window.removeEventListener("resize", updateMenuPlacement);
+      window.removeEventListener("scroll", updateMenuPlacement, true);
     };
-  }, [showModeMenu]);
+  }, [showAspectRatioMenu, showDurationMenu, showModeMenu, showResolutionMenu]);
 
   const aspectRatioIcon = {
     "16:9": "M4 7h16v10H4V7zm2 2v6h12V9H6z",
     "4:3": "M5 7h14v10H5V7zm2 2v6h10V9H7z",
+    "1:1": "M6 6h12v12H6V6zm2 2v8h8V8H8z",
+    "3:4": "M7 5h10v14H7V5zm2 2v10h6V7H9z",
     "9:16": "M7 4h10v16H7V4zm2 2v12h6V6H9z",
+    "21:9": "M3 8h18v8H3V8zm2 2v4h14v-4H5z",
   } as const;
+  const aspectRatioOptions: GenerationConfig["aspectRatio"][] = ["16:9", "4:3", "1:1", "3:4", "9:16", "21:9"];
+  const resolutionOptions: GenerationConfig["resolution"][] = ["480p", "720p", "1080p"];
+  const durationOptions: GenerationConfig["duration"][] = ["4s", "5s", "6s", "7s", "8s", "9s", "10s", "11s", "12s"];
 
   const handleSubmit = () => {
     if (!prompt.trim() || isGenerating) return;
@@ -922,8 +954,9 @@ export function InputArea({
       prompt,
       {
         mode,
-        aspectRatio: aspectRatio === "4:3" ? "16:9" : aspectRatio,
+        aspectRatio,
         resolution,
+        duration,
       },
       referenceAssets.map((asset) => ({
         id: asset.id,
@@ -935,6 +968,9 @@ export function InputArea({
     );
     setPrompt("");
     setShowModeMenu(false);
+    setShowAspectRatioMenu(false);
+    setShowResolutionMenu(false);
+    setShowDurationMenu(false);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -1102,7 +1138,7 @@ export function InputArea({
                 <div
                   ref={modeMenuListRef}
                   className={`absolute left-0 z-50 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
-                    modeMenuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                    menuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
                   }`}
                 >
                   <button
@@ -1133,50 +1169,141 @@ export function InputArea({
               ) : null}
             </div>
 
-            <button
-              type="button"
-              className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
-            >
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
-              <span>Veo 3.0</span>
-            </button>
+            <div ref={resolutionMenuRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setShowResolutionMenu((prev) => !prev)}
+                className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
+              >
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                  />
+                </svg>
+                <span>{resolution}</span>
+                <svg className="h-3 w-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
 
-            <button
-              type="button"
-              onClick={() =>
-                setAspectRatio((current) =>
-                  current === "4:3" ? "16:9" : current === "16:9" ? "9:16" : "4:3"
-                )
-              }
-              className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
-            >
-              <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
-                <path d={aspectRatioIcon[aspectRatio]} />
-              </svg>
-              <span>{aspectRatio}</span>
-            </button>
+              {showResolutionMenu ? (
+                <div
+                  ref={resolutionMenuListRef}
+                  className={`absolute left-0 z-50 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
+                    menuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                  }`}
+                >
+                  {resolutionOptions.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => {
+                        setResolution(option);
+                        setShowResolutionMenu(false);
+                      }}
+                      className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
+                        resolution === option ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
+                      }`}
+                    >
+                      <span>{option}</span>
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+            </div>
 
-            <button
-              type="button"
-              className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
-            >
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>5s</span>
-            </button>
+            <div ref={aspectRatioMenuRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setShowAspectRatioMenu((prev) => !prev)}
+                className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
+              >
+                <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d={aspectRatioIcon[aspectRatio]} />
+                </svg>
+                <span>{aspectRatio}</span>
+                <svg className="h-3 w-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {showAspectRatioMenu ? (
+                <div
+                  ref={aspectRatioMenuListRef}
+                  className={`absolute left-0 z-50 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
+                    menuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                  }`}
+                >
+                  {aspectRatioOptions.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => {
+                        setAspectRatio(option);
+                        setShowAspectRatioMenu(false);
+                      }}
+                      className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
+                        aspectRatio === option ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
+                      }`}
+                    >
+                      <svg className="h-3.5 w-3.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d={aspectRatioIcon[option]} />
+                      </svg>
+                      <span>{option}</span>
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+
+            <div ref={durationMenuRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setShowDurationMenu((prev) => !prev)}
+                className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
+              >
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>{duration}</span>
+                <svg className="h-3 w-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {showDurationMenu ? (
+                <div
+                  ref={durationMenuListRef}
+                  className={`absolute left-0 z-50 min-w-[120px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
+                    menuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                  }`}
+                >
+                  {durationOptions.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => {
+                        setDuration(option);
+                        setShowDurationMenu(false);
+                      }}
+                      className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
+                        duration === option ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
+                      }`}
+                    >
+                      <span>{option}</span>
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+            </div>
           </div>
 
           <div className="flex items-center gap-3">
