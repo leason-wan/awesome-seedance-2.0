@@ -20,6 +20,7 @@ import { disableGoogleAutoSelect } from "../lib/googleAuth";
 
 export type GenerationConfig = {
   mode: "video" | "image";
+  model: string;
   aspectRatio: "16:9" | "4:3" | "1:1" | "3:4" | "9:16" | "21:9";
   resolution: "480p" | "720p" | "1080p";
   duration: "4s" | "5s" | "6s" | "7s" | "8s" | "9s" | "10s" | "11s" | "12s";
@@ -34,6 +35,9 @@ export type ReferenceAsset = {
 
 export type ReferenceDraftAsset = ReferenceAsset & {
   file: File;
+  uploadedUrl?: string | null;
+  uploadStatus?: "idle" | "uploading" | "uploaded" | "error";
+  uploadError?: string | null;
 };
 
 export type HomePageKey = "home" | "create" | "cookbook" | "user";
@@ -121,9 +125,16 @@ type MockReferenceAsset = {
   id: string;
   file: File;
   previewUrl: string;
+  uploadedUrl?: string | null;
+  uploadStatus?: "idle" | "uploading" | "uploaded" | "error";
+  uploadError?: string | null;
 };
 
 export const CREATE_DRAFT_STORAGE_KEY = "lytai:create-draft";
+export const DEFAULT_VIDEO_MODEL = "seedance2.0";
+export const DEFAULT_IMAGE_MODEL = "nano banana";
+export const VIDEO_MODELS = [DEFAULT_VIDEO_MODEL];
+export const IMAGE_MODELS = [DEFAULT_IMAGE_MODEL];
 
 function useClickOutside<T extends HTMLElement>(
   ref: React.RefObject<T | null>,
@@ -229,6 +240,7 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
     const query = new URLSearchParams({
       prompt,
       mode: config.mode,
+      model: config.model,
       aspectRatio: config.aspectRatio,
       resolution: config.resolution,
       duration: config.duration,
@@ -279,9 +291,9 @@ const HomePage: React.FC<HomePageProps> = ({ lang = "en" }) => {
               <div className="pt-2">
                 <InputArea
                   lang={lang}
-                  hasKey={true}
+                  hasKey={Boolean(authSession)}
                   isGenerating={false}
-                  onConnectKey={() => {}}
+                  onConnectKey={() => setIsAuthDialogOpen(true)}
                   onGenerate={handleRedirectToCreate}
                 />
               </div>
@@ -842,17 +854,21 @@ export function InputArea({
   isGenerating,
   hasKey,
   onConnectKey,
+  onUploadReference,
 }: {
   lang: SupportedLanguage;
   onGenerate: (prompt: string, config: GenerationConfig, references: ReferenceDraftAsset[]) => void;
   isGenerating: boolean;
   hasKey: boolean;
   onConnectKey: () => void;
+  onUploadReference?: (reference: ReferenceDraftAsset) => Promise<{ url: string }>;
 }) {
   const copy = homeCopy[lang];
   const [prompt, setPrompt] = useState("");
   const [mode, setMode] = useState<"video" | "image">("video");
+  const [model, setModel] = useState(DEFAULT_VIDEO_MODEL);
   const [showModeMenu, setShowModeMenu] = useState(false);
+  const [showModelMenu, setShowModelMenu] = useState(false);
   const [showAspectRatioMenu, setShowAspectRatioMenu] = useState(false);
   const [showResolutionMenu, setShowResolutionMenu] = useState(false);
   const [showDurationMenu, setShowDurationMenu] = useState(false);
@@ -862,6 +878,8 @@ export function InputArea({
   const [duration, setDuration] = useState<GenerationConfig["duration"]>("4s");
   const modeMenuRef = useRef<HTMLDivElement>(null);
   const modeMenuListRef = useRef<HTMLDivElement>(null);
+  const modelMenuRef = useRef<HTMLDivElement>(null);
+  const modelMenuListRef = useRef<HTMLDivElement>(null);
   const aspectRatioMenuRef = useRef<HTMLDivElement>(null);
   const aspectRatioMenuListRef = useRef<HTMLDivElement>(null);
   const resolutionMenuRef = useRef<HTMLDivElement>(null);
@@ -873,6 +891,7 @@ export function InputArea({
   const [referenceAssets, setReferenceAssets] = useState<MockReferenceAsset[]>([]);
 
   useClickOutside(modeMenuRef, showModeMenu, () => setShowModeMenu(false));
+  useClickOutside(modelMenuRef, showModelMenu, () => setShowModelMenu(false));
   useClickOutside(aspectRatioMenuRef, showAspectRatioMenu, () => setShowAspectRatioMenu(false));
   useClickOutside(resolutionMenuRef, showResolutionMenu, () => setShowResolutionMenu(false));
   useClickOutside(durationMenuRef, showDurationMenu, () => setShowDurationMenu(false));
@@ -882,19 +901,18 @@ export function InputArea({
   }, [referenceAssets]);
 
   useEffect(() => {
-    return () => {
-      referenceAssetsRef.current.forEach((asset) => URL.revokeObjectURL(asset.previewUrl));
-    };
+    return () => {};
   }, []);
 
   useEffect(() => {
-    if (!showModeMenu && !showAspectRatioMenu && !showResolutionMenu && !showDurationMenu) {
+    if (!showModeMenu && !showModelMenu && !showAspectRatioMenu && !showResolutionMenu && !showDurationMenu) {
       return;
     }
 
     const updateMenuPlacement = () => {
       const entries = [
         [showModeMenu, modeMenuRef.current, modeMenuListRef.current],
+        [showModelMenu, modelMenuRef.current, modelMenuListRef.current],
         [showAspectRatioMenu, aspectRatioMenuRef.current, aspectRatioMenuListRef.current],
         [showResolutionMenu, resolutionMenuRef.current, resolutionMenuListRef.current],
         [showDurationMenu, durationMenuRef.current, durationMenuListRef.current],
@@ -929,7 +947,7 @@ export function InputArea({
       window.removeEventListener("resize", updateMenuPlacement);
       window.removeEventListener("scroll", updateMenuPlacement, true);
     };
-  }, [showAspectRatioMenu, showDurationMenu, showModeMenu, showResolutionMenu]);
+  }, [showAspectRatioMenu, showDurationMenu, showModeMenu, showModelMenu, showResolutionMenu]);
 
   const aspectRatioIcon = {
     "16:9": "M4 7h16v10H4V7zm2 2v6h12V9H6z",
@@ -942,9 +960,11 @@ export function InputArea({
   const aspectRatioOptions: GenerationConfig["aspectRatio"][] = ["16:9", "4:3", "1:1", "3:4", "9:16", "21:9"];
   const resolutionOptions: GenerationConfig["resolution"][] = ["480p", "720p", "1080p"];
   const durationOptions: GenerationConfig["duration"][] = ["4s", "5s", "6s", "7s", "8s", "9s", "10s", "11s", "12s"];
+  const modelOptions = mode === "video" ? VIDEO_MODELS : IMAGE_MODELS;
+  const isUploadingReferences = referenceAssets.some((asset) => asset.uploadStatus === "uploading");
 
   const handleSubmit = () => {
-    if (!prompt.trim() || isGenerating) return;
+    if (!prompt.trim() || isGenerating || isUploadingReferences) return;
     if (!hasKey) {
       onConnectKey();
       return;
@@ -954,6 +974,7 @@ export function InputArea({
       prompt,
       {
         mode,
+        model,
         aspectRatio,
         resolution,
         duration,
@@ -964,10 +985,14 @@ export function InputArea({
         kind: asset.file.type.startsWith("video/") ? "video" : "image",
         previewUrl: asset.previewUrl,
         file: asset.file,
+        uploadedUrl: asset.uploadedUrl,
+        uploadStatus: asset.uploadStatus,
+        uploadError: asset.uploadError,
       })),
     );
     setPrompt("");
     setShowModeMenu(false);
+    setShowModelMenu(false);
     setShowAspectRatioMenu(false);
     setShowResolutionMenu(false);
     setShowDurationMenu(false);
@@ -981,6 +1006,11 @@ export function InputArea({
   };
 
   const handleReferenceButtonClick = () => {
+    if (!hasKey) {
+      onConnectKey();
+      return;
+    }
+
     fileInputRef.current?.click();
   };
 
@@ -991,22 +1021,70 @@ export function InputArea({
       return;
     }
 
-    setReferenceAssets((current) => {
-      const nextFiles = selectedFiles.slice(0, Math.max(0, 5 - current.length));
+    const availableSlots = Math.max(0, 5 - referenceAssetsRef.current.length);
+    const nextFiles = selectedFiles.slice(0, availableSlots);
 
-      if (nextFiles.length === 0) {
-        return current;
-      }
+    if (nextFiles.length === 0) {
+      event.target.value = "";
+      return;
+    }
 
-      return [
-        ...current,
-        ...nextFiles.map((file, index) => ({
-          id: `${file.name}-${file.lastModified}-${current.length + index}`,
-          file,
-          previewUrl: URL.createObjectURL(file),
-        })),
-      ];
-    });
+    const newAssets = nextFiles.map((file, index) => ({
+      id: `${file.name}-${file.lastModified}-${referenceAssetsRef.current.length + index}`,
+      file,
+      previewUrl: "",
+      uploadedUrl: null,
+      uploadStatus: hasKey && onUploadReference ? ("uploading" as const) : ("idle" as const),
+      uploadError: null,
+    }));
+
+    setReferenceAssets((current) => [...current, ...newAssets]);
+
+    if (!hasKey) {
+      onConnectKey();
+    } else if (onUploadReference) {
+      newAssets.forEach((asset) => {
+        void onUploadReference({
+          id: asset.id,
+          name: asset.file.name,
+          kind: asset.file.type.startsWith("video/") ? "video" : "image",
+          previewUrl: asset.previewUrl,
+          file: asset.file,
+          uploadedUrl: asset.uploadedUrl,
+          uploadStatus: asset.uploadStatus,
+          uploadError: asset.uploadError,
+        })
+          .then((uploaded) => {
+            setReferenceAssets((snapshot) =>
+              snapshot.map((item) =>
+                item.id === asset.id
+                  ? {
+                      ...item,
+                      uploadedUrl: uploaded.url,
+                      uploadStatus: "uploaded",
+                      uploadError: null,
+                    }
+                  : item,
+              ),
+            );
+          })
+          .catch((error: unknown) => {
+            const message = error instanceof Error && error.message.trim() ? error.message : "Upload failed.";
+
+            setReferenceAssets((snapshot) =>
+              snapshot.map((item) =>
+                item.id === asset.id
+                  ? {
+                      ...item,
+                      uploadStatus: "error",
+                      uploadError: message,
+                    }
+                  : item,
+              ),
+            );
+          });
+      });
+    }
 
     event.target.value = "";
   };
@@ -1014,10 +1092,6 @@ export function InputArea({
   const handleRemoveReference = (assetId: string) => {
     setReferenceAssets((current) => {
       const assetToRemove = current.find((asset) => asset.id === assetId);
-
-      if (assetToRemove) {
-        URL.revokeObjectURL(assetToRemove.previewUrl);
-      }
 
       return current.filter((asset) => asset.id !== assetId);
     });
@@ -1036,10 +1110,12 @@ export function InputArea({
         />
 
         <div className="flex gap-3 rounded-xl bg-black/20 p-3">
-          <div className="h-24 w-[68px] shrink-0 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-            <div className="flex min-h-full flex-col gap-2">
+          <div className="h-24 w-[128px] shrink-0 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div className="grid min-h-full grid-cols-2 gap-2">
               {referenceAssets.map((asset) => {
                 const isVideo = asset.file.type.startsWith("video/");
+                const remoteUrl = asset.uploadedUrl?.trim() ?? "";
+                const showRemotePreview = asset.uploadStatus === "uploaded" && remoteUrl.length > 0;
 
                 return (
                   <div
@@ -1047,20 +1123,30 @@ export function InputArea({
                     title={asset.file.name}
                     className="group relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white/5"
                   >
-                    {isVideo ? (
-                      <video
-                        src={asset.previewUrl}
-                        className="h-full w-full object-cover"
-                        muted
-                        playsInline
-                        preload="metadata"
-                      />
+                    {showRemotePreview ? (
+                      isVideo ? (
+                        <video
+                          src={remoteUrl}
+                          className="h-full w-full object-cover"
+                          muted
+                          playsInline
+                          preload="metadata"
+                        />
+                      ) : (
+                        <img
+                          src={remoteUrl}
+                          alt={asset.file.name}
+                          className="h-full w-full object-cover"
+                        />
+                      )
                     ) : (
-                      <img
-                        src={asset.previewUrl}
-                        alt={asset.file.name}
-                        className="h-full w-full object-cover"
-                      />
+                      <div className="flex h-full w-full items-center justify-center bg-white/5 text-[9px] uppercase tracking-[0.14em] text-white/45">
+                        {asset.uploadStatus === "uploading"
+                          ? "Loading"
+                          : asset.uploadStatus === "error"
+                            ? "Error"
+                            : "Pending"}
+                      </div>
                     )}
                     <button
                       type="button"
@@ -1070,6 +1156,16 @@ export function InputArea({
                     >
                       ×
                     </button>
+                    {asset.uploadStatus === "uploading" ? (
+                      <span className="absolute inset-x-1 bottom-1 rounded bg-black/75 px-1 py-0.5 text-center text-[9px] text-white/70">
+                        ...
+                      </span>
+                    ) : null}
+                    {asset.uploadStatus === "error" ? (
+                      <span className="absolute inset-x-1 bottom-1 rounded bg-red-500/80 px-1 py-0.5 text-center text-[9px] text-white">
+                        !
+                      </span>
+                    ) : null}
                   </div>
                 );
               })}
@@ -1145,6 +1241,7 @@ export function InputArea({
                     type="button"
                     onClick={() => {
                       setMode("video");
+                      setModel(DEFAULT_VIDEO_MODEL);
                       setShowModeMenu(false);
                     }}
                     className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
@@ -1157,6 +1254,7 @@ export function InputArea({
                     type="button"
                     onClick={() => {
                       setMode("image");
+                      setModel(DEFAULT_IMAGE_MODEL);
                       setShowModeMenu(false);
                     }}
                     className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
@@ -1165,6 +1263,44 @@ export function InputArea({
                   >
                     <span>{copy.image}</span>
                   </button>
+                </div>
+              ) : null}
+            </div>
+
+            <div ref={modelMenuRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setShowModelMenu((prev) => !prev)}
+                className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
+              >
+                <span>{model}</span>
+                <svg className="h-3 w-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {showModelMenu ? (
+                <div
+                  ref={modelMenuListRef}
+                  className={`absolute left-0 z-50 min-w-[160px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] shadow-lg ${
+                    menuPlacement === "top" ? "bottom-full mb-2" : "top-full mt-2"
+                  }`}
+                >
+                  {modelOptions.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => {
+                        setModel(option);
+                        setShowModelMenu(false);
+                      }}
+                      className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
+                        model === option ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
+                      }`}
+                    >
+                      <span>{option}</span>
+                    </button>
+                  ))}
                 </div>
               ) : null}
             </div>
