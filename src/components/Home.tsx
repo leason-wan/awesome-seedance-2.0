@@ -132,9 +132,13 @@ type MockReferenceAsset = {
 
 export const CREATE_DRAFT_STORAGE_KEY = "lytai:create-draft";
 export const DEFAULT_VIDEO_MODEL = "seedance2.0";
+export const SEEDANCE_1_5_PRO_MODEL = "doubao-seedance-1-5-pro-251215";
 export const DEFAULT_IMAGE_MODEL = "nano banana";
-export const VIDEO_MODELS = [DEFAULT_VIDEO_MODEL];
-export const IMAGE_MODELS = [DEFAULT_IMAGE_MODEL];
+export const VIDEO_MODELS = [
+  { label: "seedance 2.0", value: DEFAULT_VIDEO_MODEL },
+  { label: "seedance 1.5 pro", value: SEEDANCE_1_5_PRO_MODEL },
+];
+export const IMAGE_MODELS = [{ label: "nano banana", value: DEFAULT_IMAGE_MODEL }];
 
 function useClickOutside<T extends HTMLElement>(
   ref: React.RefObject<T | null>,
@@ -961,6 +965,7 @@ export function InputArea({
   const resolutionOptions: GenerationConfig["resolution"][] = ["480p", "720p", "1080p"];
   const durationOptions: GenerationConfig["duration"][] = ["4s", "5s", "6s", "7s", "8s", "9s", "10s", "11s", "12s"];
   const modelOptions = mode === "video" ? VIDEO_MODELS : IMAGE_MODELS;
+  const selectedModelOption = modelOptions.find((option) => option.value === model) ?? modelOptions[0];
   const isUploadingReferences = referenceAssets.some((asset) => asset.uploadStatus === "uploading");
 
   const handleSubmit = () => {
@@ -1273,7 +1278,7 @@ export function InputArea({
                 onClick={() => setShowModelMenu((prev) => !prev)}
                 className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 transition-colors hover:bg-white/10"
               >
-                <span>{model}</span>
+                <span>{selectedModelOption?.label ?? model}</span>
                 <svg className="h-3 w-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -1288,17 +1293,17 @@ export function InputArea({
                 >
                   {modelOptions.map((option) => (
                     <button
-                      key={option}
+                      key={option.value}
                       type="button"
                       onClick={() => {
-                        setModel(option);
+                        setModel(option.value);
                         setShowModelMenu(false);
                       }}
                       className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
-                        model === option ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
+                        model === option.value ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5"
                       }`}
                     >
-                      <span>{option}</span>
+                      <span>{option.label}</span>
                     </button>
                   ))}
                 </div>
